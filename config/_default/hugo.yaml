@@ -1,0 +1,8 @@
+baseURL: "/"
+title: "QIM Center"
+summaryLength: 20
+
+# services:
+#   googleAnalytics:
+#     id: G-MEASUREMENT_ID
+

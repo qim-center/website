@@ -1,0 +1,35 @@
+enable: true
+
+title: "This is the **new** QIM website"
+text: "At QIM we develop algorithms for quantitative image analysis in order to support the research carried out at large-scale imaging facilities."
+
+buttons:
+  - label: "Qim Platform"
+    link: "http://platform.qim.dk/"
+
+  - label: "View More"
+    link: ""
+
+image: "images/home/hero/bill-sitting.png"
+
+items:
+  - icon: "fas fa-user"
+    color: "#4628A4"
+    title: "Web Application"
+    text: "Lorem ipsum lorem lorem"
+
+  - icon: "fas fa-user"
+    color: "#5FC300"
+    title: "SEO"
+    text: "Lorem ipsum lorem lorem"
+
+  - icon: "fas fa-user"
+    color: "#00329B"
+    title: "AR/VR Solutions"
+    text: "Lorem ipsum lorem lorem"
+
+  - icon: "fas fa-user"
+    color: "#BB3800"
+    title: "Mobile Applications"
+    text: "Lorem ipsum lorem lorem"
+

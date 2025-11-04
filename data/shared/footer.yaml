@@ -1,0 +1,26 @@
+enable: true
+
+contact:
+  title: "Contact"
+  items:
+    - label: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+      link: ""
+
+    - label: "+908 89097 890"
+      link: ""
+
+social:
+  - title: "Facebook"
+    icon: "fa-brands fa-facebook"
+    link: "#"
+  - title: "Twitter"
+    icon: "fa-brands fa-twitter"
+    link: "#"
+  - title: "Instagram"
+    icon: "fa-brands fa-instagram"
+    link: "#"
+  - title: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    link: "#"
+
+copyright: "Copyright ® 2021 Lorem All rights Rcerved"

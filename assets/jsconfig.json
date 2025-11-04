@@ -1,0 +1,10 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "../../.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/writeonlycode/hugo-agency-web@v0.0.0-20250709134630-9b263db5d8f2/assets/*"
+   ]
+  }
+ }
+}

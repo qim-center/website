@@ -1,0 +1,37 @@
+enable: true
+
+title: "Lorem Ipsum is simply dummy text of the printing. "
+text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+
+items:
+  - icon: "fas fa-user"
+    color: "#08D3BB"
+    pretitle: "Lorem Ipsum is simply dummy text"
+    pretext: "Lorem Ipsum is simply dummy text"
+    title: "**Lorem Ipsum** is simply dummy text of the printing. "
+    text: "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+    image: "images/home/features/features-1.png"
+
+  - icon: "fas fa-user"
+    color: "#1090CB"
+    pretitle: "Lorem Ipsum is simply dummy text"
+    pretext: "Lorem Ipsum is simply dummy text"
+    title: "**Lorem Ipsum** is simply dummy text of the printing. "
+    text: "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+    image: "images/home/features/features-2.png"
+
+  - icon: "fas fa-user"
+    color: "#9208D3"
+    pretitle: "Lorem Ipsum is simply dummy text"
+    pretext: "Lorem Ipsum is simply dummy text"
+    title: "**Lorem Ipsum** is simply dummy text of the printing. "
+    text: "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+    image: "images/home/features/features-3.png"
+
+  - icon: "fas fa-user"
+    color: "#1090CB"
+    pretitle: "Lorem Ipsum is simply dummy text"
+    pretext: "Lorem Ipsum is simply dummy text"
+    title: "**Lorem Ipsum** is simply dummy text of the printing. "
+    text: "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+    image: "images/home/features/features-2.png"

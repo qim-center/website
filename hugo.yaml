@@ -1,0 +1,32 @@
+theme: "github.com/writeonlycode/hugo-agency-web"
+languageCode: "en-us"
+
+build:
+  buildStats:
+    enable: true
+
+  cachebusters:
+    - source: "assets/notwatching/hugo_stats\\.json"
+      target: "css"
+
+    - source: "(postcss|tailwind)\\.config\\.js"
+      target: 'css'
+
+module:
+  hugo_version:
+    min: "0.147.8"
+
+  imports:
+    - path: github.com/writeonlycode/hugo-agency-web
+
+  mounts:
+    - source: 'hugo_stats.json'
+      target: 'assets/notwatching/hugo_stats.json'
+      disableWatch: true
+
+    - source: 'assets'
+      target: 'assets'
+
+taxonomies:
+  series: "series"
+  tags: "tags"
