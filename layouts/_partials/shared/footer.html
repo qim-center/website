@@ -1,0 +1,43 @@
+{{ with site.Data.shared.subscribe }}{{ if .enable }}{{ partial "blocks/shared/subscribe" . }}{{ end }}{{ end }}
+
+<footer class="pt-20 pb-8">
+  <div class="container mx-auto px-4 grid xl:grid-cols-12 gap-16">
+    <div class="xl:col-span-4">
+      <h1 class="text-primary font-bold uppercase mb-6 text-center xl:text-start">{{ site.Title }}</h1>
+      <p class=" text-center xl:text-start">{{ site.Params.description }}</p>
+    </div>
+    <div class="xl:col-span-2">
+      <h1 class="font-medium mb-6 text-center xl:text-start">About Us</h1>
+      <ul class="">
+        {{ range site.Menus.footer }}
+          <li class="mb-2 text-center xl:text-start"><a class="text-[#515151]" href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="xl:col-span-3">
+      <h1 class="font-medium mb-6 text-center xl:text-start">{{ site.Data.shared.footer.contact.title }}</h1>
+      <ul class="">
+        {{ range site.Data.shared.footer.contact.items }}
+          <li class="mb-2 text-center xl:text-start"><a class="text-[#515151]" href="{{ .link }}">{{ .label }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="xl:col-span-3">
+      <div class="flex items-center justify-center xl:justify-end h-full gap-4">
+        {{ range site.Data.shared.footer.social }}
+          <a class="flex items-center justify-center text-sm size-10 rounded-full shadow-xl hover:scale-125 duration-500" aria-label="{{ .title }}" href="{{ .link }}">
+            <i class="{{ .icon }}"></i>
+            {{ .label }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ with site.Data.shared.footer.copyright }}
+    <div class="border-t border-[#D2D2D2] mt-8">
+      <div class="container mx-auto px-4 flex items-center justify-center pt-8 text-[#686868] text-sm">
+        {{ . }}
+      </div>
+    </div>
+  {{ end }}
+</footer>

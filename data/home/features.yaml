@@ -5,7 +5,7 @@ text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry
 
 items:
   - icon: "fas fa-user"
-    color: "#08D3BB"
+    color: "#E63F47"
     pretitle: "Lorem Ipsum is simply dummy text"
     pretext: "Lorem Ipsum is simply dummy text"
     title: "**Lorem Ipsum** is simply dummy text of the printing. "

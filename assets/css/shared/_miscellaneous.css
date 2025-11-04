@@ -1,0 +1,6 @@
+.markdown-title {
+  strong {
+    color: var(--color-primary);
+    font-weight: inherit;
+  }
+}

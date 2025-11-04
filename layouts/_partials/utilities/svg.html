@@ -1,0 +1,15 @@
+{{/* Check for required arguments (src): */}}
+{{ if not .src }}
+  {{ errorf "Image Optimization: the partial 'utilities/svg' is missing the 'src' argument." }}
+{{ end }}
+
+{{/* Get resource from page bundle or assets folder: */}}
+{{ $resource := dict }}
+{{ with resources.Get .src }}{{ $resource = . }}{{ end }}
+{{ with page.Resources.Get .src }}{{ $resource = . }}{{ end }}
+
+{{ if $resource }}
+  {{ $resource.Content | safeHTML }}
+{{ else }}
+  {{ warnf "Image Optimization (SVG): the image '%s' has not been found. (%s)" .src page }}
+{{ end }}

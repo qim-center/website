@@ -1,7 +1,10 @@
-# QIM Website
+# Qim website
 
-Instructions
+Original theme:
+https://github.com/writeonlycode/hugo-agency-web
 
-1. Clone this repository
-2. Run `hugo server`
-3. Access http://localhost:1313/
+Usage (after installing requirements)
+1. Clone this repo
+2. run `hugo serve`
+3. Go to http://localhost:1313/
+

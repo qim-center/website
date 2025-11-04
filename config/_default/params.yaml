@@ -1,7 +1,7 @@
-title: "Agency Web"
-description: "Experienced mobile and web applications and website builders measuring."
+title: "Qim Center"
+description: "Algorithms for quantitative image analysis."
 images: 
-  - "images/home/hero/bill-sitting.png"
+  - "images/home/hero/qim-hero.png"
 
 # logo: "images/shared/logo.png"
 
@@ -22,3 +22,6 @@ social:
 
 copyright: "© 2022 Agency Web All Rights Reserved"
 
+colors:
+  primary: "#FC7323"
+  secondary: "#E63F47"

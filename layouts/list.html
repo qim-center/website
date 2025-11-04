@@ -1,0 +1,69 @@
+{{ define "main" }}
+  <section class="py-16">
+    <div class="container mx-auto px-4 mb-24">
+      <div class="mx-auto xl:max-w-1/2 mb-16">
+        {{ with .Title }}
+          <h1 class="markdown-title text-center text-4xl xl:text-5xl font-bold xl:leading-normal mb-10">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .Description }}
+          <p class="text-xl xl:leading-loose font-medium text-center text-[#777777]">{{ . }}</p>
+        {{ end }}
+      </div>
+      {{ if site.Taxonomies.tags }}
+        <div class="flex flex-wrap items-center justify-center gap-8 max-w-3/4 mx-auto">
+          {{ range site.Taxonomies.tags }}
+            {{ partial "components/button/pill" (dict "label" .Page.Title "href" .Page.Permalink)}}
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+
+    <!--Highlighted Post-->
+    {{ $post := (index .RegularPages 0) }}
+    <div class="container mx-auto px-4 grid grid-cols-2 gap-16 mb-28">
+      <div class="">
+        <a class="block bg-primary/10 h-full w-full aspect-video" href="{{ $post.Permalink }}">
+          {{ with $post.Params.image }}
+            {{ partial "utilities/image" (dict "src" . "class" "w-full h-full object-cover object-center")}}
+          {{ end }}
+        </a>
+      </div>
+      <div class="flex flex-col justify-center">
+        <h1 class="font-semibold leading-relaxed text-3xl mb-8"><a href="{{ $post.Permalink }}">{{ $post.Title}}</a></h1>
+        <div class="text-[#424242] leading-loose">{{ $post.Summary }}</div>
+        <div class="flex items-center justify-between my-4">
+          <div class="">
+          </div>
+          <div class="">
+            <a class="text-sm text-primary hover:underline" href="{{ $post.Permalink }}">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Posts List-->
+    <div class="container mx-auto px-4 grid lg:grid-cols-2 xl:grid-cols-3 gap-x-20 gap-y-32 mb-28">
+      {{ range .RegularPages }}
+        <div class="">
+          <a class="block w-full aspect-square rounded-4xl overflow-hidden mb-10" href="{{ .Permalink }}">
+            {{ with .Params.image }}
+              {{ partial "utilities/image" (dict "src" . "class" "w-full h-full object-cover object-center")}}
+            {{ else }}
+              <div class="w-full h-full bg-primary/10">
+              </div>
+            {{ end }}
+          </a>
+          <h1 class="text-2xl font-semibold leading-relaxed mb-8"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+          <div class="text-[#424242] leading-loose">
+            {{ .Summary }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+    <!--Pagination-->
+    <div class="flex items-center justify-center mb-28">
+      {{ partial "pagination" . }}
+    </div>
+  </section>
+{{ end }}

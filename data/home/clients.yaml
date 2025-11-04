@@ -1,17 +1,17 @@
 enable: true
 
-title: "You will be in good company"
+title: "The Qim Center is a partnership of"
 
 items:
-  - name: "Beneoshop"
-    image: "images/home/clients/beneoshop.png"
+  - name: "DTU"
+    image: "images/home/partners/DTU.png"
 
-  - name: "Caspio"
-    image: "images/home/clients/caspio.png"
+  - name: "KU"
+    image: "images/home/partners/KU.png"
 
-  - name: "Hypergrid"
-    image: "images/home/clients/hypergrid.png"
+  - name: "Lund"
+    image: "images/home/partners/Lund.png"
 
-  - name: "Leo Trippi"
-    image: "images/home/clients/leo-trippi.png"
+  - name: "MaxIV"
+    image: "images/home/partners/MaxIV.png"
 

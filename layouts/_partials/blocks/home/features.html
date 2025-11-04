@@ -1,0 +1,35 @@
+<section id="features" class="features relative py-8 xl:py-32 overflow-hidden">
+  <div class="container mx-auto px-4">
+    <h1 class="xl:max-w-2/3 mx-auto text-center text-[#252525] font-semibold text-4xl leading-normal mb-8">{{ .title }}</h1>
+    <p class="xl:max-w-1/2 mx-auto text-center text-[#868686] mb-14">{{ .text }}</p>
+  </div>
+
+  <div class="flex flex-col relative">
+    <div class="container mx-auto px-4 [&>svg]:absolute [&>svg]:left-0 [&>svg]:w-2/3 [&>svg]:h-auto [&>svg]:top-16 -z-10 relative hidden xl:block">
+      {{ partial "utilities/svg" (dict "src" "images/features/bg-line.svg")}}
+    </div>
+    {{ range $i, $e := .items }}
+      <div class="container mx-auto px-4 mb-16 xl:mb-0">
+        <div class="grid xl:grid-cols-12 gap-4 xl:gap-12">
+          <div class="xl:col-span-7 flex items-center justify-center {{ if (eq (mod $i 2) 0) }} xl:order-2 {{ end }}">
+            {{ partial "utilities/image" (dict "src" .image "class" "aspect-square object-contain object-center w-[75%]") }}
+          </div>
+          <div class="xl:col-span-5 flex flex-col justify-center gap-4 xl:gap-12">
+            <div class="flex flex-col xl:flex-row items-center justify-start gap-6">
+              <div class="flex items-center justify-center shrink-0 text-xl text-white bg-[{{ .color }}] size-14 rounded-full">
+                <i class="{{ .icon }}"></i> <!-- Solid style -->
+              </div> 
+              <div class="inline-flex flex-col">
+                <h2 class="text-lg font-medium text-center xl:text-start">{{ .pretitle }}</h2>
+                <p class="text-sm text-[#868686] text-center xl:text-start">{{ .pretext }}</p>
+              </div>
+            </div>
+
+            <h1 class="markdown-title text-[#252525] font-semibold text-3xl leading-relaxed text-center xl:text-start">{{ .title | markdownify }}</h1>        
+            <p class="text-[#545454] leading-relaxed text-center xl:text-start">{{ .text }}</p>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>

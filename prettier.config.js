@@ -1,19 +1,21 @@
+const GoTemplatePlugin = require('prettier-plugin-go-template')
+
 /** @type {import("prettier").Config} */
 const config = {
-  trailingComma: "es5",
+  trailingComma: 'es5',
   tabWidth: 2,
   semi: false,
   singleQuote: true,
   printWidth: 120,
-  plugins: ["prettier-plugin-go-template", "prettier-plugin-tailwindcss"],
+  plugins: [GoTemplatePlugin, 'prettier-plugin-tailwindcss'],
   overrides: [
     {
-      files: ["*.html"],
+      files: ['*.html'],
       options: {
-        parser: "go-template",
+        parser: 'go-template',
       },
     },
   ],
-};
+}
 
-module.exports = config;
+module.exports = config

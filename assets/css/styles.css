@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+@import './shared/_fontawesome-free.css';
+@import './shared/_pagination.css';
+@import './shared/_miscellaneous.css';
+
+@layer base {
+  html {
+    font-family: 'Nunito', system-ui, sans-serif;
+  }
+}
+
+@theme {
+  --color-primary: {{ (default "#9077B6" site.Params.colors.primary) }};
+}
+
+body {
+  @apply antialiased;
+}

@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <section class="py-16">
+    <div class="container mx-auto px-4 mb-24">
+      <div class="mx-auto xl:max-w-1/2 mb-16">
+        {{ with .Title }}
+          <h1 class="markdown-title text-center text-4xl xl:text-5xl font-bold xl:leading-normal mb-10">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .Description }}
+          <p class="text-xl xl:leading-loose font-medium text-center text-[#777777]">{{ . }}</p>
+        {{ end }}
+      </div>
+      {{ if .Params.tags }}
+        <div class="flex flex-wrap items-center justify-center gap-8 max-w-3/4 mx-auto">
+          {{ range .Params.tags }}
+            {{ partial "components/button/pill" (dict "label" . "href" (printf "%s/tags/%s" site.BaseURL .) )}}
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+
+    <!--Highlighted Post-->
+    {{ $post := (index .RegularPages 0) }}
+    <div class="container mx-auto px-4 mb-28">
+      <div class="prose-lg prose mx-auto">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+{{ end }}

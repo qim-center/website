@@ -1,0 +1,14 @@
+name = "Agency Web Theme"
+license = "MIT"
+licenselink = "https://github.com/writeonlycode/hugo-agency-web/blob/main/LICENSE"
+description = "A clean and professional Hugo theme for digital agencies, startups, and modern product landing pages."
+
+homepage = "https://github.com/writeonlycode/hugo-agency-web/"
+demosite = "https://writeonlycode.github.io/hugo-agency-web/"
+
+tags = ["blog", "responsive", "personal", "light", "tailwind", "portfolio", "landing", "company", "modern"]
+features = []
+
+[author]
+  name = "Iago Bozza"
+  homepage = "https://writeonlycode.io/"
