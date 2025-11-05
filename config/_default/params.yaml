@@ -1,9 +1,9 @@
 title: "Qim Center"
 description: "Algorithms for quantitative image analysis."
 images: 
-  - "images/home/hero/qim-hero.png"
+  - "images/home/hero/qim-logo.png"
 
-# logo: "images/shared/logo.png"
+logo: "images/shared/qim-icon_gradient-transparent-background.png"
 
 favicons:
   themeColor: "#FFFFFF"

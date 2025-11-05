@@ -1,7 +1,7 @@
 enable: true
 
 title: "Center for **Quantification of Imaging Data** from MAX IV"
-text: "At QIM we develop algorithms for quantitative image analysis in order to support the research carried out at large-scale imaging facilities."
+text: "At Qim we develop algorithms for quantitative image analysis in order to support the research carried out at large-scale imaging facilities."
 
 buttons:
   - label: "Qim Platform"
@@ -10,13 +10,13 @@ buttons:
   - label: "View More"
     link: ""
 
-image: "images/home/hero/qim-hero.png"
+image: "images/home/hero/qim-logo.png"
 
 items:
   - icon: "fa-solid fa-window-restore"
     color: "#4628A4"
     title: "Web platform"
-    text: "Lorem ipsum lorem lorem"
+    text: "The Qim platform."
     link: "http://platform.qim.dk/"
 
 
@@ -29,3 +29,16 @@ items:
     color: "#00329B"
     title: "Method development"
     text: "Lorem ipsum lorem lorem"
+
+  - icon: "fa-solid fa-window-restore"
+    color: "#4628A4"
+    title: "Web platform"
+    text: "Lorem ipsum lorem lorem"
+    link: "http://platform.qim.dk/"
+
+
+  - icon: "fa-brands fa-python"
+    color: "#5FC300"
+    title: "Python library"
+    text: "Lorem ipsum lorem lorem"
+

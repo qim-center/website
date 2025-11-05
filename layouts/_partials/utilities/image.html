@@ -9,37 +9,43 @@
 {{ with page.Resources.Get .src }}{{ $resource = . }}{{ end }}
 
 {{ if $resource }}
-  {{/* Configure the image widths to be generated: */}}
-  {{ $breakpoints := (slice 320 480 768 1024 1280 1600 1920) }}
-
-  {{/* Generate the images: */}}
   {{ $images := slice }}
-  {{ range $breakpoints }}
-    {{ if (ge $resource.Width .) }}
-      {{ $opts := (printf "%dx webp" .) }}
-      {{ $image := $resource.Resize $opts }}
-      {{ $images = append $images (slice $image) }}
+  {{ $srcset := "" }}
+
+  {{ if in .src "qim" }}
+    <!-- Serve original hero image, full quality -->
+    <img src="{{ .src }}" class="{{ .class }}" alt="{{ .alt }}">
+  {{ else }}
+    {{/* Configure the image widths to be generated: */}}
+    {{ $breakpoints := (slice 320 480 768 1024 1280 1600 1920) }}
+
+    {{/* Generate the images: */}}
+    {{ range $breakpoints }}
+      {{ if (ge $resource.Width .) }}
+        {{ $opts := (printf "%dx q95 png" .) }}
+        {{ $image := $resource.Resize $opts }}
+        {{ $images = append $images (slice $image) }}
+      {{ end }}
     {{ end }}
+
+    {{/* Build the srcset only if we generated images */}}
+    {{ $srcsetList := slice }}
+    {{ range $images }}
+      {{ $srcsetList = append $srcsetList (slice (printf "%s %dw" .Permalink .Width)) }}
+    {{ end }}
+    {{ $srcset = delimit $srcsetList ", " }}
+
+    <!-- Optimized image output -->
+    <img
+      {{ with $resource.Permalink }}src="{{ . }}"{{ end }}
+      {{ with $resource.Width }}width="{{ . }}"{{ end }}
+      {{ with $resource.Height }}height="{{ . }}"{{ end }}
+      {{ with $srcset }}srcset="{{ . }}"{{ end }}
+      {{ with .sizes }}sizes="{{ . }}"{{ end }}
+      {{ with .class }}class="{{ . }}"{{ end }}
+      alt="{{ . }}"
+    />
   {{ end }}
-
-  {{/* Build the srcset: */}}
-  {{ $srcset := slice }}
-  {{ range $images }}
-    {{ $srcset = append $srcset (slice (printf "%s %dw" .Permalink .Width)) }}
-  {{ end }}
-  {{ $srcset = delimit $srcset ", " }}
-
-
-  {{/* Return the img element: */}}
-  <img
-    {{ with $resource.Permalink }}src="{{ . }}"{{ end }}
-    {{ with $resource.Width }}width="{{ . }}"{{ end }}
-    {{ with $resource.Height }}height="{{ . }}"{{ end }}
-    {{ with $srcset }}srcset="{{ . }}"{{ end }}
-    {{ with .sizes }}sizes="{{ . }}"{{ end }}
-    {{ with .class }}class="{{ . }}"{{ end }}
-    alt="{{ . }}"
-  />
 {{ else }}
   {{ warnf "Image Optimization: the image '%s' has not been found. (%s)" .src page }}
 {{ end }}

@@ -1,3 +1,3 @@
 ---
-title: "QIM"
+title: "Qim Center"
 ---

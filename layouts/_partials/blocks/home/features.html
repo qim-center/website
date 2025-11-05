@@ -5,9 +5,6 @@
   </div>
 
   <div class="flex flex-col relative">
-    <div class="container mx-auto px-4 [&>svg]:absolute [&>svg]:left-0 [&>svg]:w-2/3 [&>svg]:h-auto [&>svg]:top-16 -z-10 relative hidden xl:block">
-      {{ partial "utilities/svg" (dict "src" "images/features/bg-line.svg")}}
-    </div>
     {{ range $i, $e := .items }}
       <div class="container mx-auto px-4 mb-16 xl:mb-0">
         <div class="grid xl:grid-cols-12 gap-4 xl:gap-12">
