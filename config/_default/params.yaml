@@ -4,6 +4,7 @@ images:
   - "images/home/hero/qim-logo.png"
 
 logo: "images/shared/qim-icon_gradient-transparent-background.png"
+logoHover: "images/shared/qim-icon_spinner-transparent-background-small.gif"
 
 favicons:
   themeColor: "#FFFFFF"

@@ -12,17 +12,17 @@
   {{ $images := slice }}
   {{ $srcset := "" }}
 
-  {{ if in .src "qim" }}
-    <!-- Serve original hero image, full quality -->
+  {{ if in .src "no-compression" }}
     <img src="{{ .src }}" class="{{ .class }}" alt="{{ .alt }}">
   {{ else }}
+
     {{/* Configure the image widths to be generated: */}}
     {{ $breakpoints := (slice 320 480 768 1024 1280 1600 1920) }}
 
     {{/* Generate the images: */}}
     {{ range $breakpoints }}
       {{ if (ge $resource.Width .) }}
-        {{ $opts := (printf "%dx q95 png" .) }}
+        {{ $opts := (printf "%dx q95 webp" .) }}
         {{ $image := $resource.Resize $opts }}
         {{ $images = append $images (slice $image) }}
       {{ end }}

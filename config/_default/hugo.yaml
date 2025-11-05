@@ -1,7 +1,7 @@
 baseURL: "/"
 title: ""
 summaryLength: 20
-relativeURLs: true 
+
 # services:
 #   googleAnalytics:
 #     id: G-MEASUREMENT_ID

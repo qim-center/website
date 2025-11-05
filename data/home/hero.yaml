@@ -7,38 +7,42 @@ buttons:
   - label: "Qim Platform"
     link: "http://platform.qim.dk/"
 
-  - label: "View More"
-    link: ""
+  - label: "About us"
+    link: "/about"
 
 image: "images/home/hero/qim-logo.png"
 
 items:
-  - icon: "fa-solid fa-window-restore"
-    color: "#4628A4"
-    title: "Web platform"
-    text: "The Qim platform."
-    link: "http://platform.qim.dk/"
+
+- icon: "fa-solid fa-window-restore"
+  color: "#E63F47"
+  title: "Web platform"
+  text: "Online tools for visualization and analysis of imaging data and access to the HPC resources of DTU Compute"
+  link: "http://platform.qim.dk/"
+
+- icon: "fa-brands fa-python"
+  color: "#E63F47"
+  title: "Python library"
+  text: "Development of qim3d, an open source library for quantitative image analysis"
+
+- icon: "fa-solid fa-file-code"
+  color: "#E63F47"
+  title: "Method development"
+  text: "Developing new algorithms for quantitative imaging, with focus on 3D microscopy and tomography"
+
+- icon: "fa-solid fa-database"
+  color: "#E63F47"
+  title: "Datasets"
+  text: "Volumetric data from imaging experiments, openly available for method development and benchmarking"
+  link: "http://platform.qim.dk/"
+
+- icon: "fa-solid fa-microscope"
+  color: "#E63F47"
+  title: "Scanning support"
+  text: "High-resolution imaging services and support for experimental setup, sample preparation, and imaging strategies"
 
 
-  - icon: "fa-brands fa-python"
-    color: "#5FC300"
-    title: "Python library"
-    text: "Lorem ipsum lorem lorem"
-
-  - icon: "fa-solid fa-file-code"
-    color: "#00329B"
-    title: "Method development"
-    text: "Lorem ipsum lorem lorem"
-
-  - icon: "fa-solid fa-window-restore"
-    color: "#4628A4"
-    title: "Web platform"
-    text: "Lorem ipsum lorem lorem"
-    link: "http://platform.qim.dk/"
-
-
-  - icon: "fa-brands fa-python"
-    color: "#5FC300"
-    title: "Python library"
-    text: "Lorem ipsum lorem lorem"
-
+- icon: "fa-solid fa-graduation-cap"
+  color: "#E63F47"
+  title: "Training"
+  text: "Workshops, courses, and tutorials to support researchers in quantitative imaging methods and tools"

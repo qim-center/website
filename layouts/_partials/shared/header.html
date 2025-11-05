@@ -1,10 +1,27 @@
 <nav class="z-50">
   <div class="container mx-auto flex items-center justify-between px-4 py-6">
-    <a class="flex items-center" href="{{ .Site.BaseURL }}">
+    <!-- Keeping here the original code for logo only -->
+    <!-- <a class="flex items-center" href="{{ .Site.BaseURL }}">
       {{ with site.Params.logo }}
         {{ partial "utilities/image.html" (dict "src" . "class" "h-16 w-auto") }}
       {{ end }}
       <span class="text-primary text-xl font-bold xl:text-3xl">{{ .Site.Title }}</span>
+    </a> -->
+
+    <a class="flex items-center group" href="{{ .Site.BaseURL }}">
+      {{ with site.Params.logo }}
+        <div class="relative h-10 w-10 flex-shrink-0">
+          <!-- Original logo using partial (supports assets/) -->
+          {{ partial "utilities/image.html" (dict "src" . "class" "h-10 w-10 object-contain transition-opacity duration-300 group-hover:opacity-0") }}
+
+          <!-- Hover logo also processed via Hugo resources -->
+          {{ with site.Params.logoHover }}
+            {{ $hover := resources.Get . }}
+            <img src="{{ $hover.RelPermalink }}" class="absolute top-0 left-0 h-10 w-10 object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+          {{ end }}
+        </div>
+      {{ end }}
+      <span class="text-primary text-xl font-bold xl:text-3xl ml-2">{{ .Site.Title }}</span>
     </a>
     <button
       class="cursor-pointer xl:hidden"
