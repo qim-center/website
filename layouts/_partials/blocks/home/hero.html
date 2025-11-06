@@ -1,8 +1,8 @@
-<section id="hero" class="hero relative py-8 xl:py-16 overflow-visible">
+<section id="hero" class="hero relative z-0 py-8 xl:py-16 overflow-hidden">
   <div class="text-primary absolute right-0 translate-x-[60%] top-1/2 -translate-y-[150%] -z-10">
     {{ partial "utilities/svg" (dict "src" "images/hero/circles-1.svg")}}
   </div>
-  <div class="text-[#E63F47] absolute left-0 -translate-x-[70%] bottom-0 -z-10">
+  <div class="text-[#E63F47] absolute left-0 -translate-x-[70%] bottom-30 -z-10">
     {{ partial "utilities/svg" (dict "src" "images/hero/circles-2.svg")}}
   </div>
   <div class="container mx-auto px-4">
@@ -33,7 +33,7 @@
       </div>
     </div>
     {{ if .items }}
-      <div class="flex flex-col xl:flex-row xl:items-center justify-around flex-wrap gap-8">
+      <div class="flex flex-col xl:flex-row xl:items-center justify-between flex-wrap gap-8">
         {{ range .items }}
           <div class="flex items-start justify-start gap-4">
             <div class="flex items-center justify-center text-2xl text-[{{ .color }}] bg-[{{ .color }}]/10 size-15 rounded-2xl">
