@@ -28,7 +28,18 @@
       </div>
       <div class="flex flex-col justify-center items-center">
         {{ with .image }}
-          {{ partial "utilities/image" (dict "src" . "class" "object-cover object-center w-[80%]")}}
+          {{ if (strings.HasSuffix . ".html") }}
+            <div class="w-[100%] h-100 overflow-hidden rounded-lg relative">
+              <iframe 
+                src="{{ . }}" 
+                class="w-full h-full border-0 scale-200"
+                frameborder="0"
+                scrolling="no">
+              </iframe>
+            </div>
+          {{ else }}
+            {{ partial "utilities/image" (dict "src" . "class" "object-cover object-center w-[80%]")}}
+          {{ end }}
         {{ end }}
       </div>
     </div>
