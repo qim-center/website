@@ -3,6 +3,10 @@ main:
     url: "/about"
     weight: 1
 
+  - name: "What we do"
+    url: "/what_we_do"
+    weight: 1
+
   - name: "Services"
     url: "/services"
     weight: 2
