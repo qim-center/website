@@ -5,17 +5,21 @@
         {{ with .Title }}
           <h1 class="markdown-title text-center text-4xl xl:text-5xl font-bold xl:leading-normal mb-10">{{ . | markdownify }}</h1>
         {{ end }}
-        {{ with .Description }}
+        {{ with .Description | markdownify }}
           <p class="text-xl xl:leading-loose font-medium text-center text-[#777777]">{{ . }}</p>
         {{ end }}
       </div>
-      {{ if site.Taxonomies.tags }}
-        <div class="flex flex-wrap items-center justify-center gap-8 max-w-3/4 mx-auto">
-          {{ range site.Taxonomies.tags }}
-            {{ partial "components/button/pill" (dict "label" .Page.Title "href" .Page.Permalink)}}
+      {{ $section := .Section }}
+      <div class="flex flex-wrap items-center justify-center gap-8 max-w-3/4 mx-auto">
+      {{ range $name, $term := site.Taxonomies.tags }}
+        {{ if ne $name "index" }} {{/* skip 'index' tag */}}
+          {{ $localPages := where $term.Pages "Section" $section }}
+          {{ if gt (len $localPages) 0 }}
+            {{ partial "components/button/pill" (dict "label" .Page.Title "href" $term.Page.Permalink) }}
           {{ end }}
-        </div>
+        {{end}}
       {{ end }}
+      </div>
     </div>
 
     <!--Highlighted Post-->
