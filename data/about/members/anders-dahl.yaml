@@ -1,0 +1,19 @@
+name: "Anders Bjorholm Dahl"
+group: "PI"
+role:
+  - "Professor"
+  - "Head of the QIM Center"
+affiliation: "DTU Compute"
+image: "/images/about/Abda-e1554965932656.jpg"
+bio: "Anders is the Head of the QIM Center and the Head of the Section for Visual Computing at DTU Compute since 2015. He finished his PhD at DTU in 2009 and has been at DTU since. His research focuses on a variety of things related to image analysis, where his main focus has been on quantification of 3D volumetric data."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:abda@dtu.dk"
+  - label: "Twitter"
+    icon: "fa-brands fa-twitter"
+    href: "https://x.com/BjorholmDahl"
+  - label: "Scholar"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://scholar.google.dk/citations?user=WsgfNRMAAAAJ&hl=en"
+weight: 10

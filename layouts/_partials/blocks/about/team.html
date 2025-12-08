@@ -1,0 +1,66 @@
+{{/* Team gallery block: groups members with role pills and optional links */}}
+{{ $raw := site.Data.about.members }}
+{{ if not $raw }}
+  {{ warnf "Team block: no data at data/about/members" }}
+{{ else }}
+  {{ $members := slice }}
+  {{ range $k, $v := $raw }}
+    {{ $members = $members | append (merge $v (dict "_key" $k)) }}
+  {{ end }}
+  {{ $members = sort $members "weight" "name" }}
+  {{ $groups := slice "PI" "Close collaborator" "Member" }}
+
+  {{ range $groups }}
+    {{ $groupName := . }}
+    {{ $groupMembers := where $members "group" $groupName }}
+    {{ if gt (len $groupMembers) 0 }}
+      <section class="py-12 xl:py-16">
+        <div class="container mx-auto px-4 flex flex-col gap-8">
+          <div class="flex items-center justify-between flex-wrap gap-4">
+            <h2 class="text-2xl font-semibold text-[#252525]">{{ $groupName }}</h2>
+            <div class="h-px bg-[#E5E5E5] grow"></div>
+          </div>
+          <div class="flex flex-wrap justify-center gap-4 lg:gap-5">
+            {{ range $groupMembers }}
+              {{ $member := . }}
+              <div class="flex flex-col gap-4 bg-white shadow-lg rounded-3xl p-6 w-90 min-w-90  max-w-90 flex-shrink-0">
+                <div class="overflow-hidden rounded-md bg-primary/10 h-32 w-28 mx-auto">
+                  {{ with .image }}
+                    {{ partial "utilities/image" (dict "src" . "alt" $member.name "class" "w-full h-full object-cover object-center") }}
+                  {{ end }}
+                </div>
+                <div class="flex flex-col gap-3 min-w-0">
+                  <h3 class="text-xl font-semibold text-[#252525]">{{ .name }}</h3>
+                  {{ with .affiliation }}<p class="text-sm text-[#545454]">{{ . }}</p>{{ end }}
+                  {{ with .role }}
+                    {{ $roles := . }}
+                    {{ $rolesType := printf "%T" $roles }}
+                    {{ if not (hasPrefix $rolesType "[]") }}{{ $roles = slice $roles }}{{ end }}
+                    <div class="flex flex-wrap gap-1.5 min-w-0">
+                      {{ range $roles }}
+                        {{ partial "components/tag/role" (dict "label" . "class" "") }}
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                  {{ with .bio }}
+                    <p class="text-sm leading-relaxed text-[#4A4A4A]">{{ . }}</p>
+                  {{ end }}
+                  {{ with .links }}
+                    <div class="flex items-center gap-3 mt-2 flex-wrap">
+                      {{ range . }}
+                        <a class="text-primary hover:text-primary/70 text-sm" href="{{ .href }}" aria-label="{{ .label }}">
+                          {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+                          {{ .label }}
+                        </a>
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+{{ end }}
