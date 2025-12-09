@@ -11,6 +11,10 @@ main:
     url: "/blog"
     weight: 3
 
+  - name: "Publications"
+    url: "/publications"
+    weight: 4
+
 buttons:
   - name: "Contact Us"
     url: "/contact"
