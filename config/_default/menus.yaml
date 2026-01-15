@@ -4,7 +4,7 @@ main:
     weight: 1
 
   - name: "What we do"
-    url: "/what_we_do"
+    url: "/portfolio"
     weight: 1
 
   - name: "Services"
