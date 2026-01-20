@@ -1,15 +1,38 @@
-enable: false
+enable: true
 
 items:
-  - title: "Lorem ipsum is simply dummy text"
-    text: "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+  - title: "Analysis advice for beamtime data"
+    text: "Guidance on optimal image acquisition, live quality checks during beamtime, and comprehensive data analysis support."
     button:
-      label: "View More"
-      link: "#"
+      label: "Learn More"
+      link: "#beamtime-advice"
 
-  - title: "Lorem ipsum is simply dummy text"
-    text: "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+  - title: "Online platform for data analysis"
+    text: "Access our comprehensive online platform designed for efficient data analysis and processing of your beamtime results."
     button:
-      label: "View More"
-      link: "#"
+      label: "Access Platform"
+      link: "#platform"
+
+  - title: "Software"
+    text: "Easy to use Python libraries (qim3d and CIL) for advanced image processing and analysis."
+    button:
+      label: "View Documentation"
+      link: "#software"
       
+  - title: "Training"
+    text: "Comprehensive workshops and written material, including interactive notebooks to help you master the tools and techniques."
+    button:
+      label: "See Workshops"
+      link: "#training"
+
+  - title: "Method development"
+    text: "We develop custom methods and solutions for scientific collaborations tailored to your research needs."
+    button:
+      label: "Collaborate"
+      link: "#method-development"
+
+  - title: "Datasets"
+    text: "Access curated datasets for testing and development of your analysis workflows."
+    button:
+      label: "Browse Datasets"
+      link: "#datasets"
