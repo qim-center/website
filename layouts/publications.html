@@ -8,12 +8,13 @@
   </div>
 
   <div class="container mx-auto px-4 mb-28">
-    <div class="space-y-6">
+    <div class="space-y-6 max-w-4xl mx-auto">
       {{ range .Site.Data.publications }}
         <div class="flex gap-4 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
-          <div class="flex-1">
+          <div class="flex-1 max-w-xl">
+            <p class="text-sm font-medium text-gray-600 mb-1">{{ .year }}</p>
             <p class="text-sm text-gray-600 mb-1">
-              <strong>{{ .authors }}</strong> ({{ .year }})
+              <strong>{{ .authors }}</strong>
             </p>
             <p class="font-semibold text-lg mb-2">{{ .title }}</p>
             <p class="text-gray-700 mb-3">
@@ -28,15 +29,25 @@
               {{ if .pages }}: {{ .pages }}{{ end }}
             </p>
             {{ if .url }}
-              <a href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-sm">
-                View Publication →
+              <a href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary/10 hover:bg-primary/20 text-primary transition font-semibold text-sm px-3 py-2 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4" aria-hidden="true">
+                  <path d="M14 5h5v5"></path>
+                  <path d="M10 14L19 5"></path>
+                  <path d="M19 14v5h-14v-14h5"></path>
+                </svg>
+                <span>View Publication</span>
               </a>
             {{ end }}
           </div>
           <button 
-            class="relative text-primary hover:text-primary/70 transition cursor-pointer font-semibold text-sm"
+            type="button"
+            class="relative ml-auto self-end shrink-0 inline-flex items-center gap-2 bg-primary/10 hover:bg-primary/20 text-primary transition cursor-pointer font-semibold text-sm px-3 py-2 rounded-lg"
             title="Copy BibTeX"
             onclick="copyBibTeX(event, '{{ .title | urlize }}-{{ .year }}')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4" aria-hidden="true">
+              <rect x="9" y="9" width="10" height="10" rx="2"></rect>
+              <path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"></path>
+            </svg>
             BibTeX
             <div id="toast-{{ .title | urlize }}-{{ .year }}" class="absolute left-full ml-2 top-1/2 -translate-y-1/2 bg-gray-900 text-white px-3 py-1 rounded text-xs whitespace-nowrap opacity-0 transition pointer-events-none">✓ Copied</div>
           </button>
