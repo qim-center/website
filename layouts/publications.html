@@ -1,0 +1,83 @@
+{{ define "main" }}
+<section class="py-16">
+  <div class="container mx-auto px-4 mb-24">
+    <h1 class="text-center text-4xl xl:text-5xl font-bold mb-10">{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="text-xl text-center text-[#777777]">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  <div class="container mx-auto px-4 mb-28">
+    <div class="space-y-6">
+      {{ range .Site.Data.publications }}
+        <div class="flex gap-4 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+          <div class="flex-1">
+            <p class="text-sm text-gray-600 mb-1">
+              <strong>{{ .authors }}</strong> ({{ .year }})
+            </p>
+            <p class="font-semibold text-lg mb-2">{{ .title }}</p>
+            <p class="text-gray-700 mb-3">
+              {{ if .journal }}
+                <em>{{ .journal }}</em>
+              {{ else if .booktitle }}
+                <em>{{ .booktitle }}</em>
+              {{ end }}
+              {{ if .volume }}
+                {{ .volume }}{{ if .issue }}({{ .issue }}){{ end }}
+              {{ end }}
+              {{ if .pages }}: {{ .pages }}{{ end }}
+            </p>
+            {{ if .url }}
+              <a href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-sm">
+                View Publication →
+              </a>
+            {{ end }}
+          </div>
+          <button 
+            class="relative text-primary hover:text-primary/70 transition cursor-pointer font-semibold text-sm"
+            title="Copy BibTeX"
+            onclick="copyBibTeX(event, '{{ .title | urlize }}-{{ .year }}')">
+            BibTeX
+            <div id="toast-{{ .title | urlize }}-{{ .year }}" class="absolute left-full ml-2 top-1/2 -translate-y-1/2 bg-gray-900 text-white px-3 py-1 rounded text-xs whitespace-nowrap opacity-0 transition pointer-events-none">✓ Copied</div>
+          </button>
+        </div>
+
+        <!-- Hidden BibTeX citation -->
+        <div id="bibtex-{{ .title | urlize }}-{{ .year }}" style="display: none;">@article{ {{ .title }}-{{ .year }},
+  author = { {{ .authors }} },
+  title = { {{ .title }} },
+  {{ if .journal }}journal = { {{ .journal }} },{{ end }}
+  {{ if .booktitle }}booktitle = { {{ .booktitle }} },{{ end }}
+  year = { {{ .year }} },
+  {{ if .volume }}volume = { {{ .volume }} },{{ end }}
+  {{ if .issue }}number = { {{ .issue }} },{{ end }}
+  {{ if .pages }}pages = { {{ .pages }} },{{ end }}
+  {{ if .url }}url = { {{ .url }} }{{ end }}
+}</div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<script>
+  function copyBibTeX(event, id) {
+    const bibTexElement = document.getElementById('bibtex-' + id);
+    const bibTexContent = bibTexElement.textContent.trim();
+    navigator.clipboard.writeText(bibTexContent).then(() => {
+      const toast = document.getElementById('toast-' + id);
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.add('opacity-0');
+        toast.classList.remove('opacity-100');
+      }, 2000);
+    }).catch(err => {
+      console.error('Failed to copy:', err);
+      alert('Failed to copy to clipboard');
+    });
+  }
+</script>
+{{ end }}
+
+
+
