@@ -64,7 +64,7 @@
     <!--Posts List-->
     <div class="container mx-auto px-4 space-y-6 max-w-4xl mx-auto mb-28">
       {{ range .RegularPages }}
-        <div class="flex flex-col sm:flex-row gap-6 bg-gray-50 border border-gray-200 rounded-xl p-6 hover:bg-gray-100 transition">
+        <div class="flex flex-col sm:flex-row gap-6 bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition">
           <a class="block w-full sm:w-40 md:w-48 shrink-0" href="{{ .Permalink }}">
             <div class="w-full h-24 sm:h-28 md:h-32 rounded-lg">
               {{ $img := .Params.image }}
