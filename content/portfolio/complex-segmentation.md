@@ -1,7 +1,7 @@
 +++
 author = "QIM"
 title = "Methods for complex segmentation"
-description = ""
+description = "a suite of advanced segmentation methods and 3D image analysis tools, built for complex structures and scalable workflows"
 
 tags = [
     "Software tools",

@@ -1,7 +1,7 @@
 +++
 author = "QIM"
 title = "User Support"
-description = "assistance for the Qim Platform and the qim3d library"
+description = "Assistance for the Qim Platform and the qim3d library, including onboarding guides, troubleshooting, and hands-on help"
 tags = [
     "Computational resources"
 ]
