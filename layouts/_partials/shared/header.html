@@ -10,14 +10,18 @@
 
     <a class="flex items-center group" href="{{ .Site.BaseURL }}">
       {{ with site.Params.logo }}
-        <div class="relative h-10 w-10 flex-shrink-0">
+        <div class="relative h-24 w-24 flex-shrink-0">
           <!-- Original logo using partial (supports assets/) -->
-          {{ partial "utilities/image.html" (dict "src" . "class" "h-10 w-10 object-contain transition-opacity duration-300 group-hover:opacity-0") }}
+          {{ partial "utilities/image.html" (dict "src" . "class" "h-24 w-24 object-contain transition-opacity duration-300 group-hover:opacity-0") }}
 
           <!-- Hover logo also processed via Hugo resources -->
           {{ with site.Params.logoHover }}
             {{ $hover := resources.Get . }}
-            <img src="{{ $hover.RelPermalink }}" class="absolute top-0 left-0 h-10 w-10 object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+            {{ if $hover }}
+              <img src="{{ $hover.RelPermalink }}" class="absolute top-0 left-0 h-24 w-24 object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+            {{ else }}
+              <img src="{{ . | relURL }}" class="absolute top-0 left-0 h-24 w-24 object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+            {{ end }}
           {{ end }}
         </div>
       {{ end }}
@@ -37,15 +41,15 @@
       class="fixed inset-0 flex -translate-y-full flex-col items-center justify-center gap-8 bg-white duration-500 xl:relative xl:translate-y-0 xl:flex-row"
       id="navbarContent"
     >
-      <div class="container absolute top-0 mx-auto flex items-center justify-between px-4 py-6 xl:hidden bg-white">
+      <div class="container absolute top-0 mx-auto flex items-center justify-center px-4 py-6 xl:hidden bg-white relative">
         <a class="flex items-center xl:hidden" href="{{ .Site.BaseURL }}">
           {{ with site.Params.logo }}
-            {{ partial "utilities/image.html" (dict "src" . "class" "h-6 w-auto") }}
+            {{ partial "utilities/image.html" (dict "src" . "class" "h-16 w-auto") }}
           {{ end }}
           <span class="text-primary text-xl font-semibold uppercase xl:text-3xl">{{ .Site.Title }}</span>
         </a>
         <button
-          class="cursor-pointer xl:hidden"
+          class="cursor-pointer xl:hidden absolute right-4"
           type="button"
           data-toggle-target="#navbarContent"
           data-toggle-class="-translate-y-full"

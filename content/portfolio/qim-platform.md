@@ -1,7 +1,7 @@
 +++
 author = "QIM"
 title = "Qim Platform"
-description = "your web-based hub for 3D Image analysis"
+description = "Web-based hub for 3D image analysis, combining accessible tools with HPC-backed workflows for scalable research"
 tags = [
     "Computational resources"
 ]

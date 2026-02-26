@@ -1,7 +1,7 @@
 +++
 author = "QIM"
 title = "BugNIST"
-description = "volumetric dataset for object detection and segmentation"
+description = "Volumetric dataset for object detection and segmentation, with diverse insect scans and mixture annotations that support robust benchmarking under domain shift"
 tags = [
     "Datasets",
 ]

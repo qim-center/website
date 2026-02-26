@@ -1,7 +1,7 @@
 +++
 author = "QIM"
 title = "Data repository"
-description = "a collection of 3D datasets"
+description = "A curated collection of 3D datasets and µCT scans for benchmarking, method development, and visualization across diverse samples"
 tags = [
     "Datasets"
 ]
