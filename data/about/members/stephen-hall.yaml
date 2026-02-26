@@ -1,0 +1,15 @@
+name: "Stephen Hall"
+group: "PI"
+role:
+  - "Professor"
+affiliation: "Lund University"
+image: "/images/about/Stephen_Hall-e1554968300870.jpg"
+bio: "Stephen is an associate professor at the Dept. of Solid Mechanics at the Faculty of Engineering (LTH) at Lund University. He is also in charge of the 4D-Imaging Lab x-ray tomography facility since 2011 after moving from Laboratoire 3R in Grenoble, France."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:stephen.hall@solid.lth.edu"
+  - label: "Website"
+    icon: "fa-solid fa-globe"
+    href: "https://portal.research.lu.se/en/persons/stephen-hall/#Overview"
+weight: 30
