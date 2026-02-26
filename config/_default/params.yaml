@@ -3,8 +3,8 @@ description: "Algorithms for quantitative image analysis."
 images: 
   - "images/home/hero/qim-logo.png"
 
-logo: "images/shared/qim-icon_gradient-transparent-background.png"
-logoHover: "images/shared/qim-icon_spinner-transparent-background-small.gif"
+logo: "images/shared/qim-logo_standard-trasparent-background.png"
+logoHover: "images/shared/qim-logo_standard-trasparent-background.png"
 
 favicons:
   themeColor: "#FFFFFF"
@@ -12,7 +12,7 @@ favicons:
   faviconColor: "#000000"
 
 contact:
-  - "trungkienspktnd@gamail.com"
+  - "fima@dtu.dk"
   - "207.555.0119"
 
 social:
@@ -21,7 +21,7 @@ social:
   facebook: "#"
   twitter: "#"
 
-copyright: "© 2022 Agency Web All Rights Reserved"
+copyright: "© 2026 QIM Center. All rights reserved."
 
 colors:
   primary: "#FC7323"

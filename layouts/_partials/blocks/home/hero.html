@@ -1,8 +1,8 @@
 <section id="hero" class="hero relative z-0 py-8 xl:py-16 overflow-hidden">
-  <div class="text-primary absolute right-0 translate-x-[60%] top-1/2 -translate-y-[150%] -z-10">
+  <div class="text-primary absolute right-0 translate-x-[60%] top-1/2 -translate-y-[150%] z-50 pointer-events-none">
     {{ partial "utilities/svg" (dict "src" "images/hero/circles-1.svg")}}
   </div>
-  <div class="text-[#E63F47] absolute left-0 -translate-x-[70%] bottom-30 -z-10">
+  <div class="text-[#E63F47] absolute left-0 -translate-x-[70%] bottom-30 z-1 pointer-events-none">
     {{ partial "utilities/svg" (dict "src" "images/hero/circles-2.svg")}}
   </div>
   <div class="container mx-auto px-4">
@@ -29,7 +29,7 @@
       <div class="flex flex-col justify-center items-center">
         {{ with .image }}
           {{ if (strings.HasSuffix . ".html") }}
-            <div class="w-[100%] h-100 overflow-hidden rounded-lg relative">
+            <div class="w-[100%] h-100 overflow-hidden rounded-lg relative opacity-0 transition-opacity duration-5000" data-fade-on-load>
               <iframe 
                 src="{{ . }}" 
                 class="w-full h-full border-0 scale-200"
