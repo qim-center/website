@@ -1,0 +1,15 @@
+name: "Felipe Delestro"
+group: "Staff"
+role:
+  - "Research Software Specialist"
+affiliation: "DTU Compute"
+image: "/images/about/FelipeDelestro.jpg"
+bio: "Felipe is a Research Software Specialist at DTU Compute. He has a background in computer science and has been working on developing and maintaining software tools for scientific research."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:fima@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/delestro/"
+weight: 10

@@ -5,10 +5,27 @@
 {{ else }}
   {{ $members := slice }}
   {{ range $k, $v := $raw }}
-    {{ $members = $members | append (merge $v (dict "_key" $k)) }}
+    {{ $members = $members | append (merge $v (dict "_key" $k "group" (default "Members" $v.group))) }}
   {{ end }}
   {{ $members = sort $members "weight" "name" }}
-  {{ $groups := slice "PI" "Close collaborator" "Member" }}
+  {{ $groupsFound := slice }}
+  {{ range $members }}
+    {{ if not (in $groupsFound .group) }}
+      {{ $groupsFound = $groupsFound | append .group }}
+    {{ end }}
+  {{ end }}
+  {{ $preferredGroups := slice "Center Directors" "Staff" "Collaborators" }}
+  {{ $groups := slice }}
+  {{ range $preferredGroups }}
+    {{ if in $groupsFound . }}
+      {{ $groups = $groups | append . }}
+    {{ end }}
+  {{ end }}
+  {{ range (sort $groupsFound) }}
+    {{ if not (in $groups .) }}
+      {{ $groups = $groups | append . }}
+    {{ end }}
+  {{ end }}
 
   {{ range $groups }}
     {{ $groupName := . }}
@@ -16,22 +33,25 @@
     {{ if gt (len $groupMembers) 0 }}
       <section class="py-12 xl:py-16">
         <div class="container mx-auto px-4 flex flex-col gap-8">
-          <div class="flex items-center justify-between flex-wrap gap-4">
+          <div class="text-center">
             <h2 class="text-2xl font-semibold text-[#252525]">{{ $groupName }}</h2>
-            <div class="h-px bg-[#E5E5E5] grow"></div>
           </div>
           <div class="flex flex-wrap justify-center gap-4 lg:gap-5">
             {{ range $groupMembers }}
               {{ $member := . }}
-              <div class="flex flex-col gap-4 bg-white shadow-lg rounded-3xl p-6 w-90 min-w-90  max-w-90 flex-shrink-0">
-                <div class="overflow-hidden rounded-md bg-primary/10 h-32 w-28 mx-auto">
-                  {{ with .image }}
-                    {{ partial "utilities/image" (dict "src" . "alt" $member.name "class" "w-full h-full object-cover object-center") }}
-                  {{ end }}
+              <div class="flex flex-col gap-4 bg-gray-50 shadow-lg rounded-3xl p-6 w-90 min-w-90  max-w-90 flex-shrink-0 h-[30rem]">
+                <div class="flex items-start gap-4">
+                  <div class="w-1/3 overflow-hidden rounded-full bg-primary/10 aspect-square shrink-0">
+                    {{ with .image }}
+                      {{ partial "utilities/image" (dict "src" . "alt" $member.name "class" "w-full h-full object-cover object-center") }}
+                    {{ end }}
+                  </div>
+                  <div class="w-2/3 min-w-0 flex flex-col gap-2">
+                    <h3 class="text-xl font-semibold text-[#252525]">{{ .name }}</h3>
+                    {{ with .affiliation }}<p class="text-sm text-[#545454]">{{ . }}</p>{{ end }}
+                  </div>
                 </div>
-                <div class="flex flex-col gap-3 min-w-0">
-                  <h3 class="text-xl font-semibold text-[#252525]">{{ .name }}</h3>
-                  {{ with .affiliation }}<p class="text-sm text-[#545454]">{{ . }}</p>{{ end }}
+                <div class="flex flex-col gap-3 min-w-0 grow">
                   {{ with .role }}
                     {{ $roles := . }}
                     {{ $rolesType := printf "%T" $roles }}
@@ -43,12 +63,14 @@
                     </div>
                   {{ end }}
                   {{ with .bio }}
-                    <p class="text-sm leading-relaxed text-[#4A4A4A]">{{ . }}</p>
+                    <div class="max-h-48 overflow-y-auto pr-1">
+                      <p class="text-sm leading-relaxed text-[#4A4A4A]">{{ . }}</p>
+                    </div>
                   {{ end }}
                   {{ with .links }}
-                    <div class="flex items-center gap-3 mt-2 flex-wrap">
+                    <div class="flex items-center gap-3 mt-auto pt-2 flex-wrap">
                       {{ range . }}
-                        <a class="text-primary hover:text-primary/70 text-sm" href="{{ .href }}" aria-label="{{ .label }}">
+                        <a class="text-primary hover:text-primary/70 text-sm" href="{{ .href }}" aria-label="{{ .label }}" target="_blank" rel="noopener noreferrer">
                           {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
                           {{ .label }}
                         </a>

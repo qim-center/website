@@ -1,0 +1,16 @@
+name: "Jakob Sauer Jørgensen"
+group: "Staff"
+role:
+  - "Scientific Director"
+  - "Associate Professor"
+affiliation: "DTU Compute"
+image: "/images/about/JakobSauer.jpg"
+bio: "Jakob is a Scientific Director of the QIM Center and Associate Professor at DTU Compute."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:jakj@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/jakobhj/"
+weight: 10

@@ -1,0 +1,12 @@
+name: "Rasmus Juul Pedersen"
+group: "Collaborators"
+role:
+  - "PhD Student"
+affiliation: "DTU Compute"
+image: "/images/about/RasmusPedersen.jpg"
+bio: "PhD student at DTU Compute. Rasmus is working on developing software tools for scientific research, with a focus on image analysis and machine learning."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:rjupe@dtu.dk@dtu.dk"
+weight: 10
