@@ -16,7 +16,7 @@ items:
     color: "#FC7323"
     pretitle: "Python tools"
     pretext: "Open-source library"
-    title: "**qim3d** Python library"
+    title: "The **qim3d** Python library"
     text: "A library for quantitative 3D image analysis, supporting method development and reproducible workflows. It offers modules for segmentation, filtering, and feature extraction of volumetric datasets. Extensive documentation, examples, and tutorials make it easy to integrate into research pipelines and combine with other scientific Python packages for advanced data analysis."
     image: "images/home/features/qim3d-example.png"
 
@@ -24,6 +24,6 @@ items:
     color: "#FC7323"
     pretitle: "Custom algorithms"
     pretext: "Method development"
-    title: "**Algorithm development** tools"
+    title: "**Algorithm development** for research"
     text: "Develop new quantitative imaging algorithms with a focus on 3D microscopy, tomography, and volumetric data analysis. Our environment allows testing and benchmarking algorithms efficiently, including GPU acceleration and batch processing. Researchers can experiment with new approaches and validate results with standardized datasets, enabling reproducible and high-quality outcomes."
     image: "images/home/features/local_thickness.png"
