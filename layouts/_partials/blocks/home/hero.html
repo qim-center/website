@@ -18,7 +18,7 @@
           <div class="flex items-center flex-col xl:flex-row gap-4 mt-8">
             {{ range $i, $e := .buttons }}
               {{ if (eq $i 0) }}
-                {{ partial "components/button/primary" (dict "label" .label "href" .link)}}
+                {{ partial "components/button/primary" (dict "label" .label "href" .link "target" "_blank" "rel" "noopener noreferrer")}}
               {{ else }}
                 {{ partial "components/button/outline" (dict "label" .label "href" .link)}}
               {{ end }}
@@ -44,15 +44,22 @@
       </div>
     </div>
     {{ if .items }}
-      <div class="flex flex-col xl:flex-row xl:items-center justify-between flex-wrap gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {{ range .items }}
+          {{ $item := . }}
           <div class="flex items-start justify-start gap-4">
-            <div class="flex items-center justify-center text-2xl text-[{{ .color }}] bg-[{{ .color }}]/10 size-15 rounded-2xl">
-              <i class="{{ .icon }}"></i>
-            </div> 
+            {{ with $item.link }}
+              <a href="{{ . | safeURL }}" class="flex items-center justify-center text-2xl text-[{{ $item.color }}] bg-[{{ $item.color }}]/10 hover:text-primary hover:bg-primary/10 size-15 rounded-2xl transition-colors duration-300" aria-label="{{ $item.title }}">
+                <i class="{{ $item.icon }}"></i>
+              </a>
+            {{ else }}
+              <div class="flex items-center justify-center text-2xl text-[{{ $item.color }}] bg-[{{ $item.color }}]/10 hover:text-primary hover:bg-primary/10 size-15 rounded-2xl transition-colors duration-300">
+                <i class="{{ $item.icon }}"></i>
+              </div>
+            {{ end }}
             <div class="inline-flex flex-col max-w-xs">
-              <h2 class="text-xl font-medium">{{ .title }}</h2>
-              <p class="text-sm text-[#969696]">{{ .text }}</p>
+              <h2 class="text-xl font-medium">{{ $item.title }}</h2>
+              <p class="text-sm text-[#969696]">{{ $item.text }}</p>
             </div>
           </div>
         {{ end }}

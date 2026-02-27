@@ -12,7 +12,7 @@
   {{ $images := slice }}
   {{ $srcset := "" }}
 
-  {{ if in .src "no-compression" }}
+  {{ if or (in .src "no-compression") (strings.HasSuffix (lower .src) ".gif") }}
     <img src="{{ .src }}" class="{{ .class }}" alt="{{ .alt }}">
   {{ else }}
 

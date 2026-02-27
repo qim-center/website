@@ -7,14 +7,6 @@ main:
     url: "/portfolio"
     weight: 1
 
-  - name: "Services"
-    url: "/services"
-    weight: 2
-
-  - name: "Blog"
-    url: "/blog"
-    weight: 3
-
   - name: "Publications"
     url: "/publications"
     weight: 4
@@ -32,14 +24,6 @@ footer:
   - name: "About Us"
     url: "/about"
     weight: 2
-
-  - name: "Services"
-    url: "/services"
-    weight: 3
-
-  - name: "Blog"
-    url: "/blog"
-    weight: 4
 
   - name: "Contact Us"
     url: "/contact"

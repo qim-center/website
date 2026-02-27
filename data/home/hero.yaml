@@ -1,7 +1,7 @@
 enable: true
 
 title: "Center for **Quantification of Imaging Data** from MAX IV"
-text: "At Qim we develop algorithms for quantitative image analysis in order to support the research carried out at large-scale imaging facilities."
+text: "The QIM Center advances quantitative imaging and large scale 3D image analysis by combining imaging science, AI, and high performance computing. We build open, FAIR research infrastructure that makes complex imaging data findable, accessible, interoperable, and reusable, enabling transparent, reproducible, and impactful science."
 
 buttons:
   - label: "Qim Platform"
@@ -23,26 +23,29 @@ items:
 - icon: "fa-brands fa-python"
   color: "#E63F47"
   title: "Python library"
-  text: "Development of qim3d, an open source library for quantitative image analysis"
+  text: "Development of qim3d, an open source library for volumetric image analysis"
+  link: "http://platform.qim.dk/"
 
 - icon: "fa-solid fa-file-code"
   color: "#E63F47"
   title: "Method development"
   text: "Developing new algorithms for quantitative imaging, with focus on 3D microscopy and tomography"
+  link: "http://platform.qim.dk/"
 
 - icon: "fa-solid fa-database"
   color: "#E63F47"
   title: "Datasets"
   text: "Volumetric data from imaging experiments, openly available for method development and benchmarking"
-  link: "http://platform.qim.dk/"
+  link: "http://data.qim.dk/"
 
 - icon: "fa-solid fa-microscope"
   color: "#E63F47"
   title: "Scanning support"
   text: "High-resolution imaging services and support for experimental setup, sample preparation, and imaging strategies"
-
+  link: "http://platform.qim.dk/"
 
 - icon: "fa-solid fa-graduation-cap"
   color: "#E63F47"
   title: "Training"
   text: "Workshops, courses, and tutorials to support researchers in quantitative imaging methods and tools"
+  link: "http://platform.qim.dk/"

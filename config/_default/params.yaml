@@ -3,8 +3,8 @@ description: "Algorithms for quantitative image analysis."
 images: 
   - "images/home/hero/qim-logo.png"
 
-logo: "images/shared/qim-logo_standard-trasparent-background.png"
-logoHover: "images/shared/qim-logo_standard-trasparent-background.png"
+logo: "images/shared/qim-logo_standard-transparent-background.png"
+logoHover: "images/shared/qim-logo_gradient-transparent-background.png"
 
 favicons:
   themeColor: "#FFFFFF"

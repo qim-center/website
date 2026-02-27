@@ -1,19 +1,14 @@
 <section id="highlights" class="highlights relative py-8 xl:py-16 overflow-hidden">
   <div class="container mx-auto px-4 grid xl:grid-cols-3 gap-12 items-stretch">
     {{ range $i, $e := .items }}
-    {{ $even := (eq (mod $i 2) 0)}}
-    <div class="flex flex-col justify-between gap-9 px-8 xl:px-14 py-14 rounded-3xl h-full {{ if $even }} bg-[#F4F4F4] {{ else }} bg-primary {{ end }}">
+    <div class="flex flex-col justify-between gap-9 px-8 xl:px-14 py-14 rounded-3xl h-full bg-[#F4F4F4]">
         <div>
-          <h1 class="xl:max-w-1/2 mx-auto text-2xl font-semibold leading-relaxed text-center {{ if $even }} text-[#252525] {{ else }} text-white {{ end }}">{{ .title }}</h1>
-          <p class="leading-relaxed text-center mt-6 {{ if $even }} text-[#545454] {{ else }} text-white {{ end }}">{{ .text }}</p>
+          <h1 class="mx-auto text-xl font-semibold text-center text-[#252525]">{{ .title }}</h1>
+          <p class="leading-relaxed text-center mt-6 text-[#545454]">{{ .text }}</p>
         </div>
         {{ with .button }}
           <div class="flex items-center justify-center">
-            {{ if (eq (mod $i 2) 0)}}
-              {{ partial "components/button/primary" (dict "label" .label "link" .link)}}
-            {{ else }}
-              {{ partial "components/button/outline" (dict "label" .label "link" .link)}}
-            {{ end }}
+            {{ partial "components/button/primary" (dict "label" .label "link" .link)}}
           </div>
         {{ end }}
       </div>
