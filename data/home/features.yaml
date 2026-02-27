@@ -18,7 +18,7 @@ items:
     pretext: "Open-source library"
     title: "**qim3d** Python library"
     text: "A library for quantitative 3D image analysis, supporting method development and reproducible workflows. It offers modules for segmentation, filtering, and feature extraction of volumetric datasets. Extensive documentation, examples, and tutorials make it easy to integrate into research pipelines and combine with other scientific Python packages for advanced data analysis."
-    image: "images/home/features/structure_tensor_visualization_fibers.gif"
+    image: "images/home/features/qim3d-example.png"
 
   - icon: "fas fa-cogs"
     color: "#FC7323"
