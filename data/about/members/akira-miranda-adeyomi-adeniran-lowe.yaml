@@ -1,0 +1,12 @@
+name: "Akira-Miranda Adeyomi Adeniran-Lowe"
+group: "Development Team"
+role:
+  - "Software developer"
+affiliation: "DTU Compute"
+image: "/images/about/default.png"
+bio: "Part of the Qim dev team."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:info@qim.dk"
+weight: 10

@@ -14,7 +14,7 @@
       {{ $groupsFound = $groupsFound | append .group }}
     {{ end }}
   {{ end }}
-  {{ $preferredGroups := slice "Center Directors" "Staff" "Collaborators" }}
+  {{ $preferredGroups := slice "QIM Lead" "Staff" "Development Team" "Collaborators" }}
   {{ $groups := slice }}
   {{ range $preferredGroups }}
     {{ if in $groupsFound . }}
