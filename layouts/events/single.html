@@ -1,0 +1,74 @@
+{{ define "main" }}
+  <section class="py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <article>
+        <header class="mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ .Title }}</h1>
+          <div class="mb-4">
+            {{ if .Params.location }}
+              <span class="info-pill">
+                {{ .Params.location }}
+              </span>
+            {{ end }}
+            {{ if .Params.date }}
+              <span class="info-pill">
+                {{ .Params.date }}
+              </span>
+            {{ end }}
+          </div>
+        </header>
+
+        {{/* image + map row */}}
+        {{ if or .Params.image .Params.location }}
+          <div class="flex gap-8 mb-8">
+            {{ if .Params.image }}
+              <div class="highlight-image flex-1 max-h-96">
+                {{ $img := .Params.image }}
+                {{ $src := printf "%v" $img }}
+                {{ if strings.HasSuffix (lower $src) ".svg" }}
+                  {{ partial "utilities/svg" (dict
+                    "src"  $src
+                    "alt"  .Title
+                    "class" "w-full h-full object-cover object-center"
+                  ) }}
+                {{ else }}
+                  {{ partial "utilities/image" (dict
+                    "src"  $src
+                    "alt"  .Title
+                    "class" "w-full h-full object-cover object-center"
+                  ) }}
+                {{ end }}
+              </div>
+            {{ end }}
+            {{ if .Params.location }}
+              <div class="flex-none rounded-xl overflow-hidden">
+                <iframe
+                  class="w-full h-full"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://www.google.com/maps?q={{ urlquery .Params.location }}&z=12&output=embed">
+                </iframe>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+
+
+
+        <div class="prose prose-lg max-w-none mb-12">
+          {{ .Content }}
+        </div>
+
+        {{ if .Params.cta_link }}
+          <div class="mt-12 flex justify-start">
+            <a href="{{ .Params.cta_link }}" class="btn-primary-lg">
+              {{ .Params.cta_text | default "Register" }}
+            </a>
+          </div>
+        {{ end }}
+      </article>
+    </div>
+  </section>
+{{ end }}

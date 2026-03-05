@@ -11,17 +11,6 @@
               <p class="text-l l:leading-loose font-medium text-[#777777]">{{ . }}</p>
             {{ end }}
           </div>
-          {{ $section := .Section }}
-          <div class="flex flex-wrap items-center justify-start gap-4 pills-compact">
-          {{ range $name, $term := site.Taxonomies.tags }}
-            {{ if ne $name "index" }} {{/* skip 'index' tag */}}
-              {{ $localPages := where $term.Pages "Section" $section }}
-              {{ if gt (len $localPages) 0 }}
-                {{ partial "components/button/pill" (dict "label" .Page.Title "href" $term.Page.Permalink) }}
-              {{ end }}
-            {{end}}
-          {{ end }}
-          </div>
         </div>
 
         <!--Highlight Image-->
@@ -47,7 +36,7 @@
       </div>
     </div>
 
-    <!--Posts List-->
+    <!--Events List-->
     <div class="container mx-auto px-4 space-y-6 max-w-4xl mx-auto mb-28">
       {{ range .RegularPages }}
         <div class="flex flex-col sm:flex-row gap-6 bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition">
@@ -71,25 +60,20 @@
             </div>
           </a>
           <div class="flex-1">
-            {{ if .Params.tags }}
-              <div class="flex flex-wrap gap-2 mb-3">
-                {{ range .Params.tags }}
-                  <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold tag-gray">
-                    {{ . }}
-                  </span>
-                {{ end }}
-              </div>
-            {{ end }}
             <h1 class="text-2xl font-semibold leading-relaxed mb-3">
               {{ .Title }}
             </h1>
-            <div class="text-[#424242] leading-loose">
-              {{ .Summary | markdownify}}
-              {{ .Description | markdownify}}
+            <div class="text-[#424242] leading-loose mb-4">
+              {{ .Params.description | markdownify}}
             </div>
+            {{ if .Params.location }}
+              <div class="text-sm text-gray-600 mb-4">
+                <strong>Location:</strong> {{ .Params.location }}
+              </div>
+            {{ end }}
             <div class="mt-6 flex justify-start">
-              <a href="{{ .Permalink }}" class="inline-flex items-center gap-2 btn-primary">
-                Read more
+              <a href="{{ .Permalink }}" class="btn-primary">
+                Read More
               </a>
             </div>
           </div>

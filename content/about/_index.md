@@ -4,6 +4,7 @@ title = "The Qim Center"
 description = "To ensure a high scientific output from MAX IV, the QIM center aims at developing and using the most relevant tools for data analysis."
 author = "Qim Center"
 tags = ["index"]
+image = "images/shared/qim-background_perspective.png"
 +++
 
 We are an interdisciplinary research and development hub dedicated to advancing quantitative imaging and large scale 3D image analysis. The Center bridges imaging science, artificial intelligence, and high performance computing to enable robust, scalable, and reproducible research.

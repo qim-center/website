@@ -4,4 +4,5 @@ title = "Posts"
 description = "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
 author = "Hugo Authors"
 tags = ["index"]
+image = "images/shared/qim-background_perspective.png"
 +++

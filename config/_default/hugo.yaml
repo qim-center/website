@@ -2,6 +2,8 @@ baseURL: "/"
 title: ""
 summaryLength: 20
 
+buildFuture: true
+
 # services:
 #   googleAnalytics:
 #     id: G-MEASUREMENT_ID

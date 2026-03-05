@@ -9,10 +9,38 @@
   html {
     font-family: 'Nunito', system-ui, sans-serif;
   }
+
+  h1 {
+    color: #505050;
+  }
 }
 
 @theme {
   --color-primary: {{ (default "#9077B6" site.Params.colors.primary) }};
+}
+
+.btn-primary {
+  @apply bg-primary/10 hover:bg-primary/20 text-primary transition font-semibold text-sm px-3 py-2 rounded-lg;
+}
+
+.btn-primary-lg {
+  @apply bg-primary/10 hover:bg-primary/20 text-primary transition font-semibold text-base px-5 py-3 rounded-lg;
+}
+
+.tag-gray {
+  @apply bg-gray-200 text-gray-700;
+}
+
+.info-pill {
+  @apply inline-block bg-gray-200 text-gray-700 text-sm font-semibold px-3 py-1 rounded-full mr-2;
+}
+
+.highlight-image {
+  @apply rounded-xl overflow-hidden flex items-center justify-center;
+}
+
+.pills-compact a {
+  @apply px-4 py-2 text-sm;
 }
 
 body {

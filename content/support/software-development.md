@@ -2,9 +2,7 @@
 author = "Qim"
 title = "Software development"
 description = "We do code!"
-tags = [
-    "services",
-]
+tags = ["Support"]
 image = "images/home/hero/qim-logo.png"
 +++
 
