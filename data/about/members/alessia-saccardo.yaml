@@ -3,10 +3,10 @@ group: "Development Team"
 role:
   - "Software developer"
 affiliation: "DTU Compute"
-image: "/images/about/default.png"
-bio: "Part of the Qim dev team."
+image: "/images/about/SaccardoAlessia.jpg"
+bio: "Alessia is a Master's student in Human-Centered AI at DTU Compute. She has been working on developing web applications and Python tools for 3D image analysis."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
-    href: "mailto:info@qim.dk"
+    href: "s212246@dtu.dk"
 weight: 10
