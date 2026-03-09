@@ -3,10 +3,13 @@ group: "Development Team"
 role:
   - "Software developer"
 affiliation: "DTU Compute"
-image: "/images/about/default.png"
-bio: "Part of the Qim dev team."
+image: "/images/about/AkiraMirandaAdeyomiAdeniranLowe.jpg"
+bio: "Akira is a Master's student in Autonomous Systems at DTU Electro. She has been working on deep learning methods for 3D scene understanding."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
-    href: "mailto:info@qim.dk"
+    href: "mailto:s215170@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/akira-miranda-adeniran-lowe-5a4070154/"
 weight: 10
