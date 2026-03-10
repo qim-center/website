@@ -8,5 +8,8 @@ bio: "Alessia is a Master's student in Human-Centered AI at DTU Compute. She has
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
-    href: "s212246@dtu.dk"
+    href: "mailto:s212246@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/alessia-saccardo-69a782284/"
 weight: 10
