@@ -4,7 +4,7 @@ role:
   - "Research Software Specialist"
 affiliation: "DTU Compute"
 image: "/images/about/FelipeDelestro.jpg"
-bio: "Felipe is a Research Software Specialist at DTU Compute. He has a background in computer science and has been working on developing and maintaining software tools for scientific research."
+bio: "Felipe is a Research Software Specialist at DTU Compute. He has a background in computer science and has been working on developing and maintaining software tools for scientific research, including the Qim Platform and the qim3d Python library."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
