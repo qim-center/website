@@ -4,7 +4,7 @@ role:
   - "Postdoctoral Researcher"
 affiliation: "DTU Compute"
 image: "/images/about/MiguelValverde.jpg"
-bio: "Miguel is a postdoc at the Section for Visual Computing at DTU Compute. He finished his PhD in 2022 in A.I. Virtanen Institute at the University of Eastern Finland. His research is at the intersection between deep learning, image segmentation, and topology. More recently, his focus has widen to AIS, irregular time-series and remote sensing data."
+bio: "Miguel is a postdoc at the Section for Visual Computing at DTU Compute. He finished his PhD in 2022 in A.I. Virtanen Institute at the University of Eastern Finland (Kuopio). His research is at the intersection between deep learning, image segmentation, and topology. More recently, his focus has widen to AIS, irregular time-series and remote sensing data."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
