@@ -3,10 +3,13 @@ group: "Development Team"
 role:
   - "Software developer"
 affiliation: "DTU Compute"
-image: "/images/about/default.png"
-bio: "Part of the Qim dev team."
+image: "/images/about/AndrasKovacs.jpg"
+bio: "András is a Master's student in IT and Cognition at the University of Copenhagen. He has been working on the Qim Volume Explorer and the Qim data repository most recently."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
-    href: "mailto:info@qim.dk"
+    href: "mailto:ankov@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/kovacsand/"
 weight: 10
