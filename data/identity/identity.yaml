@@ -19,13 +19,13 @@ logos:
       background: "light"
   lockup:
     title: "Full Lockup"
-    description: "The secondary logo variation includes the full spelled-out name. Use this lockup in formal contexts or when the center needs to be explicitly introduced."
+    description: "When required, use the full logo version with the complete title."
     image: "images/shared/qim-logo_standard-full-title-transparent-background.png"
     alt: "Qim full title logo"
 
 colors:
   title: "Color Palette"
-  description: "The vibrant Orange and energetic Red are grounded by our Neutral Grey forming the core visual signature."
+  description: "The color palette is defined by the codes below, to maintain consistency across all applications."
   items:
     - name: "Qim Orange"
       role: "Primary"
@@ -90,4 +90,4 @@ icon_motif:
 
 partners:
   title: "Partner Network"
-  description: "The four dots in the logo are deeply rooted in our DNA, representing the core institutional partners driving the Qim collaboration forward."
+  description: "The circular form of the Q echoes the geometry of a synchrotron, while the letter itself can also be seen as a magnifying glass, representing Qim's commitment to analysis and insight. The four dots in our logo symbolize our collaborative network."
