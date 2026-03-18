@@ -3,10 +3,13 @@ group: "Development Team"
 role:
   - "Software developer"
 affiliation: "DTU Compute"
-image: "/images/about/default.png"
-bio: "Part of the Qim dev team."
+image: "/images/about/DavidWangJohansen.jpg"
+bio: "David is a Master's student in Mathematical Modelling and Computation at DTU Compute. He has been working on CT reconstruction and 3D image analysis."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
-    href: "mailto:info@qim.dk"
+    href: "mailto:s214743@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/david-wang-johansen-384884271/"
 weight: 10
