@@ -30,15 +30,15 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
         {{ range $identity.logos.items }}
-          {{ $cardClass := "group relative flex flex-col items-center justify-center rounded-3xl border border-gray-200 bg-white py-20 px-8 shadow-sm hover:shadow-lg transition-all duration-300" }}
+          {{ $cardClass := "group relative flex flex-col items-center justify-center rounded-3xl border border-gray-200 bg-white py-20 px-8 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer downloadable-image" }}
           {{ $imageClass := "h-16 w-auto mb-8 transform group-hover:scale-105 transition-transform duration-300" }}
           {{ $labelClass := "absolute bottom-6 text-xs font-bold uppercase tracking-widest text-gray-400" }}
           {{ if eq .background "dark" }}
-            {{ $cardClass = "group relative flex flex-col items-center justify-center rounded-3xl py-20 px-8 shadow-sm hover:shadow-lg transition-all duration-300" }}
+            {{ $cardClass = "group relative flex flex-col items-center justify-center rounded-3xl py-20 px-8 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer downloadable-image" }}
             {{ $imageClass = "h-16 w-auto mb-8 brightness-0 invert transform group-hover:scale-105 transition-transform duration-300" }}
             {{ $labelClass = "absolute bottom-6 text-xs font-bold uppercase tracking-widest text-white" }}
           {{ end }}
-          <div class="{{ $cardClass }}"{{ if eq .background "dark" }} style="background-color: #747474;"{{ end }}>
+          <div class="{{ $cardClass }}" data-download="{{ .label }}"{{ if eq .background "dark" }} style="background-color: #747474;"{{ end }}>
             {{ partial "utilities/image" (dict "src" .image "alt" .alt "class" $imageClass) }}
             <span class="{{ $labelClass }}">{{ .label }}</span>
           </div>
@@ -46,7 +46,7 @@
       </div>
 
       {{/* Full lockup */}}
-      <div class="mt-8 flex flex-col xl:flex-row items-center gap-12 rounded-3xl border border-gray-200 bg-white p-12 shadow-sm hover:shadow-md transition-shadow duration-300">
+      <div class="mt-8 flex flex-col xl:flex-row items-center gap-12 rounded-3xl border border-gray-200 bg-white p-12 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer downloadable-image" data-download="{{ $identity.logos.lockup.alt }}">
         <div class="w-full xl:w-2/3 flex justify-center xl:justify-start">
           {{ partial "utilities/image" (dict "src" $identity.logos.lockup.image "alt" $identity.logos.lockup.alt "class" "h-20 xl:h-24 w-auto max-w-full object-contain") }}
         </div>
@@ -76,7 +76,12 @@
               <div class="space-y-3">
                 <div class="flex justify-between items-center bg-gray-50 px-4 py-3 rounded-xl border border-gray-100">
                   <span class="text-xs font-bold text-gray-400 tracking-widest uppercase">Hex</span>
-                  <span class="text-sm font-mono text-gray-700 font-medium">{{ .hex }}</span>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm font-mono text-gray-700 font-medium">{{ .hex }}</span>
+                    <button class="copy-hex-btn p-1.5 bg-gray-100 rounded transition-all duration-200 cursor-pointer" data-hex="{{ .hex }}" title="Copy to clipboard">
+                      <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </button>
+                  </div>
                 </div>
                 <div class="flex justify-between items-center bg-gray-50 px-4 py-3 rounded-xl border border-gray-100">
                   <span class="text-xs font-bold text-gray-400 tracking-widest uppercase">RGB</span>
@@ -132,16 +137,16 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {{ range $identity.icon_motif.items }}
-          {{ $cardClass := "group flex flex-col items-center justify-center rounded-3xl border border-gray-200 bg-white py-16 px-8 shadow-sm hover:shadow-lg transition-all duration-500" }}
+          {{ $cardClass := "group flex flex-col items-center justify-center rounded-3xl border border-gray-200 bg-white py-16 px-8 shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer downloadable-image" }}
           {{ $imageClass := "h-32 w-32 object-contain mb-8 transform group-hover:scale-110 transition-transform duration-500" }}
           {{ if eq .background "dark" }}
-            {{ $cardClass = "group flex flex-col items-center justify-center rounded-3xl py-16 px-8 shadow-sm hover:shadow-lg transition-all duration-500" }}
+            {{ $cardClass = "group flex flex-col items-center justify-center rounded-3xl py-16 px-8 shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer downloadable-image" }}
             {{ $imageClass = "h-32 w-32 object-contain mb-8 brightness-0 invert transform group-hover:scale-110 transition-transform duration-500" }}
           {{ else if eq .background "muted" }}
-            {{ $cardClass = "group flex flex-col items-center justify-center rounded-3xl border border-gray-200 bg-gray-50 py-16 px-8 shadow-inner hover:shadow-md transition-all duration-500" }}
+            {{ $cardClass = "group flex flex-col items-center justify-center rounded-3xl border border-gray-200 bg-gray-50 py-16 px-8 shadow-inner hover:shadow-md transition-all duration-500 cursor-pointer downloadable-image" }}
             {{ $imageClass = "h-32 w-32 object-contain mb-8 opacity-80 group-hover:opacity-100 transition-opacity duration-300 mix-blend-multiply" }}
           {{ end }}
-          <div class="{{ $cardClass }}"{{ if eq .background "dark" }} style="background-color: #747474;"{{ end }}>
+          <div class="{{ $cardClass }}" data-download="{{ .title }}"{{ if eq .background "dark" }} style="background-color: #747474;"{{ end }}>
             {{ partial "utilities/image" (dict "src" .image "alt" .alt "class" $imageClass) }}
             <div class="text-center">
               <h4 class="font-bold mb-2{{ if eq .background "dark" }} text-white{{ else }} text-gray-900{{ end }}">{{ .title }}</h4>
@@ -162,7 +167,7 @@
       {{ with site.Data.home.clients }}
         <div class="flex flex-wrap justify-center items-center gap-12 xl:gap-24 rounded-3xl border border-gray-200 bg-white py-16 px-8 shadow-sm hover:shadow-md transition-shadow duration-500 mx-auto">
           {{ range .items }}
-            <div class="opacity-60 hover:opacity-100 transition-opacity duration-300 cursor-pointer tooltip-trigger" title="{{ .name }}">
+            <div class="opacity-60 hover:opacity-100 transition-opacity duration-300 cursor-pointer tooltip-trigger downloadable-image" title="{{ .name }}" data-download="{{ .name }}">
               {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "h-16 xl:h-20 w-auto grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-105") }}
             </div>
           {{ end }}
