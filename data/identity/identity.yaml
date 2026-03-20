@@ -1,0 +1,93 @@
+header:
+  description: "Guidelines for using the Qim visual identity consistently across all applications."
+
+logos:
+  title: "Logos"
+  description: "The Qim logo comes in Standard, White, and Gradient variations. Maintain clear space around the logo and ensure sufficient contrast."
+  items:
+    - label: "Standard"
+      image: "images/shared/qim-logo_standard-transparent-background.png"
+      alt: "Qim logo standard"
+      background: "light"
+    - label: "White"
+      image: "images/shared/qim-logo_white-transparent-background.png"
+      alt: "Qim logo white"
+      background: "dark"
+    - label: "Gradient"
+      image: "images/shared/qim-logo_gradient-transparent-background.png"
+      alt: "Qim logo gradient"
+      background: "light"
+  lockup:
+    title: "Full Lockup"
+    description: "When required, use the full logo version with the complete title."
+    image: "images/shared/qim-logo_standard-full-title-transparent-background.png"
+    alt: "Qim full title logo"
+
+colors:
+  title: "Color Palette"
+  description: "The color palette is defined by the codes below, to maintain consistency across all applications."
+  items:
+    - name: "Qim Orange"
+      role: "Primary"
+      hex: "#FC7323"
+      rgb: "252, 115, 35"
+    - name: "Qim Red"
+      role: "Secondary"
+      hex: "#E63F47"
+      rgb: "230, 63, 71"
+    - name: "Qim Grey"
+      role: "Neutral"
+      hex: "#747474"
+      rgb: "116, 116, 116"
+    - name: "Background"
+      role: "Light"
+      hex: "#F8F9FA"
+      rgb: "248, 249, 250"
+
+
+typography:
+  title: "Typography"
+  description: "Nunito is the primary typeface across digital and printed materials. Use a clear hierarchy and consistent weight pairing for readability."
+  items:
+    - label: "Display"
+      size: "48px / Extra Bold (800)"
+      sample: "Quantitative Imaging"
+      style: "display"
+    - label: "H1"
+      size: "36px / Bold (700)"
+      sample: "Center for MAX IV"
+      style: "h1"
+    - label: "H2"
+      size: "24px / Bold (700)"
+      sample: "Visual Identity Guide"
+      style: "h2"
+    - label: "H3"
+      size: "20px / SemiBold (600)"
+      sample: "Logo Usage & Specs"
+      style: "h3"
+    - label: "Body"
+      size: "16px / Regular (400)"
+      sample: "We develop tools and infrastructure for quantitative imaging, enhancing 3D workflows globally."
+      style: "body"
+
+
+icon_motif:
+  title: "Icons"
+  description: "The standalone icon may also be used as a simplified or abstract representation."
+  items:
+    - title: "Standard Icon"
+      image: "images/shared/qim-icon_standard-transparent-background.png"
+      alt: "Qim icon standard"
+      background: "light"
+    - title: "White Icon"
+      image: "images/shared/qim-icon_white-transparent-background.png"
+      alt: "Qim icon white"
+      background: "dark"
+    - title: "Gradient Icon"
+      image: "images/shared/qim-icon_gradient-transparent-background.png"
+      alt: "Qim icon gradient"
+      background: "light"
+
+partners:
+  title: "Partner Network"
+  description: "The circular form of the Q echoes the geometry of a synchrotron, while the letter itself can also be seen as a magnifying glass, representing Qim's commitment to analysis and insight. The four dots in our logo symbolize our collaborative network."

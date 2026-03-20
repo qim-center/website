@@ -1,0 +1,180 @@
+{{ define "main" }}
+{{ $identity := site.Data.identity.identity }}
+<div class="bg-gray-50/50">
+
+  {{/* ── Page Header ── */}}
+  <header class="relative bg-white border-b border-gray-200 pt-28 pb-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: url('{{ "images/shared/qim-background_perspective.png" | relURL }}'); background-size: cover; background-position: center;"></div>
+    <div class="container mx-auto px-4 relative z-10 text-center">
+      <div class="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-6 text-primary">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+      </div>
+      {{ with .Title }}
+        <h1 class="text-4xl xl:text-6xl font-extrabold mb-6 text-gray-900 tracking-tight">{{ . }}</h1>
+      {{ end }}
+      {{ with .Description }}
+        <p class="text-xl text-gray-500 xl:max-w-3xl mx-auto leading-relaxed">{{ or $identity.header.description . }}</p>
+      {{ end }}
+    </div>
+  </header>
+
+  {{/* ── Main Content ── */}}
+  <div class="container mx-auto px-4 py-20 max-w-6xl space-y-32">
+
+    {{/* ── Logo ── */}}
+    <section id="logos" class="scroll-mt-24">
+      <div class="mb-12 border-b border-gray-200 pb-6">
+        <h2 class="text-3xl xl:text-4xl font-bold text-gray-900 mb-4 tracking-tight">{{ $identity.logos.title }}</h2>
+        <p class="text-lg xl:text-xl text-gray-500 max-w-3xl">{{ $identity.logos.description }}</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+        {{ range $identity.logos.items }}
+          {{ $cardClass := "group relative flex flex-col items-center justify-center rounded-3xl border border-gray-200 bg-white py-20 px-8 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer downloadable-image" }}
+          {{ $imageClass := "h-16 w-auto mb-8 transform group-hover:scale-105 transition-transform duration-300" }}
+          {{ $labelClass := "absolute bottom-6 text-xs font-bold uppercase tracking-widest text-gray-400" }}
+          {{ if eq .background "dark" }}
+            {{ $cardClass = "group relative flex flex-col items-center justify-center rounded-3xl py-20 px-8 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer downloadable-image" }}
+            {{ $imageClass = "h-16 w-auto mb-8 brightness-0 invert transform group-hover:scale-105 transition-transform duration-300" }}
+            {{ $labelClass = "absolute bottom-6 text-xs font-bold uppercase tracking-widest text-white" }}
+          {{ end }}
+          <div class="{{ $cardClass }}" data-download="{{ .label }}"{{ if eq .background "dark" }} style="background-color: #747474;"{{ end }}>
+            {{ partial "utilities/image" (dict "src" .image "alt" .alt "class" $imageClass) }}
+            <span class="{{ $labelClass }}">{{ .label }}</span>
+          </div>
+        {{ end }}
+      </div>
+
+      {{/* Full lockup */}}
+      <div class="mt-8 flex flex-col xl:flex-row items-center gap-12 rounded-3xl border border-gray-200 bg-white p-12 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer downloadable-image" data-download="{{ $identity.logos.lockup.alt }}">
+        <div class="w-full xl:w-2/3 flex justify-center xl:justify-start">
+          {{ partial "utilities/image" (dict "src" $identity.logos.lockup.image "alt" $identity.logos.lockup.alt "class" "h-20 xl:h-24 w-auto max-w-full object-contain") }}
+        </div>
+        <div class="w-full xl:w-1/3 xl:border-l xl:border-gray-200 xl:pl-10 text-center xl:text-left">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $identity.logos.lockup.title }}</h3>
+          <p class="text-base text-gray-500 leading-relaxed">{{ $identity.logos.lockup.description }}</p>
+        </div>
+      </div>
+    </section>
+
+    {{/* ── Color Palette ── */}}
+    <section id="colors" class="scroll-mt-24">
+      <div class="mb-12 border-b border-gray-200 pb-6">
+        <h2 class="text-3xl xl:text-4xl font-bold text-gray-900 mb-4 tracking-tight">{{ $identity.colors.title }}</h2>
+        <p class="text-lg xl:text-xl text-gray-500 max-w-3xl">{{ $identity.colors.description }}</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+        {{ range $identity.colors.items }}
+          <div class="group rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
+            <div class="h-48 w-full" style="background-color: {{ .hex }};"></div>
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-6">
+                <span class="font-bold text-gray-900 text-xl">{{ .name }}</span>
+                <span class="text-xs font-bold text-gray-500 bg-gray-100/80 rounded-full px-3 py-1 uppercase tracking-wide">{{ .role }}</span>
+              </div>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center bg-gray-50 px-4 py-3 rounded-xl border border-gray-100">
+                  <span class="text-xs font-bold text-gray-400 tracking-widest uppercase">Hex</span>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm font-mono text-gray-700 font-medium">{{ .hex }}</span>
+                    <button class="copy-hex-btn p-1.5 bg-gray-100 rounded transition-all duration-200 cursor-pointer" data-hex="{{ .hex }}" title="Copy to clipboard">
+                      <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center bg-gray-50 px-4 py-3 rounded-xl border border-gray-100">
+                  <span class="text-xs font-bold text-gray-400 tracking-widest uppercase">RGB</span>
+                  <span class="text-sm font-mono text-gray-700 font-medium">{{ .rgb }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+
+    {{/* ── Typography ── */}}
+    <section id="typography" class="scroll-mt-24" style="font-family: 'Nunito', system-ui, sans-serif;">
+      <div class="mb-12 border-b border-gray-200 pb-6">
+        <h2 class="text-3xl xl:text-4xl font-bold text-gray-900 mb-4 tracking-tight">{{ $identity.typography.title }}</h2>
+        <p class="text-lg xl:text-xl text-gray-500 max-w-3xl">{{ $identity.typography.description }}</p>
+      </div>
+
+      <div class="rounded-3xl border border-gray-200 bg-white overflow-hidden shadow-sm divide-y divide-gray-100/80 p-2">
+        {{ range $identity.typography.items }}
+          {{ $sampleClass := "text-base text-gray-600 leading-relaxed" }}
+          {{ if eq .style "display" }}
+            {{ $sampleClass = "text-5xl font-extrabold tracking-tight" }}
+          {{ else if eq .style "h1" }}
+            {{ $sampleClass = "text-4xl font-bold tracking-tight" }}
+          {{ else if eq .style "h2" }}
+            {{ $sampleClass = "text-2xl font-bold" }}
+          {{ else if eq .style "h3" }}
+            {{ $sampleClass = "text-xl font-semibold" }}
+          {{ end }}
+          <div class="flex flex-col xl:flex-row xl:items-center gap-6 xl:gap-8 p-6 xl:p-8 hover:bg-gray-50/50 rounded-2xl transition-colors duration-300">
+            <div class="xl:w-32 shrink-0">
+              <span class="inline-block text-xs font-bold text-gray-500 bg-gray-100 rounded-lg px-4 py-2 uppercase tracking-widest">{{ .label }}</span>
+            </div>
+            <div class="xl:w-48 shrink-0">
+              <span class="text-sm font-mono text-gray-400 bg-white border border-gray-200 rounded px-3 py-1">{{ .size }}</span>
+            </div>
+            <div class="grow pt-2 xl:pt-0">
+              <span class="{{ $sampleClass }} text-gray-900 block">{{ .sample }}</span>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+
+    {{/* ── Icon & Dot Motif ── */}}
+    <section id="icon" class="scroll-mt-24">
+      <div class="mb-12 border-b border-gray-200 pb-6">
+        <h2 class="text-3xl xl:text-4xl font-bold text-gray-900 mb-4 tracking-tight">{{ $identity.icon_motif.title }}</h2>
+        <p class="text-lg xl:text-xl text-gray-500 max-w-3xl">{{ $identity.icon_motif.description }}</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {{ range $identity.icon_motif.items }}
+          {{ $cardClass := "group flex flex-col items-center justify-center rounded-3xl border border-gray-200 bg-white py-16 px-8 shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer downloadable-image" }}
+          {{ $imageClass := "h-32 w-32 object-contain mb-8 transform group-hover:scale-110 transition-transform duration-500" }}
+          {{ if eq .background "dark" }}
+            {{ $cardClass = "group flex flex-col items-center justify-center rounded-3xl py-16 px-8 shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer downloadable-image" }}
+            {{ $imageClass = "h-32 w-32 object-contain mb-8 brightness-0 invert transform group-hover:scale-110 transition-transform duration-500" }}
+          {{ else if eq .background "muted" }}
+            {{ $cardClass = "group flex flex-col items-center justify-center rounded-3xl border border-gray-200 bg-gray-50 py-16 px-8 shadow-inner hover:shadow-md transition-all duration-500 cursor-pointer downloadable-image" }}
+            {{ $imageClass = "h-32 w-32 object-contain mb-8 opacity-80 group-hover:opacity-100 transition-opacity duration-300 mix-blend-multiply" }}
+          {{ end }}
+          <div class="{{ $cardClass }}" data-download="{{ .title }}"{{ if eq .background "dark" }} style="background-color: #747474;"{{ end }}>
+            {{ partial "utilities/image" (dict "src" .image "alt" .alt "class" $imageClass) }}
+            <div class="text-center">
+              <h4 class="font-bold mb-2{{ if eq .background "dark" }} text-white{{ else }} text-gray-900{{ end }}">{{ .title }}</h4>
+              <span class="text-sm{{ if eq .background "dark" }} text-gray-100{{ else }} text-gray-500{{ end }}">{{ .text }}</span>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+
+    {{/* ── Partner Network ── */}}
+    <section id="partners" class="pb-16">
+      <div class="mb-12 text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl xl:text-4xl font-bold text-gray-900 mb-6 tracking-tight">{{ $identity.partners.title }}</h2>
+        <p class="text-lg xl:text-xl text-gray-500">{{ $identity.partners.description }}</p>
+      </div>
+
+      {{ with site.Data.home.clients }}
+        <div class="flex flex-wrap justify-center items-center gap-12 xl:gap-24 rounded-3xl border border-gray-200 bg-white py-16 px-8 shadow-sm hover:shadow-md transition-shadow duration-500 mx-auto">
+          {{ range .items }}
+            <div class="opacity-60 hover:opacity-100 transition-opacity duration-300 cursor-pointer tooltip-trigger downloadable-image" title="{{ .name }}" data-download="{{ .name }}">
+              {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "h-16 xl:h-20 w-auto grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-105") }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </section>
+
+  </div>
+</div>
+{{ end }}
