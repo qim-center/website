@@ -3,10 +3,13 @@ group: "Development Team"
 role:
   - "Software developer"
 affiliation: "DTU Compute"
-image: "/images/about/default.png"
-bio: "Part of the Qim dev team."
+image: "/images/about/ChristianBjerregaard.jpg"
+bio: "Christian is a Master's student in Mathematical Modelling and Computation at DTU. He enjoys working with volumetric data, especially from medical imaging. His bachelor's thesis was on reconstructing brain endocasts (as meshes) of wolves from µCT-scans."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
-    href: "mailto:info@qim.dk"
+    href: "mailto:s224389@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/chrbjerre/"
 weight: 10
