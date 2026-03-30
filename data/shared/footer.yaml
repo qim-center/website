@@ -5,8 +5,6 @@ contact:
   items:
     - label: "Email: info@qim.dk"
       link: "mailto:info@qim.dk"
-    - label: "Connect with us on LinkedIn"
-      link: "https://www.linkedin.com/company/107930840"
 
 social:
   - title: "LinkedIn"

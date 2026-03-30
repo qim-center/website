@@ -8,14 +8,29 @@
 {{ with resources.Get .src }}{{ $resource = . }}{{ end }}
 {{ with page.Resources.Get .src }}{{ $resource = . }}{{ end }}
 
+{{ $alt := default "" .alt }}
+{{ $class := .class }}
+{{ $sizes := .sizes }}
+{{ $loading := default "lazy" .loading }}
+{{ $decoding := default "async" .decoding }}
+{{ $fetchpriority := .fetchpriority }}
+
 {{ if $resource }}
   {{ $images := slice }}
   {{ $srcset := "" }}
 
   {{ if or (in .src "no-compression") (strings.HasSuffix (lower .src) ".gif") }}
-    <img src="{{ .src }}" class="{{ .class }}" alt="{{ .alt }}">
+    <img
+      src="{{ $resource.Permalink }}"
+      width="{{ $resource.Width }}"
+      height="{{ $resource.Height }}"
+      {{ with $class }}class="{{ . }}"{{ end }}
+      alt="{{ $alt }}"
+      loading="{{ $loading }}"
+      decoding="{{ $decoding }}"
+      {{ with $fetchpriority }}fetchpriority="{{ . }}"{{ end }}
+    />
   {{ else }}
-
     {{/* Configure the image widths to be generated: */}}
     {{ $breakpoints := (slice 320 480 768 1024 1280 1600 1920) }}
 
@@ -35,15 +50,17 @@
     {{ end }}
     {{ $srcset = delimit $srcsetList ", " }}
 
-    <!-- Optimized image output -->
     <img
-      {{ with $resource.Permalink }}src="{{ . }}"{{ end }}
-      {{ with $resource.Width }}width="{{ . }}"{{ end }}
-      {{ with $resource.Height }}height="{{ . }}"{{ end }}
+      src="{{ $resource.Permalink }}"
+      width="{{ $resource.Width }}"
+      height="{{ $resource.Height }}"
       {{ with $srcset }}srcset="{{ . }}"{{ end }}
-      {{ with .sizes }}sizes="{{ . }}"{{ end }}
-      {{ with .class }}class="{{ . }}"{{ end }}
-      alt="{{ . }}"
+      {{ with $sizes }}sizes="{{ . }}"{{ end }}
+      {{ with $class }}class="{{ . }}"{{ end }}
+      alt="{{ $alt }}"
+      loading="{{ $loading }}"
+      decoding="{{ $decoding }}"
+      {{ with $fetchpriority }}fetchpriority="{{ . }}"{{ end }}
     />
   {{ end }}
 {{ else }}
