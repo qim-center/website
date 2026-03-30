@@ -8,24 +8,29 @@
       <span class="text-primary text-xl font-bold xl:text-3xl">{{ .Site.Title }}</span>
     </a> -->
 
-    <a class="flex items-center group" href="{{ .Site.BaseURL }}">
+    <a class="flex items-center group" href="{{ .Site.BaseURL }}" aria-label="Qim Center home">
       {{ with site.Params.logo }}
         <div class="relative h-24 w-24 flex-shrink-0">
           <!-- Original logo using partial (supports assets/) -->
-          {{ partial "utilities/image.html" (dict "src" . "class" "h-24 w-24 object-contain transition-opacity duration-300 group-hover:opacity-0") }}
+          {{ partial "utilities/image.html" (dict
+            "src" .
+            "alt" "Qim Center"
+            "class" "h-24 w-24 object-contain transition-opacity duration-300 group-hover:opacity-0"
+            "loading" "eager"
+            "fetchpriority" "high"
+          ) }}
 
           <!-- Hover logo also processed via Hugo resources -->
           {{ with site.Params.logoHover }}
             {{ $hover := resources.Get . }}
             {{ if $hover }}
-              <img src="{{ $hover.RelPermalink }}" class="absolute top-0 left-0 h-24 w-24 object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+              <img src="{{ $hover.RelPermalink }}" class="absolute top-0 left-0 h-24 w-24 object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100" alt="" aria-hidden="true" loading="eager" decoding="async" fetchpriority="high" />
             {{ else }}
-              <img src="{{ . | relURL }}" class="absolute top-0 left-0 h-24 w-24 object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+              <img src="{{ . | relURL }}" class="absolute top-0 left-0 h-24 w-24 object-contain opacity-0 transition-opacity duration-200 group-hover:opacity-100" alt="" aria-hidden="true" loading="eager" decoding="async" fetchpriority="high" />
             {{ end }}
           {{ end }}
         </div>
       {{ end }}
-      <span class="text-primary text-xl font-bold xl:text-3xl ml-2">{{ .Site.Title }}</span>
     </a>
     <button
       class="cursor-pointer xl:hidden"
@@ -42,11 +47,16 @@
       id="navbarContent"
     >
       <div class="container absolute top-0 mx-auto flex items-center justify-center px-4 py-6 xl:hidden bg-white relative">
-        <a class="flex items-center xl:hidden" href="{{ .Site.BaseURL }}">
+        <a class="flex items-center xl:hidden" href="{{ .Site.BaseURL }}" aria-label="Qim Center home">
           {{ with site.Params.logo }}
-            {{ partial "utilities/image.html" (dict "src" . "class" "h-16 w-auto") }}
+            {{ partial "utilities/image.html" (dict
+              "src" .
+              "alt" "Qim Center"
+              "class" "h-16 w-auto"
+              "loading" "eager"
+              "fetchpriority" "high"
+            ) }}
           {{ end }}
-          <span class="text-primary text-xl font-semibold uppercase xl:text-3xl">{{ .Site.Title }}</span>
         </a>
         <button
           class="cursor-pointer xl:hidden absolute right-4"

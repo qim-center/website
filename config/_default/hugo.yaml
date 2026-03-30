@@ -1,10 +1,11 @@
 baseURL: "/"
-title: ""
+title: "Qim Center"
 summaryLength: 20
 
-buildFuture: true
+buildFuture: false
+enableRobotsTXT: true
 
+# Set baseURL to the final public site URL before publishing.
 # services:
 #   googleAnalytics:
 #     id: G-MEASUREMENT_ID
-
