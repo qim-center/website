@@ -1,5 +1,5 @@
 +++
-author = "Hugo Authors"
+author = "Qim Center"
 title = "Rich Content 1"
 date = "2019-03-10"
 description = "A brief description of Hugo Shortcodes"

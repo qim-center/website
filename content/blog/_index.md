@@ -1,8 +1,8 @@
 +++
 aliases = ["posts", "articles", "blog", "docs"]
-title = "Posts"
-description = "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
-author = "Hugo Authors"
+title = "News"
+description = "Updates, articles, and announcements from the Qim Center."
+author = "Qim Center"
 tags = ["index"]
 image = "images/shared/qim-background_perspective.png"
 +++

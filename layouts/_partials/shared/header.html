@@ -25,7 +25,6 @@
           {{ end }}
         </div>
       {{ end }}
-      <span class="text-primary text-xl font-bold xl:text-3xl ml-2">{{ .Site.Title }}</span>
     </a>
     <button
       class="cursor-pointer xl:hidden"
@@ -46,7 +45,6 @@
           {{ with site.Params.logo }}
             {{ partial "utilities/image.html" (dict "src" . "class" "h-16 w-auto") }}
           {{ end }}
-          <span class="text-primary text-xl font-semibold uppercase xl:text-3xl">{{ .Site.Title }}</span>
         </a>
         <button
           class="cursor-pointer xl:hidden absolute right-4"
