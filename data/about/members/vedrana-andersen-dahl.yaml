@@ -1,0 +1,15 @@
+name: "Vedrana Andersen Dahl"
+group: "Working Group"
+role:
+  - "Professor"
+affiliation: "DTU Compute"
+image: "/images/about/Vedrana.jpg"
+bio: "Vedrana Dahl develops methods for image analysis and geometry processing, with a particular focus on geometric models for the analysis of volumetric data. Her work includes volumetric and tomographic segmentation, as well as methods based on deformable meshes. She has developed image analysis tools with applications in materials science, industrial inspection, and biomedicine."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:vand@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/vedranaandersen/"
+weight: 10
