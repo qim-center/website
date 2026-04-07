@@ -9,7 +9,13 @@ links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
     href: "mailto:vand@dtu.dk"
+  - label: "Website"
+    icon: "fa-solid fa-globe"
+    href: "https://people.compute.dtu.dk/vand/"
   - label: "LinkedIn"
     icon: "fa-brands fa-linkedin"
     href: "https://www.linkedin.com/in/vedranaandersen/"
+  - label: "Scholar"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://scholar.google.com/citations?hl=en&user=UKzooBcAAAAJ"
 weight: 10
