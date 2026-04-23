@@ -5,6 +5,12 @@ summaryLength: 20
 buildFuture: false
 enableRobotsTXT: true
 
+# Enable raw HTML rendering in markdown
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 # Set baseURL to the final public site URL before publishing.
 # services:
 #   googleAnalytics:

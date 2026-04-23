@@ -7,4 +7,4 @@ showcases:
     branch: main
     raw_base: https://raw.githubusercontent.com/qim-center/showcases.reconstruction-with-stitching/main/
     report: https://raw.githubusercontent.com/qim-center/showcases.reconstruction-with-stitching/main/report.md
-    image: images/portfolio/reconstruction/logo.png
+    image: images/showcases/reconstruction-with-stitching.png

@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section class="py-16">
     <div class="container mx-auto px-4 mb-24">
-      <div class="mx-auto xl:max-w-1/2 mb-16">
+      <div class="mx-auto max-w-5xl mb-16">
         {{ with .Title }}
           <h1 class="markdown-title text-center text-4xl xl:text-5xl font-bold xl:leading-normal mb-10">{{ . | markdownify }}</h1>
         {{ end }}
@@ -20,7 +20,7 @@
 
     <!-- Remote Showcase Content -->
     <div class="container mx-auto px-4 mb-28">
-      <div class="prose-lg prose mx-auto">
+      <div class="prose-lg prose prose-img:max-w-full mx-auto max-w-5xl">
         {{ if .Params.report }}
           {{ $report := resources.GetRemote .Params.report }}
           
@@ -33,11 +33,17 @@
               {{ $base = printf "%s/" $base }}
             {{ end }}
             
-            <!-- STEP 4.2: Rewrite image links ![alt](image.png) -->
-            {{ $content = replaceRE `!\[(.*?)\]\((?!https?:\/\/)([^)]+)\)` (printf "![${1}](%s${2})" $base) $content }}
+            <!-- STEP 4.2: Rewrite image links ![alt](image.png) - match paths without ':' to skip URLs -->
+            {{ $content = replaceRE `!\[([^\]]*)\]\(([^:)]+)\)` (printf "![${1}](%s${2})" $base) $content }}
             
-            <!-- STEP 4.3: Rewrite normal links [text](link.md) -->
-            {{ $content = replaceRE `\[(.*?)\]\((?!https?:\/\/)([^)]+)\)` (printf "[${1}](%s${2})" $base) $content }}
+            <!-- STEP 4.3: Rewrite normal links [text](link.md) - match paths without ':' to skip URLs -->
+            {{ $content = replaceRE `\[([^\]]*)\]\(([^:)]+)\)` (printf "[${1}](%s${2})" $base) $content }}
+            
+            <!-- STEP 4.4: Rewrite HTML img src attributes src="assets/..." -->
+            {{ $content = replaceRE `src="([^:"]+)"` (printf "src=\"%s${1}\"" $base) $content }}
+            
+            <!-- STEP 4.5: Rewrite HTML link href attributes href="assets/..." or href="file.md" -->
+            {{ $content = replaceRE `href="([^:"]+)"` (printf "href=\"%s${1}\"" $base) $content }}
             
             <!-- STEP 4.4: Render markdown -->
             {{ $content | markdownify }}
