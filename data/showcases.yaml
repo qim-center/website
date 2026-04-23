@@ -1,0 +1,10 @@
+showcases:
+  - id: reconstruction-with-stitching
+    title: "Reconstruction with Stitching"
+    description: "3D reconstruction pipeline using image stitching techniques"
+    tags: ["Reconstruction", "Pipeline"]
+    repo: https://github.com/qim-center/showcases.reconstruction-with-stitching
+    branch: main
+    raw_base: https://raw.githubusercontent.com/qim-center/showcases.reconstruction-with-stitching/main/
+    report: https://raw.githubusercontent.com/qim-center/showcases.reconstruction-with-stitching/main/report.md
+    image: images/showcases/reconstruction-with-stitching.png

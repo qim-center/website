@@ -1,0 +1,93 @@
+{{ define "main" }}
+  <section class="py-16">
+    <div class="container mx-auto px-4 mb-24">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-32">
+        <div>
+          <div class="mb-16">
+            {{ with .Title }}
+              <h1 class="markdown-title text-3xl xl:text-3xl font-bold xl:leading-normal mb-10">{{ . | markdownify }}</h1>
+            {{ end }}
+            {{ with .Description | markdownify }}
+              <p class="text-l l:leading-loose font-medium text-[#777777]">{{ . }}</p>
+            {{ end }}
+          </div>
+        </div>
+
+        <!--Highlight Image-->
+        {{ if .Params.image }}
+          <div class="highlight-image max-h-[320px]">
+            {{ $img := .Params.image }}
+            {{ $src := printf "%v" $img }}
+            {{ if strings.HasSuffix (lower $src) ".svg" }}
+              {{ partial "utilities/svg" (dict
+                "src"  $src
+                "alt"  .Title
+                "class" "w-full h-full object-cover object-center"
+              ) }}
+            {{ else }}
+              {{ partial "utilities/image" (dict
+                "src"  $src
+                "alt"  .Title
+                "class" "w-full h-full object-cover object-center"
+              ) }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <!--Showcases List from data/showcases.yaml-->
+    <div class="container mx-auto px-4 space-y-6 max-w-4xl mx-auto mb-28">
+      {{ $showcases := site.Data.showcases.showcases }}
+      {{ if $showcases }}
+        {{ range $showcases }}
+          <div class="flex flex-col sm:flex-row gap-6 bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition">
+            <a class="block w-full sm:w-40 md:w-48 shrink-0" href="{{ .id }}/">
+              <div class="w-full h-24 sm:h-28 md:h-32 rounded-lg">
+                {{ $img := .image }}
+                {{ if $img }}
+                  {{ $src := printf "%v" $img }}
+                  {{ if strings.HasSuffix (lower $src) ".svg" }}
+                    {{ partial "utilities/svg" (dict
+                      "src" $src
+                      "class" "w-full h-full object-contain object-center"
+                    ) }}
+                  {{ else }}
+                    {{ partial "utilities/image" (dict
+                      "src" $src
+                      "class" "w-full h-full object-contain object-center"
+                    ) }}
+                  {{ end }}
+                {{ end }}
+              </div>
+            </a>
+            <div class="flex-1">
+              {{ if .tags }}
+                <div class="flex flex-wrap gap-2 mb-3">
+                  {{ range .tags }}
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold tag-gray">
+                      {{ . }}
+                    </span>
+                  {{ end }}
+                </div>
+              {{ end }}
+              <h1 class="text-2xl font-semibold leading-relaxed mb-3">
+                {{ .title }}
+              </h1>
+              <div class="text-[#424242] leading-loose">
+                {{ .description }}
+              </div>
+              <div class="mt-6 flex justify-start">
+                <a href="{{ .id }}/" class="inline-flex items-center gap-2 btn-primary">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      {{ else }}
+        <p>No showcases available.</p>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
