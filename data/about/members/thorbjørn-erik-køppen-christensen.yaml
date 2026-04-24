@@ -1,0 +1,18 @@
+name: "Thorbjørn Erik Køppen Christesnen"
+group: "Working Group"
+role:
+  - "Beamline scientist"
+affiliation: "DanMAX at MAX IV and DTU Compute"
+image: "/images/about/ThorbjornErikKoppenChristensen.png"
+bio: "Thorbjørn is a person"
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:thorbjorn_erik.koppen_christensen@maxiv.lu.se.dk"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0000-0002-0754-6984"
+  - label: "Scholar"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://scholar.google.com/citations?user=xkXpbiwAAAAJ&hl=en"
+weight: 10
