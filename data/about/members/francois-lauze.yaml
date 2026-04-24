@@ -4,7 +4,7 @@ role:
   - "Associate Professor"
 affiliation: "DIKU"
 image: "/images/about/loutchoa.jpg"
-bio: "Rasmus is a PhD student at the Section for Visual Computing at DTU Compute. His research area touches on CT-reconstruction, deep learning, and image analysis."
+bio: "Mathematical Image Analysis, including variational and partial differential equations methods, with applications to image inpainting (still and video), motion estimation in image sequences, segmentation, video format conversion. Differential and Riemannian geometric methods for shape analysis applied to anatomical structures extracted from X-ray and other medical imaging modalities."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
