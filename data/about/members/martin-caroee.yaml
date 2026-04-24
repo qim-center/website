@@ -1,0 +1,12 @@
+name: "Martin Sæbye Carøe"
+group: "Working Group"
+role:
+  - "PhD Student"
+affiliation: "DTU Compute"
+image: "/images/about/MartinCaroee.jpg"
+bio: "Martin is a PhD student at the Section for Visual Computing at DTU Compute. His research topic is in tomographic reconstruction techniques for X-ray diffraction."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:msaca@dtu.dk"
+weight: 10
