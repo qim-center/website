@@ -3,7 +3,7 @@ group: "Working Group"
 role:
   - "Research Assistant"
 affiliation: "DTU Compute"
-image: ""
+image: "/images/about/Christian_Deding.png"
 bio: "Christian is a Research Assistant at the Section for Statistics and Data Analysis at DTU Compute. His work lies in CT image reconstruction, image analysis and pipelines."
 links:
   - label: "Email"
