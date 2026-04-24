@@ -5,7 +5,7 @@ role:
   - "Associate Professor"
 affiliation: "DTU Compute"
 image: "/images/about/JakobSauer.jpg"
-bio: "Jakob is a Scientific Director of the QIM Center and Associate Professor at DTU Compute."
+bio: "Jakob is the Scientific Director of the QIM Center and Associate Professor at DTU Compute. His background is in mathematics, algorithms and software for tomographic reconstruction, especially X-ray and neutron CT. He is one of the founders of the CIL (Core Imaging Library) and CUQIpy python imaging libraries."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
