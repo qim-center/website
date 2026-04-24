@@ -3,7 +3,7 @@ group: "Working Group"
 role:
   - "Postdoc"
 affiliation: "LTH - Solid Mechanics"
-image: ""
+image: "/images/about/endrilacaj.png"
 bio: "Endri is a postdoc in the Department of Solid Mechanics at the Faculty of Engineering (LTH), Lund University. His work focuses on the characterization of materials through in-situ loading, 3D image analysis and Digital Volume Correlation. Part of his mission also involves supporting the use of tomography at MAXIV."
 links:
   - label: "Email"
