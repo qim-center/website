@@ -16,4 +16,7 @@ links:
   - label: "Scholar"
     icon: "fa-solid fa-graduation-cap"
     href: "https://scholar.google.dk/citations?user=WsgfNRMAAAAJ&hl=en"
+  - label: "Website"
+    icon: "fa-solid fa-globe"
+    href: "https://orbit.dtu.dk/en/persons/anders-bjorholm-dahl/"
 weight: 10
