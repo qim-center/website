@@ -4,7 +4,7 @@ role:
   - "Associate Professor"
 affiliation: "DTU Compute"
 image: "/images/about/HMartinKjer.jpg"
-bio: "Martin is an Associate Professor at DTU Compute, Section for Visual Computing."
+bio: "Martin is an Associate Professor at DTU Compute, Section for Visual Computing. He works on 3D image analysis, developing methods for segmentation and registration, with a strong interest in effective 3D visualization"
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
