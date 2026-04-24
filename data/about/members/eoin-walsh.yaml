@@ -1,1 +1,21 @@
-
+name: "Eoin Walsh"
+group: "Working Group"
+role:
+  - "Postdoctoral Researcher"
+affiliation: "LTH, Lund University"
+image: 
+bio: "As a postdoc in the Department of Solid Mechanics at LTH in Lund University, Eoin’s research focuses on the segmentation of objects of interest from 3-D XCT volumes. Such objects include paper fibres, foam bubbles, and porous materials. Eoin’s previous experience includes postdoctoral research at Met Éireann, Ireland’s meteorological service, co-founding a start-up, and a PhD in synthetic data and deep learning from the University of Limerick in Ireland."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:eoin.walsh@solid.lth.se"
+  - label: "Scholar"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://scholar.google.com/citations?user=qllRo1gAAAAJ&hl=en"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/walsh-eoin/"
+  - label: "Github"
+    icon: "fa-brands fa-github"
+    href: "https://github.com/eoin-walsh"
+weight: 10
