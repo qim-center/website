@@ -1,0 +1,15 @@
+name: "William Michael Laprade"
+group: "Working Group"
+role:
+  - "Postdoctoral Researcher"
+affiliation: "DTU Compute"
+image: "/images/about/WilliamMichaelLaprade.jpg"
+bio: "William is a postdoc in the Visual Computing section at DTU Compute. He finished his PhD at DTU in 2024 in hyperspectral imaging. His current research focuses on deep learning and image segmentation of 3D volumetric data. "
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:willap@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/william-laprade-41b64a171/"
+weight: 10
