@@ -1,0 +1,15 @@
+name: "Julia Mertesdorf"
+group: "Working Group"
+role:
+  - "BioImage Analyst"
+affiliation: "DBI-Infra, IACF"
+image: "/images/about/JuliaMertesdorf.jpg"
+bio: "Julia is a scientific programmer and bioimage analyst working at the image analysis core facility (IACF) in Copenhagen, which is part of the Danish BioImaging Infrastructure (DBI-Infra). At IACF, she supports researchers and life scientists in analyzing their bioimage data through tailored software solutions, workshops, and consultations. In collaboration with the IMAGE section of DIKU and the QIM Center, Julia works on making bioimage processing tools available to life scientists in a user-friendly way. She holds a master’s degree in computer science from the University of Freiburg, specializing on unsupervised deep learning methods for image and video analysis."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:jume@di.ku.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/julia-mertesdorf-691b6a284/"
+weight: 20
