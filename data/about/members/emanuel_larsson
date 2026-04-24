@@ -1,0 +1,19 @@
+name: "Emanuel Larsson"
+group: "QIM"
+role:
+  - "Researcher"
+  - "QIM Fellow"
+affiliation: "Faculty of Medicine, Lund University, Lund, Sweden"
+image: "/images/about/EmanuelLarsson.webp"
+bio: "Emanuel works as a Researcher at the Department of Experimental Medical Science at the Faculty of Medicine, Lund University and as a LINXS Co-Director responsible for the focus area of Life Science. He also works as a Lund University Node Coordinator for InfraVis – a Swedish National Research Infrastructure for Data Visualization, and as Coordinator for CIPA – a cross faculty infrastructure for image processing and analysis at Lund University. His work includes everything from experimental planning, image acquisition, reconstruction, processing, analysis, and visualization of X-ray and Neutron tomography datasets. Emanuel also very dedicated to finding new pedagogical ways of teaching tomography and image reconstruction."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:emanuel.larsson@med.lu.se"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/emanuellarsson//"
+  - label: "Scholar"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://scholar.google.com/citations?user=A9oS7vwAAAAJ&hl=en"
+weight: 10
