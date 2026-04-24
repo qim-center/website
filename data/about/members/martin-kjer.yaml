@@ -1,0 +1,15 @@
+name: "H. Martin Kjer"
+group: "Working Group"
+role:
+  - "Associate Professor"
+affiliation: "DTU Compute"
+image: "HMartinKjer.jpg"
+bio: "Martin is an Associate Professor at DTU Compute, Section for Visual Computing"
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:hmkj@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "www.linkedin.com/in/hans-martin-kjer-a2019480"
+weight: 10
