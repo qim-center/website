@@ -1,0 +1,21 @@
+name: "Jon Sporring"
+group: "Working Group"
+role:
+  - "Professor"
+affiliation: "University of Copenhagen"
+image: "/images/about/JonSporring.jpg"
+bio: "Jon Sporring received his Master and Ph.D. degree from the Department of Computer Science (DIKU), University of Copenhagen, Denmark in 1995 and 1998, respectively. Part of his Ph.D. program was carried out at IBM Research Center, Almaden, California, USA. Following his Ph.D, he worked as a visiting researcher at the Computer Vision and Robotics Lab at Foundation for Research & Technology - Hellas, Greece, and as an assistant research professor at 3D-Lab, School of Dentistry, University of Copenhagen. During 2003-2018 he was an associate professor at DIKU. From 2008-2009 he was a part-time Senior Researcher at Nordic Bioscience a/s. In the period 2012-13, he is a visiting professor at the School of Computer Science, McGill University, Montreal, Canada. Jon Sporring also co-founded DigiCorpus Aps in 2012 and served as Chief research officer of the company from 2012-16 developing computer vision-based systems for automatic feedback for physiotherapeutic rehabilitation. In 2007-2012, 2015-2019, and 2021 he was Deputy head for Research at DIKU. Since 2018, he is a full professor at DIKU, and since 2019 he is the Deputy head of the Center for Quantifying Images for MAXIV (QIM)."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:sporring@di.ku.dk"
+  - label: "Website"
+    icon: "fa-solid fa-globe"
+    href: "https://sporring.github.io/"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/jon-sporring-b085254/"
+  - label: "Scholar"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://scholar.google.com/citations?user=T7NW-rwAAAAJ"
+weight: 10
