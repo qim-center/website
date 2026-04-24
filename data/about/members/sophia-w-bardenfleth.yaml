@@ -1,0 +1,15 @@
+name: "Sophia Wiinberg Bardenfleth"
+group: "Working Group"
+role:
+  - "PhD student"
+affiliation: "DTU Compute"
+image: "/images/about/SophiaBardenfleth.jpg"
+bio: "In her PhD project Sophia has investigated methods for doing 3D super-resolution as well as created multiple scientific super-resolution datasets."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:soeba@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/phialosophy/"
+weight: 10
