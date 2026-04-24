@@ -5,7 +5,8 @@ role:
   - "Deputy Head of the QIM Center"
 affiliation: "University of Copenhagen"
 image: "/images/about/JonSporring.jpg"
-bio: "Jon Sporring is a full professor at DIKU, University of Copenhagen, and Deputy Head of QIM since 2019. He earned his Ph.D. in 1998, including research at IBM Research Center, and has held academic and industry roles, including visiting professor at McGill University and co-founder of DigiCorpus ApS."
+bio: "Jon Sporring is a full professor at DIKU, University of Copenhagen, where he is the head of the Image Analysis, Computational Modelling, and Geometry
+ Section. He earned his Ph.D. in 1998, including research at IBM Research Center, and has held academic and industry roles, including visiting professor at McGill University and co-founder of DigiCorpus ApS."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
