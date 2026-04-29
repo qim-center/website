@@ -10,7 +10,7 @@
   <!-- Overview Card -->
   <div class="container mx-auto px-4 mb-12">
     <div class="max-w-4xl mx-auto bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-8 border border-primary/20">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
         <div class="text-center">
           <div class="text-3xl font-bold text-primary mb-1" id="total-publications">{{ len .Site.Data.publications }}</div>
           <div class="text-sm text-gray-600 font-medium">Publications</div>
@@ -22,10 +22,6 @@
         <div class="text-center">
           <div class="text-3xl font-bold text-primary mb-1" id="total-authors">-</div>
           <div class="text-sm text-gray-600 font-medium">Unique Authors</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl font-bold text-primary mb-1" id="year-range">-</div>
-          <div class="text-sm text-gray-600 font-medium">Year Range</div>
         </div>
       </div>
     </div>
@@ -141,15 +137,12 @@
   // Calculate overview statistics
   function calculateStats() {
     const publications = document.querySelectorAll('.publication-card');
-    const years = new Set();
     const venues = new Set();
     const authors = new Set();
 
     publications.forEach(pub => {
-      const year = pub.dataset.year;
       const venue = pub.dataset.venue;
-      
-      if (year) years.add(year);
+
       if (venue) venues.add(venue);
 
       // Extract authors (this is approximate since we're working with formatted strings)
@@ -162,12 +155,6 @@
     document.getElementById('total-journals').textContent = venues.size;
     document.getElementById('total-authors').textContent = authors.size;
     
-    if (years.size > 0) {
-      const yearArray = Array.from(years).map(Number).sort((a, b) => a - b);
-      const minYear = yearArray[0];
-      const maxYear = yearArray[yearArray.length - 1];
-      document.getElementById('year-range').textContent = minYear === maxYear ? minYear : `${minYear}–${maxYear}`;
-    }
   }
 
   // Extract all unique keywords
