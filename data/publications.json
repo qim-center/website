@@ -5,22 +5,17 @@
     "title": "Experimental investigation of microscale mechanisms during compressive loading of paperboard",
     "journal": "Cellulose",
     "note": "accepted",
-    "keywords": [
-      "Mechanics",
-      "Materials Characterization"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
-    "authors": "Larsson, E. and Gürsoy, D. and Hall, S.A.",
+    "authors": "Larsson, E. and G\u00fcrsoy, D. and Hall, S.A.",
     "year": "2023",
-    "title": "Kitchen-Based Light Tomography – a DIY toolkit for advancing tomography – by and for the tomography community",
+    "title": "Kitchen-Based Light Tomography \u2013 a DIY toolkit for advancing tomography \u2013 by and for the tomography community",
     "journal": "Tomography of Materials and Structures",
     "volume": "1",
     "pages": "100001",
     "url": "https://www.sciencedirect.com/science/article/pii/S2949673X22000018",
-    "keywords": [
-      "Tomographic Reconstruction"
-    ]
+    "keywords": ["Materials Characterization", "Tomographic Reconstruction", "Software Development"]
   },
   {
     "authors": "Lowes, M. and Christensen, J. and Hansen, B. and Hannemose, M. and Dahl, A. and Dahl, V.",
@@ -28,48 +23,34 @@
     "title": "Interactive Scribble Segmentation",
     "booktitle": "Proceedings of the Northern Lights Deep Learning Workshop",
     "url": "https://septentrio.uit.no/index.php/nldl/article/view/6823",
-    "keywords": [
-      "Image Segmentation",
-      "Computer Vision"
-    ]
+    "keywords": ["Computer Vision", "Image Analysis"]
   },
   {
-    "authors": "Mikkelsen, L. and Fæster, S. and Dahl, V.",
+    "authors": "Mikkelsen, L. and F\u00e6ster, S. and Dahl, V.",
     "year": "2023",
     "title": "Dataset for scanning electron microscopy based local fiber volume fraction analysis of non-crimp fabric glass fiber reinforced composites",
     "journal": "Composites Part A: Applied Science and Manufacturing",
     "pages": "107493",
     "url": "https://www.sciencedirect.com/science/article/pii/S1359835X23000696",
-    "keywords": [
-      "Microscopy",
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "Image Analysis"]
   },
   {
-    "authors": "Ørting, S. N. and Stephensen, H. J. T. and Sporring, J.",
+    "authors": "\u00d8rting, S. N. and Stephensen, H. J. T. and Sporring, J.",
     "year": "2023",
     "title": "Morphology on categorical distributions",
     "journal": "Journal of Mathematical Imaging and Vision",
     "pages": "1-13",
     "url": "https://link.springer.com/article/10.1007/s10851-023-01146-x",
-    "keywords": [
-      "Morphology",
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis"]
   },
   {
     "authors": "Auenhammer, R.M. and Jeppesen, N. and Mikkelsen, L.P. and Dahl, V.A. and Asp, L.E.",
     "year": "2022",
-    "title": "X-ray computed tomography data structure tensor orientation mapping for finite element models—STXAE",
+    "title": "X-ray computed tomography data structure tensor orientation mapping for finite element models\u2014STXAE",
     "journal": "Software Impacts",
     "pages": "100216",
     "url": "https://www.sciencedirect.com/science/article/pii/S2665963821000968",
-    "keywords": [
-      "X-ray Tomography",
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["X-ray Tomography", "Tomographic Reconstruction"]
   },
   {
     "authors": "Auenhammer, R.M. and Jeppesen, N. and Mikkelsen, L.P. and Dahl, V.A. and Blinzler, B.J. and Asp, L.E.",
@@ -78,11 +59,7 @@
     "journal": "Composites Science and Technology",
     "pages": "109458",
     "url": "https://www.sciencedirect.com/science/article/pii/S0266353822002007",
-    "keywords": [
-      "X-ray Tomography",
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "X-ray Tomography", "Tomographic Reconstruction", "Image Analysis"]
   },
   {
     "authors": "Christensen, J. and Jensen, P. and Hannemose, M. and Dahl, A. and Dahl, V.",
@@ -91,10 +68,7 @@
     "booktitle": "Proceedings of the Northern Lights Deep Learning Workshop",
     "volume": "3",
     "url": "https://eludamos.org/index.php/nldl/article/view/6254",
-    "keywords": [
-      "Image Segmentation",
-      "Deep Learning"
-    ]
+    "keywords": ["Machine Learning", "Image Analysis"]
   },
   {
     "authors": "Jensen, P.M. and Jeppesen, N. and Dahl, A.B. and Dahl, V.A.",
@@ -104,33 +78,25 @@
     "issue": "01",
     "pages": "1-1",
     "url": "https://ieeexplore.ieee.org/document/9763394",
-    "keywords": [
-      "Computer Vision"
-    ]
+    "keywords": ["Method Development", "Computer Vision"]
   },
   {
-    "authors": "Jensen, J. and Schou, M. and Andersen, S. and Tomov, B. and Søgaard, S. and Sørensen, C. and Nielsen, M. and Gundlach, C. and Kjer, H. and Dahl, A. and others",
+    "authors": "Jensen, J. and Schou, M. and Andersen, S. and Tomov, B. and S\u00f8gaard, S. and S\u00f8rensen, C. and Nielsen, M. and Gundlach, C. and Kjer, H. and Dahl, A. and others",
     "year": "2022",
     "title": "In Vivo Super Resolution Ultrasound Imaging using the Erythrocytes-SURE",
     "booktitle": "2022 IEEE International Ultrasonics Symposium (IUS)",
-    "pages": "1–4",
+    "pages": "1\u20134",
     "url": "https://ieeexplore.ieee.org/document/9958236",
-    "keywords": [
-      "Ultrasound Imaging",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Image Analysis", "Machine Learning"]
   },
   {
-    "authors": "Jensen, J. and Schou, M. and Andersen, S. and Søgaard, S. and Sørensen, C. and Nielsen, M. and Gundlach, C. and Kjer, H. and Dahl, A. and Stuart, M. and others",
+    "authors": "Jensen, J. and Schou, M. and Andersen, S. and S\u00f8gaard, S. and S\u00f8rensen, C. and Nielsen, M. and Gundlach, C. and Kjer, H. and Dahl, A. and Stuart, M. and others",
     "year": "2022",
     "title": "Fast super resolution ultrasound imaging using the erythrocytes",
     "booktitle": "Medical Imaging 2022: Ultrasonic Imaging and Tomography",
-    "pages": "79–84",
+    "pages": "79\u201384",
     "url": "https://orbit.dtu.dk/en/publications/fast-super-resolution-ultrasound-imaging-using-the-erythrocytes",
-    "keywords": [
-      "Ultrasound Imaging",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Image Analysis", "Machine Learning"]
   },
   {
     "authors": "Jensen, P. and Wickramasinghe, U. and Dahl, A. and Fua, P. and Dahl, V.",
@@ -138,36 +104,26 @@
     "title": "Deep Active Latent Surfaces for Medical Geometries",
     "journal": "arXiv preprint arXiv:2206.10241",
     "url": "https://arxiv.org/abs/2206.10241",
-    "keywords": [
-      "Deep Learning",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Johansson, S. and Engqvist, J. and Tryding, J. and Hall, S.A.",
     "year": "2022",
-    "title": "Microscale deformation mechanisms in paperboard during continuous tensile loading and 4D synchrotron X‐ray tomography",
+    "title": "Microscale deformation mechanisms in paperboard during continuous tensile loading and 4D synchrotron X\u2010ray tomography",
     "journal": "Strain",
     "pages": "e12414",
     "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/str.12414",
-    "keywords": [
-      "X-ray Tomography",
-      "Mechanics",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "Tomographic Reconstruction"]
   },
   {
-    "authors": "Kalbfleisch S. and Zhang Y. and Kahnt M. and Buakor K. and Langer M. and Dreier T. and Dierks H. and Stjärneblad P. and Larsson E. and Gordeyeva K. and Chayanun L. and Söderberg D. and Wallentin J. and Bech M. and Villanueva-Perez P.",
+    "authors": "Kalbfleisch S. and Zhang Y. and Kahnt M. and Buakor K. and Langer M. and Dreier T. and Dierks H. and Stj\u00e4rneblad P. and Larsson E. and Gordeyeva K. and Chayanun L. and S\u00f6derberg D. and Wallentin J. and Bech M. and Villanueva-Perez P.",
     "year": "2022",
     "title": "X-ray in-line holography and holotomography at the NanoMAX beamline",
     "journal": "J. Synchrotron Radiation",
     "volume": "29",
     "pages": "224-229",
     "url": "https://scripts.iucr.org/cgi-bin/paper?mo5242",
-    "keywords": [
-      "X-ray Tomography",
-      "Materials Characterization"
-    ]
+    "keywords": ["X-ray Tomography", "Tomographic Reconstruction"]
   },
   {
     "authors": "Martell, J. and Alwmark, C. and Daly, L. and Hall, S. and Alwmark, S. and Woracek, R. and Hektor, J. and Helfen, L. and Tengattini, A. and Lee, M.",
@@ -178,28 +134,20 @@
     "issue": "19",
     "pages": "eabn3044",
     "url": "https://www.science.org/doi/10.1126/sciadv.abn3044",
-    "keywords": [
-      "X-ray Tomography",
-      "Neutron Imaging",
-      "Materials Characterization"
-    ]
+    "keywords": ["Neutron Imaging", "Tomographic Reconstruction", "Multimodal Imaging", "X-ray Tomography"]
   },
   {
-    "authors": "Perens, J. and Salinas, C. and Roostalu, U. and Skytte, J. and Gundlach, C. and Hecksher-Sørensen, J. and Dahl, A. and Dyrby, T.",
+    "authors": "Perens, J. and Salinas, C. and Roostalu, U. and Skytte, J. and Gundlach, C. and Hecksher-S\u00f8rensen, J. and Dahl, A. and Dyrby, T.",
     "year": "2022",
     "title": "Multimodal 3D mouse brain atlas framework with skull-derived coordinate system",
     "journal": "Neuroinformatics",
     "note": "Accepted/In press",
     "pages": "18 p",
     "url": "https://link.springer.com/article/10.1007/s12021-023-09623-9",
-    "keywords": [
-      "Brain Imaging",
-      "Biomedical Imaging",
-      "Life Sciences"
-    ]
+    "keywords": ["Software Development", "Method Development", "Multimodal Imaging", "3D Imaging"]
   },
   {
-    "authors": "Pingel, J. and Kjer, H. and Biering-Sørensen, F. and Feidenhans'l, R. and Dyrby, T.",
+    "authors": "Pingel, J. and Kjer, H. and Biering-S\u00f8rensen, F. and Feidenhans'l, R. and Dyrby, T.",
     "year": "2022",
     "title": "3D synchrotron imaging of muscle tissues at different atrophic stages in stroke and spinal cord injury: a proof-of-concept study",
     "journal": "Scientific Reports",
@@ -207,10 +155,7 @@
     "issue": "1",
     "pages": "17289",
     "url": "https://www.nature.com/articles/s41598-022-21741-z",
-    "keywords": [
-      "X-ray Tomography",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Image Analysis", "3D Imaging"]
   },
   {
     "authors": "Sporring, J. and Darkner, S.",
@@ -221,10 +166,7 @@
     "issue": "3",
     "pages": "433",
     "url": "https://www.mdpi.com/1552150",
-    "keywords": [
-      "Morphology",
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Sporring, J. and Darkner, S.",
@@ -233,10 +175,7 @@
     "journal": "Frontiers in Computer Science",
     "volume": "4",
     "url": "https://www.frontiersin.org/articles/10.3389/fcomp.2022.939563/full",
-    "keywords": [
-      "Morphology",
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Tichit, P. and Zhou, T. and Kjer, H.M. and Dahl, V.A. and Dahl, A.B. and Baird, E.",
@@ -247,24 +186,17 @@
     "issue": "1",
     "pages": "1-12",
     "url": "https://bmczool.biomedcentral.com/articles/10.1186/s40850-021-00101-w",
-    "keywords": [
-      "Image Segmentation",
-      "Computer Vision",
-      "Life Sciences"
-    ]
+    "keywords": ["Computer Vision", "Image Analysis"]
   },
   {
-    "authors": "Törnquist, E. and Le Cann, S. and Tengattini, A. and Helfen, L. and Kok, J. and Hall, S.A. and Isaksson, H.",
+    "authors": "T\u00f6rnquist, E. and Le Cann, S. and Tengattini, A. and Helfen, L. and Kok, J. and Hall, S.A. and Isaksson, H.",
     "year": "2022",
     "title": "The hydration state of bone tissue affects contrast in neutron tomographic images",
     "journal": "Frontiers in Bioengineering and Biotechnology",
     "volume": "10",
     "pages": "911866",
     "url": "https://www.frontiersin.org/articles/10.3389/fbioe.2022.911866/full",
-    "keywords": [
-      "Neutron Imaging",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Materials Characterization", "Neutron Imaging", "Image Analysis"]
   },
   {
     "authors": "Wang, C. and Ostergaard, L. and Hasselholt, S. and Sporring, J.",
@@ -273,10 +205,7 @@
     "journal": "bioRxiv",
     "pages": "2022-11",
     "url": "https://www.biorxiv.org/content/10.1101/2022.11.08.515664v1",
-    "keywords": [
-      "Microscopy",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["3D Imaging", "Image Analysis"]
   },
   {
     "authors": "Wu, D. and Engqvist, J. and Barbier, C. and Karlsson, C. and Hall, S.",
@@ -286,14 +215,10 @@
     "volume": "242",
     "pages": "111539",
     "url": "https://www.sciencedirect.com/science/article/pii/S0020768322000890",
-    "keywords": [
-      "X-ray Tomography",
-      "Mechanics",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "X-ray Tomography", "Tomographic Reconstruction", "Image Analysis"]
   },
   {
-    "authors": "Andersen, S.B. and Taghavi, I. and Kjer, H.M. and Søgaard, S.B. and Gundlach, C. and Dahl, V.A. and Nielsen, M.B. and Dahl, A.B. and Jensen, J.A. and Sørensen, C.M.",
+    "authors": "Andersen, S.B. and Taghavi, I. and Kjer, H.M. and S\u00f8gaard, S.B. and Gundlach, C. and Dahl, V.A. and Nielsen, M.B. and Dahl, A.B. and Jensen, J.A. and S\u00f8rensen, C.M.",
     "year": "2021",
     "title": "Evaluation of 2D super-resolution ultrasound imaging of the rat renal vasculature using ex vivo micro-computed tomography",
     "journal": "Scientific reports",
@@ -301,41 +226,31 @@
     "issue": "1",
     "pages": "1-13",
     "url": "https://www.nature.com/articles/s41598-021-03726-6",
-    "keywords": [
-      "Ultrasound Imaging",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["X-ray Tomography", "Tomographic Reconstruction", "Image Analysis"]
   },
   {
     "authors": "Baud, P. and Hall, S. and Heap, M.J. and Ji, Y. and Wong, T.F.",
     "year": "2021",
-    "title": "The Brittle‐Ductile Transition in Porous Limestone: Failure Mode, Constitutive Modeling of Inelastic Deformation and Strain Localization",
+    "title": "The Brittle\u2010Ductile Transition in Porous Limestone: Failure Mode, Constitutive Modeling of Inelastic Deformation and Strain Localization",
     "journal": "Journal of Geophysical Research: Solid Earth",
     "volume": "126",
     "issue": "5",
     "pages": "e2020JB021602",
     "url": "https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020JB021602",
-    "keywords": [
-      "Mechanics",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "Image Analysis"]
   },
   {
-    "authors": "Brenne, E.O. and Dahl, V.A. and Jørgensen, P.S.",
+    "authors": "Brenne, E.O. and Dahl, V.A. and J\u00f8rgensen, P.S.",
     "year": "2021",
     "title": "A physical model for microstructural characterization and segmentation of 3D tomography data",
     "journal": "Materials Characterization",
     "volume": "171",
     "pages": "110796",
     "url": "https://www.sciencedirect.com/science/article/pii/S1044580320322671",
-    "keywords": [
-      "Image Segmentation",
-      "Tomographic Reconstruction",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "Tomographic Reconstruction", "Computer Vision", "3D Imaging"]
   },
   {
-    "authors": "Heingård, M. and Musser, G. and Hall, S.A. and Clarke, J.A.",
+    "authors": "Heing\u00e5rd, M. and Musser, G. and Hall, S.A. and Clarke, J.A.",
     "year": "2021",
     "title": "New remains of scandiavis Mikkelseni inform avian phylogenetic relationships and brain evolution",
     "journal": "Diversity",
@@ -343,9 +258,7 @@
     "issue": "12",
     "pages": "651",
     "url": "https://www.mdpi.com/1424-2818/13/12/651",
-    "keywords": [
-      "Life Sciences"
-    ]
+    "keywords": ["Method Development", "Image Analysis"]
   },
   {
     "authors": "Jeppesen, N. and Jensen, P.M. and Christensen, A.N. and Dahl, A.B. and Dahl, V.A.",
@@ -354,10 +267,7 @@
     "booktitle": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
     "pages": "6260-6269",
     "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Jeppesen_Faster_Multi-Object_Segmentation_Using_Parallel_Quadratic_Pseudo-Boolean_Optimization_ICCV_2021_paper.html",
-    "keywords": [
-      "Image Segmentation",
-      "Computer Vision"
-    ]
+    "keywords": ["Computer Vision", "Image Analysis"]
   },
   {
     "authors": "Jeppesen, N. and Mikkelsen, L.P. and Dahl, A.B. and Christensen, A.N. and Dahl, V.A.",
@@ -367,10 +277,7 @@
     "volume": "149",
     "pages": "106541",
     "url": "https://www.sciencedirect.com/science/article/pii/S1359835X21002633",
-    "keywords": [
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "Method Development"]
   },
   {
     "authors": "Johansson, S. and Engqvist, J. and Tryding, J. and Hall, S.A.",
@@ -381,10 +288,7 @@
     "issue": "3",
     "pages": "581-608",
     "url": "https://link.springer.com/article/10.1007/s11340-020-00681-7",
-    "keywords": [
-      "Mechanics",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "3D Imaging"]
   },
   {
     "authors": "Koo, J. and Brenne, E.O. and Dahl, A.B. and Dahl, V.A.",
@@ -393,10 +297,7 @@
     "booktitle": "Proceedings of the Northern Lights Deep Learning Workshop",
     "volume": "2",
     "url": "https://septentrio.uit.no/index.php/nldl/article/view/5676",
-    "keywords": [
-      "Tomographic Reconstruction",
-      "Deep Learning"
-    ]
+    "keywords": ["Tomographic Reconstruction", "Machine Learning", "Method Development"]
   },
   {
     "authors": "Koo, J. and Dahl, A.B. and Dahl, V.A.",
@@ -406,24 +307,17 @@
     "volume": "7",
     "pages": "151-163",
     "url": "https://ieeexplore.ieee.org/abstract/document/9325545",
-    "keywords": [
-      "Tomographic Reconstruction",
-      "Image Segmentation",
-      "Computer Vision"
-    ]
+    "keywords": ["Tomographic Reconstruction", "Computer Vision"]
   },
   {
-    "authors": "Koo, J. and Dahl, A.B. and Bærentzen, J.A. and Chen, Q. and Bals, S. and Dahl, V.A.",
+    "authors": "Koo, J. and Dahl, A.B. and B\u00e6rentzen, J.A. and Chen, Q. and Bals, S. and Dahl, V.A.",
     "year": "2021",
     "title": "Shape from projections via differentiable forward projector for computed tomography",
     "journal": "Ultramicroscopy",
     "volume": "224",
     "pages": "113239",
     "url": "https://www.sciencedirect.com/science/article/pii/S0304399121000334",
-    "keywords": [
-      "Tomographic Reconstruction",
-      "Computer Vision"
-    ]
+    "keywords": ["X-ray Tomography", "Tomographic Reconstruction"]
   },
   {
     "authors": "Laprade, W.M. and Perslev, M. and Sporring, J.",
@@ -433,14 +327,10 @@
     "pages": "209-216",
     "publisher": "Springer, Cham",
     "url": "https://link.springer.com/chapter/10.1007/978-3-030-88210-5_20",
-    "keywords": [
-      "Image Segmentation",
-      "Deep Learning",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Computer Vision", "Image Analysis"]
   },
   {
-    "authors": "Perens, J. and Salinas, C.G. and Skytte, J.L. and Roostalu, U. and Dahl, A.B. and Dyrby, T.B. and Wichern, F. and Barkholt, P. and Vrang, N. and Jelsing, J. and Hecksher-Sørensen, J.",
+    "authors": "Perens, J. and Salinas, C.G. and Skytte, J.L. and Roostalu, U. and Dahl, A.B. and Dyrby, T.B. and Wichern, F. and Barkholt, P. and Vrang, N. and Jelsing, J. and Hecksher-S\u00f8rensen, J.",
     "year": "2021",
     "title": "An optimized mouse brain atlas for automated mapping and quantification of neuronal activity using iDISCO+ and light sheet fluorescence microscopy",
     "journal": "Neuroinformatics",
@@ -448,11 +338,7 @@
     "issue": "3",
     "pages": "433-446",
     "url": "https://link.springer.com/article/10.1007/s12021-020-09490-8",
-    "keywords": [
-      "Brain Imaging",
-      "Microscopy",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Perens, J. and Skytte, J.L. and Salinas, C.G. and Hecksher-Sorensen, J. and Dyrby, T.B. and Dahl, A.B.",
@@ -462,25 +348,18 @@
     "pages": "1433-1437",
     "publisher": "IEEE",
     "url": "https://ieeexplore.ieee.org/abstract/document/9434015",
-    "keywords": [
-      "Brain Imaging",
-      "Microscopy",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Image Analysis", "Method Development"]
   },
   {
-    "authors": "Peter Winkel Rasmussen and Anders Bjorholm Dahl and Henning Osholm Sørensen and Anders Nymark Christensen",
+    "authors": "Peter Winkel Rasmussen and Anders Bjorholm Dahl and Henning Osholm S\u00f8rensen and Anders Nymark Christensen",
     "year": "2021",
     "title": "Dynamic X-ray 3D imaging of fluid flow in Stevns Klint chalk",
-    "booktitle": "DHRTC Technology Conference 2021: Oil and Gas R&D towards 2050–supporting the energy transition",
+    "booktitle": "DHRTC Technology Conference 2021: Oil and Gas R&D towards 2050\u2013supporting the energy transition",
     "url": "https://orbit.dtu.dk/en/publications/dynamic-x-ray-3d-imaging-of-fluid-flow-in-stevns-klint-chalk",
-    "keywords": [
-      "X-ray Tomography",
-      "Materials Characterization"
-    ]
+    "keywords": ["X-ray Tomography", "Image Analysis", "3D Imaging"]
   },
   {
-    "authors": "Rasmussen, P.W. and Sørensen, H.O. and Bruns, S. and Dahl, A.B. and Christensen, A.N.",
+    "authors": "Rasmussen, P.W. and S\u00f8rensen, H.O. and Bruns, S. and Dahl, A.B. and Christensen, A.N.",
     "year": "2021",
     "title": "Improved dynamic imaging of multiphase flow by constrained tomographic reconstruction",
     "journal": "Scientific reports",
@@ -488,37 +367,28 @@
     "issue": "1",
     "pages": "1-14",
     "url": "https://www.nature.com/articles/s41598-021-91776-1",
-    "keywords": [
-      "Tomographic Reconstruction",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "Image Analysis", "Tomographic Reconstruction"]
   },
   {
-    "authors": "Reichardt, M. and Jensen, P.M. and Dahl, V.A. and Dahl, A.B. and Ackermann, M. and Shah, H. and Länger, F. and Werlein, C. and Kuehnel, M.P. and Jonigk, D. and Salditt, T.",
+    "authors": "Reichardt, M. and Jensen, P.M. and Dahl, V.A. and Dahl, A.B. and Ackermann, M. and Shah, H. and L\u00e4nger, F. and Werlein, C. and Kuehnel, M.P. and Jonigk, D. and Salditt, T.",
     "year": "2021",
     "title": "3D virtual histopathology of cardiac tissue from Covid-19 patients based on phase-contrast X-ray tomography",
     "journal": "Elife",
     "volume": "10",
     "pages": "e71359",
     "url": "https://elifesciences.org/articles/71359",
-    "keywords": [
-      "X-ray Tomography",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["X-ray Tomography", "Tomographic Reconstruction", "3D Imaging"]
   },
   {
-    "authors": "Stenqvist, T. and Hektor, J. and Bylund, S. and Moberg, R. and Edwards, M.O. and Hall, S.A. and Näslund, L.Å.",
+    "authors": "Stenqvist, T. and Hektor, J. and Bylund, S. and Moberg, R. and Edwards, M.O. and Hall, S.A. and N\u00e4slund, L.\u00c5.",
     "year": "2021",
-    "title": "3D X‐Ray Diffraction Characterization of Grain Growth and Recrystallization in Rolled Braze Clad Aluminum Sheet",
+    "title": "3D X\u2010Ray Diffraction Characterization of Grain Growth and Recrystallization in Rolled Braze Clad Aluminum Sheet",
     "journal": "Advanced Engineering Materials",
     "volume": "23",
     "issue": "11",
     "pages": "2100126",
     "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/adem.202100126",
-    "keywords": [
-      "X-ray Tomography",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "3D Imaging"]
   },
   {
     "authors": "Stephensen, H.J. and Svane, A.M. and Villanueva, C.B. and Goldman, S.A. and Sporring, J.",
@@ -529,38 +399,28 @@
     "issue": "8",
     "pages": "1069-1083",
     "url": "https://link.springer.com/article/10.1007/s10851-021-01041-3",
-    "keywords": [
-      "Morphology",
-      "Computer Vision"
-    ]
+    "keywords": ["Method Development"]
   },
   {
-    "authors": "Sørensen, H.O. and Rasmussen, P.W. and Dahl, A.B. and Christensen, A.",
+    "authors": "S\u00f8rensen, H.O. and Rasmussen, P.W. and Dahl, A.B. and Christensen, A.",
     "year": "2021",
     "title": "Tri-axial flow cell for dynamic CT",
-    "booktitle": "DHRTC Technology Conference 2021: Oil and Gas R&D towards 2050–supporting the energy transition",
+    "booktitle": "DHRTC Technology Conference 2021: Oil and Gas R&D towards 2050\u2013supporting the energy transition",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WsgfNRMAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=WsgfNRMAAAAJ:mlAyqtXpCwEC",
-    "keywords": [
-      "Tomographic Reconstruction",
-      "Materials Characterization"
-    ]
+    "keywords": ["X-ray Tomography", "Image Analysis"]
   },
   {
-    "authors": "Townsend, P. and Larsson, E. and Karlson, T. and Hall, S.A. and Lundman, M. and Bergström, P. and Hanson, C. and Lorén, N. and Gebäck, T. and Särkkä, A. and Röding, M.",
+    "authors": "Townsend, P. and Larsson, E. and Karlson, T. and Hall, S.A. and Lundman, M. and Bergstr\u00f6m, P. and Hanson, C. and Lor\u00e9n, N. and Geb\u00e4ck, T. and S\u00e4rkk\u00e4, A. and R\u00f6ding, M.",
     "year": "2021",
     "title": "Stochastic modelling of 3D fiber structures imaged with X-ray microtomography",
     "journal": "Computational Materials Science",
     "volume": "194",
     "pages": "110433",
     "url": "https://doi.org/10.1016/j.commatsci.2021.110433",
-    "keywords": [
-      "X-ray Tomography",
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["Tomographic Reconstruction", "Materials Characterization", "3D Imaging", "X-ray Tomography"]
   },
   {
-    "authors": "Törnquist, E. and Le Cann, S. and Tudisco, E. and Tengattini, A. and Andò, E. and Lenoir, N. and Hektor, J. and Raina, D.B. and Tägil, M. and Hall, S.A. and Isaksson, H.",
+    "authors": "T\u00f6rnquist, E. and Le Cann, S. and Tudisco, E. and Tengattini, A. and And\u00f2, E. and Lenoir, N. and Hektor, J. and Raina, D.B. and T\u00e4gil, M. and Hall, S.A. and Isaksson, H.",
     "year": "2021",
     "title": "Dual modality neutron and x-ray tomography for enhanced image analysis of the bone-metal interface",
     "journal": "Physics in Medicine & Biology",
@@ -568,11 +428,7 @@
     "issue": "13",
     "pages": "135016",
     "url": "https://iopscience.iop.org/article/10.1088/1361-6560/ac02d4/meta",
-    "keywords": [
-      "X-ray Tomography",
-      "Neutron Imaging",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Tomographic Reconstruction", "Materials Characterization", "Image Analysis", "Neutron Imaging"]
   },
   {
     "authors": "Wang, Y. and Emerson, M.J. and Conradsen, K. and Dahl, A.B. and Dahl, V.A. and Maire, E. and Withers, P.J.",
@@ -582,25 +438,18 @@
     "volume": "213",
     "pages": "108929",
     "url": "https://www.sciencedirect.com/science/article/pii/S0266353821002852",
-    "keywords": [
-      "Composites",
-      "Mechanics",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "Image Analysis"]
   },
   {
     "authors": "Andersson, M. and Kjer, H.M. and Rafael-Patino, J. and Pacureanu, A. and Pakkenberg, B. and Thiran, J.P. and Ptito, M. and Bech, M. and Dahl, A.B. and Dahl, V.A. and Dyrby, T.B.",
     "year": "2020",
-    "title": "Axon morphology is modulated by the local environment and impacts the noninvasive investigation of its structure–function relationship",
+    "title": "Axon morphology is modulated by the local environment and impacts the noninvasive investigation of its structure\u2013function relationship",
     "journal": "Proceedings of the National Academy of Sciences",
     "volume": "117",
     "issue": "52",
     "pages": "33649-33659",
     "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2012533117",
-    "keywords": [
-      "Morphology",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Cattaneo, C. and Liu, J. and Wang, C. and Pagliarini, E. and Sporring, J. and Bredie, W.L.",
@@ -611,10 +460,7 @@
     "issue": "1",
     "pages": "1-15",
     "url": "https://www.nature.com/articles/s41598-020-75678-2",
-    "keywords": [
-      "Biomedical Imaging",
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis", "Method Development", "Machine Learning", "Computer Vision"]
   },
   {
     "authors": "Dahl, V.A. and Emerson, M.J. and Trinderup, C.H. and Dahl, A.B.",
@@ -623,10 +469,7 @@
     "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops",
     "pages": "994-995",
     "url": "https://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Dahl_Content-Based_Propagation_of_User_Markings_for_Interactive_Segmentation_of_Patterned_CVPRW_2020_paper.html",
-    "keywords": [
-      "Image Segmentation",
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Dahlin, L.B. and Rix, K.R. and Dahl, V.A. and Dahl, A.B. and Jensen, J.N. and Cloetens, P. and Pacureanu, A. and Mohseni, S. and Thomsen, N.O. and Bech, M.",
@@ -637,10 +480,7 @@
     "issue": "1",
     "pages": "1-8",
     "url": "https://www.nature.com/articles/s41598-020-64430-5",
-    "keywords": [
-      "X-ray Tomography",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["X-ray Tomography", "Tomographic Reconstruction", "3D Imaging"]
   },
   {
     "authors": "Jensen, P.M. and Dahl, A.B. and Dahl, V.A.",
@@ -649,10 +489,7 @@
     "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops",
     "pages": "976-977",
     "url": "http://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Jensen_Multi-Object_Graph-Based_Segmentation_With_Non-Overlapping_Surfaces_CVPRW_2020_paper.html",
-    "keywords": [
-      "Image Segmentation",
-      "Computer Vision"
-    ]
+    "keywords": ["Computer Vision", "Image Analysis"]
   },
   {
     "authors": "Jeppesen, N. and Christensen, A.N. and Dahl, V.A. and Dahl, A.B.",
@@ -661,10 +498,7 @@
     "booktitle": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
     "pages": "12777-12785",
     "url": "http://openaccess.thecvf.com/content_CVPR_2020/html/Jeppesen_Sparse_Layered_Graphs_for_Multi-Object_Segmentation_CVPR_2020_paper.html",
-    "keywords": [
-      "Image Segmentation",
-      "Computer Vision"
-    ]
+    "keywords": ["Computer Vision", "Image Analysis"]
   },
   {
     "authors": "Jeppesen, N. and Dahl, V.A. and Christensen, A.N. and Dahl, A.B. and Mikkelsen, L.P.",
@@ -676,10 +510,7 @@
     "pages": "012037",
     "publisher": "IOP Publishing",
     "url": "https://iopscience.iop.org/article/10.1088/1757-899X/942/1/012037/meta",
-    "keywords": [
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "Image Analysis"]
   },
   {
     "authors": "Kjer, H.M. and Andersson, M. and He, Y. and Elkjaer, M.L. and Pacureanu, A. and Illes, Z. and Pakkenberg, B. and Dahl, A.B. and Dahl, V.A. and Dyrby, T.B.",
@@ -689,23 +520,17 @@
     "pages": "1-3",
     "publisher": "The International Society for Magnetic Resonance in Medicine",
     "url": "https://orbit.dtu.dk/en/publications/streamline-tractography-for-3d-mapping-of-axon-bundle-organizatio",
-    "keywords": [
-      "Brain Imaging",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Image Analysis", "Machine Learning", "3D Imaging"]
   },
   {
-    "authors": "Lindhøj, M.B. and Henriksen, T. and Pedersen, L. and Sporring, J.",
+    "authors": "Lindh\u00f8j, M.B. and Henriksen, T. and Pedersen, L. and Sporring, J.",
     "year": "2019",
     "title": "Using a high-level parallel programming language for GPU-accelerated tomographic reconstruction",
     "booktitle": "2019 International Conference on High Performance Computing & Simulation (HPCS)",
     "pages": "27-32",
     "publisher": "IEEE",
     "url": "https://ieeexplore.ieee.org/abstract/document/9188217/",
-    "keywords": [
-      "Tomographic Reconstruction",
-      "Computer Vision"
-    ]
+    "keywords": ["Tomographic Reconstruction", "Image Analysis"]
   },
   {
     "authors": "Andersson, M. and Rafael-Patino, J. and Kjer, H.M. and Dahl, V.A. and Pacureanu, A. and Bech, M. and Dahl, A.B. and Thiran, J.P. and Dyrby, T.B.",
@@ -715,21 +540,16 @@
     "pages": "1-3",
     "publisher": "The International Society for Magnetic Resonance in Medicine",
     "url": "https://orbit.dtu.dk/en/publications/the-impact-of-axon-orientation-dispersion-and-3d-diameter-variati",
-    "keywords": [
-      "Biomedical Imaging"
-    ]
+    "keywords": ["3D Imaging", "Image Analysis"]
   },
   {
-    "authors": "Nyboe Ørting, S. and Teglbjærg Stephensen, H.J. and Sporring, J.",
+    "authors": "Nyboe \u00d8rting, S. and Teglbj\u00e6rg Stephensen, H.J. and Sporring, J.",
     "year": "2020",
     "title": "Morphology on categorical distributions",
     "journal": "arXiv e-prints",
     "pages": "arXiv-2012",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201207315N/abstract",
-    "keywords": [
-      "Morphology",
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Wang, C. and Cattaneo, C. and Liu, J. and Bredie, W. and Pagliarini, E. and Sporring, J.",
@@ -739,21 +559,15 @@
     "pages": "36-45",
     "publisher": "Springer, Cham",
     "url": "https://link.springer.com/chapter/10.1007/978-3-030-59722-1_4",
-    "keywords": [
-      "Biomedical Imaging",
-      "Computer Vision"
-    ]
+    "keywords": ["Method Development", "Image Analysis"]
   },
   {
-    "authors": "Ørting, S.N. and Stephensen, H.J.T. and Sporring, J.",
+    "authors": "\u00d8rting, S.N. and Stephensen, H.J.T. and Sporring, J.",
     "year": "2020",
     "title": "Morphology on categorical distributions",
     "journal": "arXiv preprint arXiv:2012.07315",
     "url": "https://arxiv.org/abs/2012.07315",
-    "keywords": [
-      "Morphology",
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Borg, L. and Sporring, J. and Dam, E.B. and Dahl, V.A. and Dyrby, T.B. and Feidenhans, R. and Dahl, A.B. and Pingel, J.",
@@ -763,10 +577,7 @@
     "volume": "107",
     "pages": "265-269",
     "url": "https://www.sciencedirect.com/science/article/pii/S0010482519300551",
-    "keywords": [
-      "X-ray Tomography",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["X-ray Tomography", "Tomographic Reconstruction", "3D Imaging"]
   },
   {
     "authors": "Dahl, V.A. and Dahl, A.B.",
@@ -776,10 +587,7 @@
     "pages": "357-368",
     "publisher": "Springer, Cham",
     "url": "https://link.springer.com/chapter/10.1007/978-3-030-22368-7_28",
-    "keywords": [
-      "Image Segmentation",
-      "Computer Vision"
-    ]
+    "keywords": ["Computer Vision", "Image Analysis"]
   },
   {
     "authors": "Emerson, M.J. and Dahl, A.B. and Conradsen, K. and Dahl, V.A.",
@@ -788,10 +596,7 @@
     "booktitle": "22nd International Conference On Composite Materials (ICCM22)",
     "address": "Melbourne, Australia",
     "url": "https://orbit.dtu.dk/files/190197001/ICCM22_Full_Paper_Submission_monj.pdf",
-    "keywords": [
-      "Image Segmentation",
-      "Composites"
-    ]
+    "keywords": ["Software Development", "Computer Vision"]
   },
   {
     "authors": "Emerson, M.J. and Jespersen, K.M. and Wang, Y. and Withers, P.J. and Dahl, V.A. and Conradsen, K. and Mikkelsen, L.P. and Dahl, A.B.",
@@ -800,10 +605,7 @@
     "booktitle": "Int. Conf. Tomography of Materials & Structures",
     "address": "Cairns, Australia",
     "url": "https://orbit.dtu.dk/en/publications/insegt-fibre-a-powerful-segmentation-tool-for-quantifying-fibre-a",
-    "keywords": [
-      "Image Segmentation",
-      "Composites"
-    ]
+    "keywords": ["Materials Characterization", "Software Development", "Computer Vision"]
   },
   {
     "authors": "Hempel, C. and Sporring, J. and Kurtzhals, J.A.L.",
@@ -814,9 +616,7 @@
     "issue": "2",
     "pages": "2058-2071",
     "url": "https://faseb.onlinelibrary.wiley.com/doi/abs/10.1096/fj.201800657R",
-    "keywords": [
-      "Life Sciences"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Jensen, P.M. and Trinderup, C.H. and Dahl, A.B. and Dahl, V.A.",
@@ -826,22 +626,17 @@
     "pages": "128-139",
     "publisher": "Springer, Cham",
     "url": "https://link.springer.com/chapter/10.1007/978-3-030-20205-7_11",
-    "keywords": [
-      "Morphology",
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis", "Method Development"]
   },
   {
-    "authors": "Nguyen, T.T. and Dahl, V.A. and Bærentzen, J.A. and Dahl, A.B.",
+    "authors": "Nguyen, T.T. and Dahl, V.A. and B\u00e6rentzen, J.A. and Dahl, A.B.",
     "year": "2019",
     "title": "Deformable Mesh Evolved by Similarity of Image Patches",
     "booktitle": "2019 IEEE International Conference on Image Processing (ICIP)",
     "pages": "2731-2735",
     "publisher": "IEEE",
     "url": "https://ieeexplore.ieee.org/abstract/document/8803365/",
-    "keywords": [
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis"]
   },
   {
     "authors": "Saxena, P. and Bissacco, G. and Gundlach, C. and Dahl, V.A. and Trinderup, C.H. and Dahl, A.B.",
@@ -849,10 +644,7 @@
     "title": "Process characterization for molding of paper bottles using computed tomography and structure tensor analysis",
     "booktitle": "9th Conference on industrial computed tomography",
     "url": "https://orbit.dtu.dk/en/publications/process-characterization-for-molding-of-paper-bottles-using-compu",
-    "keywords": [
-      "X-ray Tomography",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "X-ray Tomography", "Tomographic Reconstruction"]
   },
   {
     "authors": "Dahl, V.A. and Dahl, A.B. and Trinderup, C.H. and Gundlach, C.",
@@ -862,9 +654,7 @@
     "pages": "3074-3080",
     "publisher": "IEEE",
     "url": "https://ieeexplore.ieee.org/abstract/document/8546206/",
-    "keywords": [
-      "Computer Vision"
-    ]
+    "keywords": ["Computer Vision", "Image Analysis"]
   },
   {
     "authors": "Dahl, V.A. and Koo, J. and Hansen, P.C. and Dahl, A.B.",
@@ -872,11 +662,7 @@
     "title": "Deformable Curves for Outlining Objects Directly From Projections",
     "booktitle": "69th Annual Conference of the Nordic Microscopy Society",
     "url": "https://orbit.dtu.dk/en/publications/deformable-curves-for-outlining-objects-directly-from-projections",
-    "keywords": [
-      "Image Segmentation",
-      "Tomographic Reconstruction",
-      "Computer Vision"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Emerson, M.J. and Dahl, A.B. and Dahl, V.A. and Conradsen, K. and Wang, Y. and Withers, P.J. and Jespersen, K.M. and Mikkelsen, L.P.",
@@ -884,11 +670,7 @@
     "title": "Understanding UD Fibre-reinforced Polymers through X-ray Imaging and Individual Fibre Tracking",
     "booktitle": "69th Annual Conference of the Nordic Microscopy Society",
     "url": "https://orbit.dtu.dk/en/publications/understanding-ud-fibre-reinforced-polymers-through-x-ray-imaging-",
-    "keywords": [
-      "X-ray Tomography",
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "X-ray Tomography", "Image Analysis"]
   },
   {
     "authors": "Emerson, M.J. and Dahl, V.A. and Conradsen, K. and Mikkelsen, L.P. and Dahl, A.B.",
@@ -898,10 +680,7 @@
     "volume": "18",
     "pages": "1388-1393",
     "url": "https://www.sciencedirect.com/science/article/pii/S235234091830386X",
-    "keywords": [
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "Multimodal Imaging"]
   },
   {
     "authors": "Emerson, M.J. and Dahl, V.A. and Conradsen, K. and Mikkelsen, L.P. and Dahl, A.B.",
@@ -911,11 +690,7 @@
     "volume": "160",
     "pages": "208-215",
     "url": "https://www.sciencedirect.com/science/article/pii/S0266353818302896",
-    "keywords": [
-      "Image Segmentation",
-      "Microscopy",
-      "Composites"
-    ]
+    "keywords": ["Materials Characterization", "Computer Vision"]
   },
   {
     "authors": "Emerson, M.J. and Wang, Y. and Withers, P.J. and Conradsen, K. and Dahl, A.B. and Dahl, V.A.",
@@ -925,11 +700,7 @@
     "volume": "168",
     "pages": "47-54",
     "url": "https://www.sciencedirect.com/science/article/pii/S0266353818319943",
-    "keywords": [
-      "X-ray Tomography",
-      "Composites",
-      "Mechanics"
-    ]
+    "keywords": ["Materials Characterization", "X-ray Tomography", "Image Analysis"]
   },
   {
     "authors": "Fedrigo, A. and Marstal, K. and Bender Koch, C. and Andersen Dahl, V. and Bjorholm Dahl, A. and Lyksborg, M. and Gundlach, C. and Ott, F. and Strobl, M.",
@@ -940,11 +711,7 @@
     "issue": "5",
     "pages": "72",
     "url": "https://www.mdpi.com/2313-433X/4/5/72",
-    "keywords": [
-      "X-ray Tomography",
-      "Neutron Imaging",
-      "Materials Characterization"
-    ]
+    "keywords": ["Neutron Imaging", "Tomographic Reconstruction", "Multimodal Imaging", "X-ray Tomography"]
   },
   {
     "authors": "Kehl, C. and Mustafa, W. and Kehres, J. and Dahl, A.B. and Olsen, U.L.",
@@ -952,11 +719,7 @@
     "title": "Multi-Spectral Imaging via Computed Tomography (MUSIC)-Comparing Unsupervised Spectral Segmentations for Material Differentiation",
     "journal": "arXiv preprint arXiv:1810.11823",
     "url": "https://arxiv.org/abs/1810.11823",
-    "keywords": [
-      "X-ray Tomography",
-      "Image Segmentation",
-      "Materials Characterization"
-    ]
+    "keywords": ["Tomographic Reconstruction", "Materials Characterization", "X-ray Tomography", "Image Analysis"]
   },
   {
     "authors": "Sales, M. and Strobl, M. and Shinohara, T. and Tremsin, A. and Kuhn, L.T. and Lionheart, W.R. and Desai, N.M. and Dahl, A.B. and Schmidt, S.",
@@ -967,23 +730,18 @@
     "issue": "1",
     "pages": "1-6",
     "url": "https://www.nature.com/articles/s41598-018-20461-7",
-    "keywords": [
-      "Neutron Imaging",
-      "Materials Characterization"
-    ]
+    "keywords": ["Neutron Imaging", "Tomographic Reconstruction"]
   },
   {
     "authors": "Sporring, J.",
     "year": "2018",
-    "title": "Estimating the Continuous Entropy of a Discrete Set of Orientations in R↑ 3",
+    "title": "Estimating the Continuous Entropy of a Discrete Set of Orientations in R\u2191 3",
     "publisher": "Department of Computer Science, University of Copenhagen",
     "url": "https://arxiv.org/abs/1806.04371",
-    "keywords": [
-      "Morphology"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
-    "authors": "Borg, L. and Jørgensen, J.S. and Frikel, J. and Sporring, J.",
+    "authors": "Borg, L. and J\u00f8rgensen, J.S. and Frikel, J. and Sporring, J.",
     "year": "2017",
     "title": "Reduction of variable-truncation artifacts from beam occlusion during in situ x-ray tomography",
     "journal": "Measurement Science and Technology",
@@ -991,30 +749,23 @@
     "issue": "12",
     "pages": "124004",
     "url": "https://iopscience.iop.org/article/10.1088/1361-6501/aa8c27/meta",
-    "keywords": [
-      "X-ray Tomography",
-      "Tomographic Reconstruction"
-    ]
+    "keywords": ["X-ray Tomography", "Tomographic Reconstruction"]
   },
   {
-    "authors": "Borg, L. and Jørgensen, J.S. and Frikel, J. and Quinto, E.T. and Sporring, J.",
+    "authors": "Borg, L. and J\u00f8rgensen, J.S. and Frikel, J. and Quinto, E.T. and Sporring, J.",
     "year": "2017",
     "title": "Reducing artifacts from varying projection truncations",
     "booktitle": "3rd International Conference on Tomography of 3D Materials and Structures",
     "url": "https://orbit.dtu.dk/en/publications/reducing-artifacts-from-varying-projection-truncations",
-    "keywords": [
-      "Tomographic Reconstruction"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
-    "authors": "Borg, L. and Sporring, J. and Jørgensen, J.S.",
+    "authors": "Borg, L. and Sporring, J. and J\u00f8rgensen, J.S.",
     "year": "2017",
     "title": "Towards characterizing and reducing artifacts caused by varying projection truncation",
     "publisher": "Department of Computer Science, University of Copenhagen",
     "url": "https://di.ku.dk/english/research/Rapporter/Borg17-Towards%20characterizing%20and%20reducing%20artifacts%20caused%20by%20varying%20projection%20truncation.pdf",
-    "keywords": [
-      "Tomographic Reconstruction"
-    ]
+    "keywords": ["Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Dahl, V.A. and Dahl, A.B.",
@@ -1024,10 +775,7 @@
     "pages": "421-432",
     "publisher": "Springer, Cham",
     "url": "https://link.springer.com/chapter/10.1007/978-3-319-58771-4_34",
-    "keywords": [
-      "Morphology",
-      "Computer Vision"
-    ]
+    "keywords": ["Software Development", "Method Development"]
   },
   {
     "authors": "Dahl, V.A. and Dahl, A.B. and Hansen, P.C.",
@@ -1038,25 +786,17 @@
     "issue": "1",
     "pages": "014003",
     "url": "https://iopscience.iop.org/article/10.1088/1361-6501/aa9260/meta",
-    "keywords": [
-      "Image Segmentation",
-      "X-ray Tomography",
-      "Computer Vision"
-    ]
+    "keywords": ["X-ray Tomography", "Computer Vision"]
   },
   {
-    "authors": "Einarsson, G. and Jensen, J.N. and Paulsen, R.R. and Einarsdottir, H. and Ersbøll, B.K. and Dahl, A.B. and Christensen, L.B.",
+    "authors": "Einarsson, G. and Jensen, J.N. and Paulsen, R.R. and Einarsdottir, H. and Ersb\u00f8ll, B.K. and Dahl, A.B. and Christensen, L.B.",
     "year": "2017",
     "title": "Foreign object detection in multispectral x-ray images of food items using sparse discriminant analysis",
     "booktitle": "Scandinavian Conference on Image Analysis",
     "pages": "350-361",
     "publisher": "Springer, Cham",
     "url": "https://link.springer.com/chapter/10.1007/978-3-319-59129-2_30",
-    "keywords": [
-      "X-ray Tomography",
-      "Computer Vision",
-      "Materials Characterization"
-    ]
+    "keywords": ["X-ray Tomography", "Image Analysis", "Computer Vision"]
   },
   {
     "authors": "Emerson, M.J. and Dahl, A.B. and Dahl, V.A. and Conradsen, K. and Mikkelsen, L.P.",
@@ -1064,10 +804,7 @@
     "title": "New approach for validating the segmentation of 3D data applied to individual fibre extraction",
     "booktitle": "3rd International Conference on Tomography of 3D Materials and Structures",
     "url": "https://orbit.dtu.dk/en/publications/new-approach-for-validating-the-segmentation-of-3d-data-applied-t",
-    "keywords": [
-      "Image Segmentation",
-      "Composites"
-    ]
+    "keywords": ["Method Development", "Computer Vision", "3D Imaging"]
   },
   {
     "authors": "Emerson, M.J. and Dahl, V.A. and Mikkelsen, L.P. and Dahl, A.B. and Conradsen, K.",
@@ -1076,11 +813,7 @@
     "booktitle": "30th Nordic Seminar on Computational Mechanics (NSCM-30)",
     "pages": "59",
     "url": "https://orbit.dtu.dk/en/publications/geometrical-characterisation-of-individual-fibres-from-x-ray-tomo",
-    "keywords": [
-      "X-ray Tomography",
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["X-ray Tomography", "Image Analysis"]
   },
   {
     "authors": "Emerson, M.J. and Jespersen, K.M. and Dahl, A.B. and Conradsen, K. and Mikkelsen, L.P.",
@@ -1090,11 +823,7 @@
     "volume": "97",
     "pages": "83-92",
     "url": "https://www.sciencedirect.com/science/article/pii/S1359835X16304705",
-    "keywords": [
-      "X-ray Tomography",
-      "Image Segmentation",
-      "Composites"
-    ]
+    "keywords": ["Tomographic Reconstruction", "Materials Characterization", "3D Imaging", "X-ray Tomography"]
   },
   {
     "authors": "Emerson, M.J. and Wang, Y. and Jespersen, K.M. and Mikkelsen, L.P. and Withers, P.J. and Conradsen, K. and Dahl, V.A. and Dahl, A.B.",
@@ -1102,11 +831,7 @@
     "title": "Unidirectional Fibre Composite Characterisation from X-ray Tomography",
     "booktitle": "TMS 2017: 146th Annual Meeting and Exhibition",
     "url": "https://orbit.dtu.dk/en/publications/unidirectional-fibre-composite-characterisation-from-x-ray-tomogr",
-    "keywords": [
-      "X-ray Tomography",
-      "Composites",
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "X-ray Tomography", "Tomographic Reconstruction"]
   },
   {
     "authors": "Kheirabadi, M. and Mustafa, W. and Lyksborg, M. and Olsen, U.L. and Dahl, A.B.",
@@ -1117,50 +842,38 @@
     "pages": "1039113",
     "publisher": "International Society for Optics and Photonics",
     "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10391/1039113/Multispectral-x-ray-CT--multivariate-statistical-analysis-for-efficient/10.1117/12.2273936.short",
-    "keywords": [
-      "X-ray Tomography",
-      "Tomographic Reconstruction",
-      "Materials Characterization"
-    ]
+    "keywords": ["X-ray Tomography", "Tomographic Reconstruction"]
   },
   {
-    "authors": "Mukherjee, K. and Fæster, S. and Hansen, N. and Dahl, A.B. and Gundlach, C. and Frandsen, J.O. and Sturlason, A.",
+    "authors": "Mukherjee, K. and F\u00e6ster, S. and Hansen, N. and Dahl, A.B. and Gundlach, C. and Frandsen, J.O. and Sturlason, A.",
     "year": "2017",
     "title": "Graphite nodules in fatigue-tested cast iron characterized in 2D and 3D",
     "journal": "Materials Characterization",
     "volume": "129",
     "pages": "169-178",
     "url": "https://www.sciencedirect.com/science/article/pii/S1044580317304709",
-    "keywords": [
-      "Materials Characterization"
-    ]
+    "keywords": ["Materials Characterization", "3D Imaging"]
   },
   {
-    "authors": "Neldam, C.A. and Sporring, J. and Rack, A. and Lauridsen, T. and Hauge, E.M. and Jørgensen, H.L. and Jørgensen, N.R. and Feidenhansl, R. and Pinholt, E.M.",
+    "authors": "Neldam, C.A. and Sporring, J. and Rack, A. and Lauridsen, T. and Hauge, E.M. and J\u00f8rgensen, H.L. and J\u00f8rgensen, N.R. and Feidenhansl, R. and Pinholt, E.M.",
     "year": "2017",
-    "title": "Synchrotron radiation μCT and histology evaluation of bone-to-implant contact",
+    "title": "Synchrotron radiation \u03bcCT and histology evaluation of bone-to-implant contact",
     "journal": "Journal of Cranio-Maxillofacial Surgery",
     "volume": "45",
     "issue": "9",
     "pages": "1448-1457",
     "url": "https://www.sciencedirect.com/science/article/pii/S1010518217302068",
-    "keywords": [
-      "X-ray Tomography",
-      "Biomedical Imaging"
-    ]
+    "keywords": ["Materials Characterization", "Image Analysis"]
   },
   {
     "authors": "Sun, J. and Zhang, Y.B. and Dahl, A.B. and Conradsen, K. and JUUL JENSEN, D.",
     "year": "2017",
-    "title": "A method to characterize the roughness of 2‐D line features: recrystallization boundaries",
+    "title": "A method to characterize the roughness of 2\u2010D line features: recrystallization boundaries",
     "journal": "Journal of Microscopy",
     "volume": "265",
     "issue": "3",
     "pages": "313-321",
     "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jmi.12492",
-    "keywords": [
-      "Microscopy",
-      "Materials Characterization"
-    ]
+    "keywords": ["Method Development", "Image Analysis"]
   }
 ]
