@@ -51,3 +51,22 @@ body {
   width: 100%;
   max-width: 80rem;
 }
+
+/* Navigation link with underline animation */
+.nav-link {
+  @apply relative inline-block;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-[-4px] left-1/2 -translate-x-1/2 h-px w-0 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full left-0 translate-x-0;
+}
+
+/* Active page indicator */
+.nav-link.active::after {
+  @apply w-full left-0 translate-x-0;
+}

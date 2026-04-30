@@ -71,7 +71,7 @@
       <ul class="flex flex-col gap-8 xl:flex-row">
         {{ range site.Menus.main }}
           <li class="text-center">
-            <a class="text-primary" href="{{ .URL }}">{{ .Name }}</a>
+            <a class="nav-link text-primary{{ if eq (strings.TrimSuffix "/" $.RelPermalink) (strings.TrimSuffix "/" .URL) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
           </li>
         {{ end }}
       </ul>
