@@ -237,9 +237,9 @@
       const keywordStr = pub.dataset.keywords || ''; // Handle missing keywords
       const keywords = keywordStr ? keywordStr.split(',').map(kw => kw.trim()).filter(kw => kw) : [];
       
-      // Show if no filters active OR if publication has any of the active keywords
-      const shouldShow = activeFilters.size === 0 || 
-                        keywords.some(kw => activeFilters.has(kw));
+      // Show if no filters active OR if publication has all of the active keywords
+      const shouldShow = activeFilters.size === 0 ||
+                        [...activeFilters].every(kw => keywords.includes(kw));
       
       if (shouldShow) {
         pub.style.display = 'flex';
