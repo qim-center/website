@@ -1,0 +1,73 @@
+{{ define "main" }}
+  <section class="py-16">
+    <div class="container mx-auto px-4 mb-24">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-32 items-center">
+        <div>
+          <div class="mb-8">
+            {{ with .Title }}
+              <h1 class="markdown-title text-3xl xl:text-4xl font-bold xl:leading-normal mb-6">{{ . | markdownify }}</h1>
+            {{ end }}
+            {{ with .Description }}
+              <p class="text-lg xl:leading-loose font-medium text-[#777777]">{{ . }}</p>
+            {{ end }}
+          </div>
+          {{ if .Params.tags }}
+            <div class="flex flex-wrap items-center gap-4">
+              {{ range .Params.tags }}
+                {{ partial "components/button/pill" (dict "label" . "href" (printf "%s/tags/%s" site.BaseURL .) )}}
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+
+        {{ if .Params.image }}
+          <div class="highlight-image max-h-[320px]">
+            {{ $img := .Params.image }}
+            {{ $src := printf "%v" $img }}
+            {{ if strings.HasSuffix (lower $src) ".svg" }}
+              {{ partial "utilities/svg" (dict
+                "src"  $src
+                "alt"  .Title
+                "class" "w-full h-full object-contain object-center"
+              ) }}
+            {{ else }}
+              {{ partial "utilities/image" (dict
+                "src"  $src
+                "alt"  .Title
+                "class" "w-full h-full object-contain object-center"
+              ) }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Tool Details -->
+    <div class="container mx-auto px-4 mb-28">
+      <div class="prose-lg prose prose-img:max-w-full mx-auto max-w-5xl">
+        {{ .Content }}
+      </div>
+
+      <!-- Tool Metadata Card -->
+      <div class="max-w-5xl mx-auto mt-16 bg-gray-50 rounded-xl p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {{ with .Params.authors }}
+            <div>
+              <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Authors</h3>
+              <p class="text-gray-900">{{ . }}</p>
+            </div>
+          {{ end }}
+          {{ with .Params.source_url }}
+            <div>
+              <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Source Code</h3>
+              <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-primary">
+                <i class="fa-brands fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

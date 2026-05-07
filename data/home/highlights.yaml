@@ -1,38 +1,38 @@
-enable: true
+enable: false
 
 items:
-  - title: "Analysis advice for beamtime data"
-    text: "Guidance on optimal image acquisition, live quality checks during beamtime, and comprehensive data analysis support."
+  - title: 'Analysis advice for beamtime data'
+    text: 'Guidance on optimal image acquisition, live quality checks during beamtime, and comprehensive data analysis support.'
     button:
-      label: "Learn More"
-      link: "#beamtime-advice"
+      label: 'Learn More'
+      link: '#beamtime-advice'
 
-  - title: "Online platform for data analysis"
-    text: "Access our comprehensive online platform designed for efficient data analysis and processing of your beamtime results."
+  - title: 'Online platform for data analysis'
+    text: 'Access our comprehensive online platform designed for efficient data analysis and processing of your beamtime results.'
     button:
-      label: "Access Platform"
-      link: "#platform"
+      label: 'Access Platform'
+      link: '#platform'
 
-  - title: "Software"
-    text: "Easy to use Python libraries (qim3d and CIL) for advanced image processing and analysis."
+  - title: 'Software'
+    text: 'Easy to use Python libraries (qim3d and CIL) for advanced image processing and analysis.'
     button:
-      label: "View Documentation"
-      link: "#software"
-      
-  - title: "Training"
-    text: "Comprehensive workshops and written material, including interactive notebooks to help you master the tools and techniques."
-    button:
-      label: "See Workshops"
-      link: "#training"
+      label: 'View Documentation'
+      link: '#software'
 
-  - title: "Method development"
-    text: "We develop custom methods and solutions for scientific collaborations tailored to your research needs."
+  - title: 'Training'
+    text: 'Comprehensive workshops and written material, including interactive notebooks to help you master the tools and techniques.'
     button:
-      label: "Collaborate"
-      link: "#method-development"
+      label: 'See Workshops'
+      link: '#training'
 
-  - title: "Datasets"
-    text: "Access curated datasets for testing and development of your analysis workflows."
+  - title: 'Method development'
+    text: 'We develop custom methods and solutions for scientific collaborations tailored to your research needs.'
     button:
-      label: "Browse Datasets"
-      link: "#datasets"
+      label: 'Collaborate'
+      link: '#method-development'
+
+  - title: 'Datasets'
+    text: 'Access curated datasets for testing and development of your analysis workflows.'
+    button:
+      label: 'Browse Datasets'
+      link: '#datasets'
