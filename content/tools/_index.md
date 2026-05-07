@@ -6,5 +6,5 @@ Below you will find an overview of QIM developed software tools. The tools are f
 """
 author = "Qim Center"
 tags = ["index"]
-image = "images/shared/qim-background_perspective.png"
+image = "images/tools/software-tools.jpg"
 +++

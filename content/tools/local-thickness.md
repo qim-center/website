@@ -1,8 +1,8 @@
 +++
 title = "Local Thickness"
 description = "A lightweight pip-installable tool for computing local thickness in 3D images."
-authors = "Anders Bjorholm Dahl"
-tags = ["Thickness", "3D"]
+authors = "Vedrana Andersen Dahl, Anders Bjorholm Dahl"
+tags = ["Analysis"]
 image = "images/tools/local-thickness.png"
 source_url = "https://github.com/qim-center/local-thickness"
 +++

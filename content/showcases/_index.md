@@ -8,5 +8,5 @@ Below you can find a glimpse of our portfolio.
 """
 author = "Qim Center"
 tags = ["index"]
-image = "images/shared/qim-background_perspective.png"
+image = "images/showcases/showcases.jpg"
 +++

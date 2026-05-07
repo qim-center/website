@@ -1,10 +1,10 @@
 +++
 title = "Structure Tensor"
 description = "Analyses orientation in volumetric images using the structure tensor method."
-authors = "Hans Martin Kjer, Rasmus Larsen"
-tags = ["Orientation", "Analysis"]
+authors = "Niels Jeppesen"
+tags = ["Analysis"]
 image = "images/tools/structure-tensor.png"
-source_url = "https://github.com/qim-center/structure-tensor"
+source_url = "https://github.com/Skielex/structure-tensor"
 +++
 
 ## Overview
