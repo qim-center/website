@@ -19,16 +19,24 @@
             {{ $img := .Params.image }}
             {{ $src := printf "%v" $img }}
             {{ if strings.HasSuffix (lower $src) ".svg" }}
-              {{ partial "utilities/svg" (dict "src" $src "alt" .Title "class" "w-full h-full object-cover object-center") }}
+              {{ partial "utilities/svg" (dict
+                "src"  $src
+                "alt"  .Title
+                "class" "w-full h-full object-cover object-center"
+              ) }}
             {{ else }}
-              {{ partial "utilities/image" (dict "src" $src "alt" .Title "class" "w-full h-full object-cover object-center") }}
+              {{ partial "utilities/image" (dict
+                "src"  $src
+                "alt"  .Title
+                "class" "w-full h-full object-cover object-center"
+              ) }}
             {{ end }}
           </div>
         {{ end }}
       </div>
     </div>
 
-    <!--Tools List-->
+    <!--Support Pages List-->
     <div class="container mx-auto px-4 space-y-6 mb-28">
       {{ range .RegularPages }}
         <div class="flex flex-col sm:flex-row gap-6 bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition">
@@ -38,45 +46,34 @@
               {{ if $img }}
                 {{ $src := printf "%v" $img }}
                 {{ if strings.HasSuffix (lower $src) ".svg" }}
-                  {{ partial "utilities/svg" (dict "src" $src "class" "w-full h-full object-contain object-center") }}
+                  {{ partial "utilities/svg" (dict
+                    "src" $src
+                    "class" "w-full h-full object-contain object-center"
+                  ) }}
                 {{ else }}
-                  {{ partial "utilities/image" (dict "src" $src "class" "w-full h-full object-contain object-center") }}
+                  {{ partial "utilities/image" (dict
+                    "src" $src
+                    "class" "w-full h-full object-contain object-center"
+                  ) }}
                 {{ end }}
               {{ end }}
             </div>
           </a>
           <div class="flex-1">
-            {{ if .Params.tags }}
-              <div class="flex flex-wrap gap-2 mb-3">
-                {{ range .Params.tags }}
-                  <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold tag-gray">
-                    {{ . }}
-                  </span>
-                {{ end }}
-              </div>
-            {{ end }}
             <h2 class="text-2xl font-semibold leading-relaxed mb-3">
               {{ .Title }}
             </h2>
             <div class="text-[#424242] leading-loose">
-              {{ .Description }}
+              {{ .Description | markdownify}}
             </div>
-            <div class="mt-6 flex justify-start gap-3">
+            <div class="mt-6 flex justify-start">
               <a href="{{ .Permalink }}" class="inline-flex items-center gap-2 btn-primary">
                 <i class="fa-solid fa-arrow-right"></i>
                 Read more
               </a>
-              {{ with .Params.source_url }}
-                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-primary">
-                  <i class="fa-brands fa-github"></i>
-                  GitHub
-                </a>
-              {{ end }}
             </div>
           </div>
         </div>
-      {{ else }}
-        <p>No tools available.</p>
       {{ end }}
     </div>
   </section>

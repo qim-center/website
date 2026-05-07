@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <section class="py-16">
+    <div class="container mx-auto px-4 mb-24">
+      <div class="mx-auto max-w-5xl">
+        {{ with .Title }}
+          <h1 class="markdown-title text-center text-4xl xl:text-5xl font-bold xl:leading-normal mb-10">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .Description }}
+          <p class="text-xl xl:leading-loose font-medium text-center text-[#777777]">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 mb-28">
+      <div class="prose-lg prose prose-img:max-w-full mx-auto max-w-5xl">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+{{ end }}
