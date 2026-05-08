@@ -1,0 +1,40 @@
+<figure class="my-8">
+  {{ $src := .Get "src" }}
+  {{ $alt := .Get "alt" | default "" }}
+  {{ $caption := .Get "caption" }}
+  {{ $class := "w-full rounded-xl" }}
+
+  {{ $isSvg := strings.HasSuffix (lower $src) ".svg" }}
+
+  {{ if $isSvg }}
+    {{ with resources.Get $src }}
+      {{ .Content | safeHTML }}
+    {{ else }}
+      <img src="{{ $src | relURL }}" alt="{{ $alt }}" class="{{ $class }}" />
+    {{ end }}
+  {{ else }}
+    {{ with resources.Get $src }}
+      {{ $imgRes := . }}
+      {{ $breakpoints := slice 320 480 768 1024 1280 1600 1920 }}
+      {{ $images := slice }}
+      {{ range $breakpoints }}
+        {{ $bp := . }}
+        {{ if ge $imgRes.Width $bp }}
+          {{ $images = $images | append (slice ($imgRes.Resize (printf "%dx q95 webp" $bp))) }}
+        {{ end }}
+      {{ end }}
+      {{ $srcsetList := slice }}
+      {{ range $images }}
+        {{ $srcsetList = $srcsetList | append (slice (printf "%s %dw" .Permalink .Width)) }}
+      {{ end }}
+      {{ $srcset := delimit $srcsetList ", " }}
+      <img src="{{ $imgRes.Permalink }}"{{ with $srcset }} srcset="{{ . }}"{{ end }} alt="{{ $alt }}" class="{{ $class }}" loading="lazy" decoding="async" />
+    {{ else }}
+      <img src="{{ $src | relURL }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy" decoding="async" />
+    {{ end }}
+  {{ end }}
+
+  {{ with $caption }}
+    <figcaption class="mt-3 text-center text-sm text-[#777777] italic leading-relaxed">{{ . | markdownify }}</figcaption>
+  {{ end }}
+</figure>

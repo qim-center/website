@@ -38,9 +38,9 @@
               {{ if $img }}
                 {{ $src := printf "%v" $img }}
                 {{ if strings.HasSuffix (lower $src) ".svg" }}
-                  {{ partial "utilities/svg" (dict "src" $src "class" "w-full h-full object-contain object-center") }}
+                  {{ partial "utilities/svg" (dict "src" $src "class" "w-full h-full object-cover object-center") }}
                 {{ else }}
-                  {{ partial "utilities/image" (dict "src" $src "class" "w-full h-full object-contain object-center") }}
+                  {{ partial "utilities/image" (dict "src" $src "class" "w-full h-full object-cover object-center") }}
                 {{ end }}
               {{ end }}
             </div>

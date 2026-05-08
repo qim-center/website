@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section class="py-16">
     <div class="container mx-auto px-4 mb-24">
-      <div class="mx-auto xl:max-w-1/2 mb-16">
+      <div class="mb-16">
         {{ with .Title }}
           <h1 class="markdown-title text-center text-4xl xl:text-5xl font-bold xl:leading-normal mb-10">{{ . | markdownify }}</h1>
         {{ end }}
@@ -21,7 +21,7 @@
     <!--Highlighted Post-->
     {{ $post := (index .RegularPages 0) }}
     <div class="container mx-auto px-4 mb-28">
-      <div class="prose-lg prose mx-auto">
+      <div class="prose-lg prose max-w-none">
         {{ .Content }}
       </div>
     </div>
