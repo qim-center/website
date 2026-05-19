@@ -26,7 +26,7 @@
 }
 
 @theme {
-  --color-primary: {{ (default "#9077B6" site.Params.colors.primary) }};
+  --color-primary: #FC7323;
 }
 
 .btn-primary {

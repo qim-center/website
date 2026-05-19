@@ -21,7 +21,7 @@
       {{ range $breakpoints }}
         {{ $bp := . }}
         {{ if ge $imgRes.Width $bp }}
-          {{ $images = $images | append (slice ($imgRes.Resize (printf "%dx q95 webp" $bp))) }}
+          {{ $images = $images | append (slice ($imgRes.Resize (printf "%dx q95" $bp))) }}
         {{ end }}
       {{ end }}
       {{ $srcsetList := slice }}

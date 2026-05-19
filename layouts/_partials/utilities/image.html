@@ -37,7 +37,7 @@
     {{/* Generate the images: */}}
     {{ range $breakpoints }}
       {{ if (ge $resource.Width .) }}
-        {{ $opts := (printf "%dx q95 webp" .) }}
+        {{ $opts := (printf "%dx q95" .) }}
         {{ $image := $resource.Resize $opts }}
         {{ $images = append $images (slice $image) }}
       {{ end }}
