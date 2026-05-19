@@ -3,6 +3,7 @@
   {{ $alt := .Get "alt" | default "" }}
   {{ $caption := .Get "caption" }}
   {{ $class := "w-full rounded-xl" }}
+  {{ if (.Get "shadow") }}{{ $class = printf "%s shadow-lg" $class }}{{ end }}
 
   {{ $isSvg := strings.HasSuffix (lower $src) ".svg" }}
 

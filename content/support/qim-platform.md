@@ -1,20 +1,52 @@
 +++
 title = "Qim Platform"
 description = "High performance computing environment for processing and analysing large 3D imaging datasets."
+icon = "fa-server"
 image = "images/home/features/platform-neutral-screenshot-angle.png"
 +++
 
-## Overview
 
-The QIM Center operates a high performance computing platform designed for processing, visualization, and analysis of large 3D imaging datasets. Our platform provides access to computational resources that go beyond what is typically available on individual workstations.
+The QIM Platform is a web-based computational environment designed to make quantitative analysis of large-scale 3D imaging data easier, faster, and more accessible. 
 
-## Platform Capabilities
+Developed by the QIM Center and hosted at the DTU Computing Center, it provides researchers with direct access to analysis tools, data resources, documentation, and high-performance computing through a single interface.
 
-- **High performance computing** — Access to GPU-accelerated nodes for computationally intensive tasks such as tomography reconstruction and large-scale segmentation.
-- **Pre-installed tools** — Our platform comes with QIM-developed tools and popular imaging software ready to use.
-- **Large dataset support** — Handle datasets that exceed the memory capacity of standard desktop machines.
-- **Collaborative environment** — Share data, workflows, and results with team members across institutions.
+The platform combines browser-based tools for local processing with remote services running on DTU’s computing infrastructure, allowing users to work efficiently with volumetric datasets regardless of their computational requirements.
 
-## Access
 
-To request access to the QIM platform, please contact us at [info@qim.dk](mailto:info@qim.dk). We will work with you to understand your computational needs and set up an appropriate environment for your research.
+## What the platform provides
+
+### Data access
+
+The platform offers integrated access to research data through a web-based file system interface called <a href="https://filestash.qim.dk/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-primary not-prose">
+  <i class="fa-solid fa-folder-open"></i>
+  Filestash
+</a> which allows direct access to the file system at the DTU HPC (Gbar).
+
+{{< fig src="/images/support/filestash.png" shadow="true" caption="The QIM Platform file explorer interface for browsing project and public datasets." >}}
+
+Using Filestash, users can:
+
+- Browse project and personal storage
+- Visualize large volumetric data
+- Upload and download datasets under 2 GB
+
+### Computational tools
+
+The Qim platform allows users to easily start tools directly to the HPC cluster at DTU, using our launchers.
+
+For example, the Jupyter Launcher can be used for Jupyter servers:
+
+{{< fig src="/images/support/jupyter-launcher.png" shadow="true" caption="The Jupyter launcher interface on the QIM Platform allows launching a notebook server on the HPC cluster." >}}
+
+
+## Ongoigng develoment
+
+The platform is under active development, with continuous additions of new tools, interfaces, and computational capabilities.
+
+Its goal is to provide a growing ecosystem for quantitative imaging that lowers technical barriers and enables researchers to focus on scientific discovery rather than infrastructure.
+
+If you find any issues or have feature requestes, please use the GitHub repository:
+<a href="https://github.com/qim-center/qim-platform" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-primary not-prose">
+  <i class="fa-brands fa-github"></i>
+  QIM Platform
+</a>

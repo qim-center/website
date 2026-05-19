@@ -1,12 +1,12 @@
 +++
 title = "Support for Beamtime"
 description = "Technical support and expertise for researchers conducting experiments at synchrotron and laboratory beamlines."
+icon = "fa-brands fa-superpowers"
 image = "images/support/support.jpg"
 +++
 
-## Overview
 
-The QIM Center provides support to researchers planning and conducting beamtime experiments at synchrotron and laboratory X-ray sources. Our expertise spans experiment design, data acquisition, and post-experiment analysis.
+The Qim Center provides support to researchers planning and conducting beamtime experiments at synchrotron and laboratory X-ray sources. Our expertise spans experiment design, data acquisition, and post-experiment analysis.
 
 ## Pre-Beamtime Support
 
@@ -28,4 +28,4 @@ The QIM Center provides support to researchers planning and conducting beamtime 
 
 ## Contact
 
-To discuss beamtime support, contact us at [info@qim.dk](mailto:info@qim.dk). We work with researchers using facilities at MAX IV and other synchrotron and laboratory sources worldwide.
+To discuss beamtime support, contact us at [info@qim.dk](mailto:info@qim.dk).
