@@ -67,36 +67,11 @@
     {{ end -}}
 
 
-    <!-- Load Tailwind -->
-    {{ with (templates.Defer (dict "key" "global")) }}
-      {{ with resources.Get "css/styles.css" }}
-        {{ with resources.ExecuteAsTemplate "css/styles.css" $ . }}
-          {{ $opts := dict "inlineImports" true "optimize" true "minify" true }}
-          {{ with . | css.TailwindCSS $opts | fingerprint }}
-            <link
-              rel="stylesheet"
-              href="{{ .RelPermalink }}"
-              integrity="{{ .Data.Integrity }}"
-              crossorigin="anonymous"
-            />
-          {{ end }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
+    <link rel="stylesheet" href="/css/tailwind.css" />
 
-
-    <!-- Load Fonts -->
     {{ with resources.Get "css/fonts.css" }}
       {{ with resources.ExecuteAsTemplate "css/fonts.css" $ . }}
-        {{ $opts := dict "inlineImports" true "optimize" true "minify" true }}
-        {{ with . | css.TailwindCSS $opts | fingerprint }}
-          <link
-            rel="stylesheet"
-            href="{{ .RelPermalink }}"
-            integrity="{{ .Data.Integrity }}"
-            crossorigin="anonymous"
-          />
-        {{ end }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" />
       {{ end }}
     {{ end }}
 

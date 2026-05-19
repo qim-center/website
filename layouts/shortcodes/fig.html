@@ -3,6 +3,7 @@
   {{ $alt := .Get "alt" | default "" }}
   {{ $caption := .Get "caption" }}
   {{ $class := "w-full rounded-xl" }}
+  {{ if (.Get "shadow") }}{{ $class = printf "%s shadow-lg" $class }}{{ end }}
 
   {{ $isSvg := strings.HasSuffix (lower $src) ".svg" }}
 
@@ -20,7 +21,7 @@
       {{ range $breakpoints }}
         {{ $bp := . }}
         {{ if ge $imgRes.Width $bp }}
-          {{ $images = $images | append (slice ($imgRes.Resize (printf "%dx q95 webp" $bp))) }}
+          {{ $images = $images | append (slice ($imgRes.Resize (printf "%dx q95" $bp))) }}
         {{ end }}
       {{ end }}
       {{ $srcsetList := slice }}

@@ -1,6 +1,7 @@
 +++
 title = "Training and Workshops"
 description = "Hands-on training sessions and workshops on quantitative image analysis techniques."
+icon = "fa-chalkboard-user"
 image = "images/support/support.jpg"
 +++
 
