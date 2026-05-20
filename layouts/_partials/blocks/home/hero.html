@@ -6,8 +6,8 @@
     {{ partial "utilities/svg" (dict "src" "images/hero/circles-2.svg")}}
   </div>
   <div class="container mx-auto px-4">
-    <div class="grid xl:grid-cols-2 gap-8 mb-24">
-      <div class="flex flex-col justify-center gap-4">
+    <div class="grid items-start xl:grid-cols-2 gap-8 mb-24">
+      <div class="flex flex-col justify-start gap-4">
         {{ with .title }}
           <h1 class="markdown-title text-center xl:text-start text-4xl xl:text-5xl font-bold xl:leading-normal text-[#5C5C5C]">{{ . | markdownify }}</h1>
         {{ end }}
@@ -26,20 +26,47 @@
           </div>
         {{ end }}
       </div>
-      <div class="flex flex-col justify-center items-center">
-        {{ with .image }}
-          {{ if (strings.HasSuffix . ".html") }}
-            <div class="w-[100%] h-100 overflow-hidden rounded-lg relative opacity-0 transition-opacity duration-5000" data-fade-on-load>
-              <iframe 
-                src="{{ . }}" 
-                class="w-full h-full border-0 scale-200"
-                frameborder="0"
-                scrolling="no">
-              </iframe>
-            </div>
-          {{ else }}
-            {{ partial "utilities/image" (dict "src" . "class" "object-cover object-center w-[80%]")}}
+      <div class="flex flex-col justify-start items-center">
+        {{ with .visualizations }}
+          {{ $visualizationUrls := slice }}
+          {{ range . }}
+            {{ $visualizationUrls = $visualizationUrls | append . }}
           {{ end }}
+          <div class="w-full aspect-video overflow-hidden rounded-lg bg-gray-100">
+            <iframe
+              class="w-full h-full border-0"
+              title="Interactive QIM volume visualization"
+              frameborder="0"
+              scrolling="no"
+              loading="eager"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <script>
+            (() => {
+              const container = document.currentScript.previousElementSibling;
+              const iframe = container && container.querySelector("iframe");
+              if (!iframe) return;
+
+              const urls = {{ $visualizationUrls | jsonify | safeJS }};
+              let previousUrl = "";
+
+              try {
+                previousUrl = window.localStorage.getItem("qimHeroVisualizationUrl") || "";
+              } catch (error) {}
+
+              const candidates = urls.length > 1 ? urls.filter((url) => url !== previousUrl) : urls;
+              const selectedUrl = candidates[Math.floor(Math.random() * candidates.length)] || urls[0];
+
+              if (selectedUrl) {
+                iframe.src = selectedUrl;
+
+                try {
+                  window.localStorage.setItem("qimHeroVisualizationUrl", selectedUrl);
+                } catch (error) {}
+              }
+            })();
+          </script>
         {{ end }}
       </div>
     </div>

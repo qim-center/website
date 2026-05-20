@@ -10,7 +10,10 @@ buttons:
   - label: 'About us'
     link: '/about'
 
-image: 'images/home/hero/qim-plot.html'
+visualizations:
+  - 'https://viz.qim.dk/?src=https%3A%2F%2Fplatform.qim.dk%2Fqim-public%2Fmex_coral%2Fmex_coral.zarr&scale=2&hidden=true&turntable=true&colormap=plasma'
+  - 'https://viz.qim.dk/?src=https%3A%2F%2Fplatform.qim.dk%2Fqim-public%2Fescargot%2Fescargot.zarr&scale=2&hidden=true&turntable=true&colormap=plasma'
+  - 'https://viz.qim.dk/?src=https%3A%2F%2Fplatform.qim.dk%2Fqim-public%2Fcowry_shell%2Fcowry_shell.zarr&scale=2&hidden=true&turntable=true&colormap=plasma'
 
 items:
   - icon: 'fa-solid fa-window-restore'
