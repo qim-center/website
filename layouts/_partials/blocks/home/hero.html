@@ -32,20 +32,28 @@
           {{ range . }}
             {{ $visualizationUrls = $visualizationUrls | append . }}
           {{ end }}
-          <div class="w-full aspect-video overflow-hidden rounded-lg bg-gray-100">
+          <div class="hero-visualization-frame overflow-hidden rounded-lg bg-gray-100" data-hero-visualization>
             <iframe
-              class="w-full h-full border-0"
+              class="hero-visualization-iframe"
               title="Interactive QIM volume visualization"
               frameborder="0"
               scrolling="no"
               loading="eager"
               allowfullscreen>
             </iframe>
+            <a
+              class="hero-visualization-dataset-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open this dataset in the QIM data repository">
+              View in data-repository
+            </a>
           </div>
           <script>
             (() => {
               const container = document.currentScript.previousElementSibling;
               const iframe = container && container.querySelector("iframe");
+              const datasetLink = container && container.querySelector(".hero-visualization-dataset-link");
               if (!iframe) return;
 
               const urls = {{ $visualizationUrls | jsonify | safeJS }};
@@ -58,8 +66,37 @@
               const candidates = urls.length > 1 ? urls.filter((url) => url !== previousUrl) : urls;
               const selectedUrl = candidates[Math.floor(Math.random() * candidates.length)] || urls[0];
 
+              const getRepositoryUrl = (visualizationUrl) => {
+                try {
+                  const src = new URL(visualizationUrl).searchParams.get("src");
+                  if (!src) return "";
+
+                  const parts = new URL(src).pathname.split("/").filter(Boolean);
+                  const datasetName = parts[parts.length - 2] || "";
+                  const datasetSlug = datasetName.toLowerCase().replaceAll("_", "-");
+
+                  return datasetSlug ? "https://data-repository.qim.dk/datasets/" + datasetSlug + "/" : "";
+                } catch (error) {
+                  return "";
+                }
+              };
+
               if (selectedUrl) {
                 iframe.src = selectedUrl;
+
+                if (datasetLink) {
+                  const repositoryUrl = getRepositoryUrl(selectedUrl);
+
+                  if (repositoryUrl) {
+                    datasetLink.href = repositoryUrl;
+                  }
+                }
+
+                requestAnimationFrame(() => {
+                  requestAnimationFrame(() => {
+                    container.classList.add("is-visible");
+                  });
+                });
 
                 try {
                   window.localStorage.setItem("qimHeroVisualizationUrl", selectedUrl);
