@@ -1,0 +1,54 @@
+/* Home hero visualization fade-in */
+.hero-visualization-frame {
+  --hero-visualization-height: clamp(260px, 30vw, 440px);
+  width: 100%;
+  height: var(--hero-visualization-height);
+  position: relative;
+  opacity: 0;
+  transition: opacity 1s ease-in 1.0s;
+}
+
+.hero-visualization-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.hero-visualization-frame.is-visible {
+  opacity: 1;
+}
+
+
+.hero-visualization-dataset-link {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.6rem;
+  transform: none;
+  z-index: 1;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #5c5c5c;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  transition:
+    opacity 1.0s ease 3s,
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero-visualization-frame.is-visible .hero-visualization-dataset-link {
+  opacity: 1;
+}
+
+.hero-visualization-dataset-link:hover,
+.hero-visualization-dataset-link:focus-visible {
+  background: #fc7323;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
