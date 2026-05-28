@@ -61,7 +61,7 @@
           {{ .Content }}
         </div>
 
-        {{ if .Params.cta_link }}
+        {{ if and .Params.cta_link (ge .Params.date now) }}
           <div class="mt-12 flex justify-start">
             <a href="{{ .Params.cta_link }}" class="btn-primary-lg">
               {{ .Params.cta_text | default "Register" }}

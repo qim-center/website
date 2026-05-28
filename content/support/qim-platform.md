@@ -10,14 +10,12 @@ The QIM Platform is a web-based computational environment designed to make quant
 
 Developed by the QIM Center and hosted at the DTU Computing Center, it provides researchers with direct access to analysis tools, data resources, documentation, and high-performance computing through a single interface.
 
-The platform combines browser-based tools for local processing with remote services running on DTU’s computing infrastructure, allowing users to work efficiently with volumetric datasets regardless of their computational requirements.
-
 
 ## What the platform provides
 
 ### Data access
 
-The platform offers integrated access to research data through a web-based file system interface called <a href="https://filestash.qim.dk/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-primary not-prose">
+The platform offers integrated access to data through a web-based file system interface called <a href="https://filestash.qim.dk/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-primary not-prose">
   <i class="fa-solid fa-folder-open"></i>
   Filestash
 </a> which allows direct access to the file system at the DTU HPC (Gbar).

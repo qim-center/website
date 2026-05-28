@@ -46,19 +46,19 @@
           {{ range $upcoming }}
             <div class="flex flex-col sm:flex-row gap-6 bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition">
               <a class="block w-full sm:w-40 md:w-48 shrink-0" href="{{ .Permalink }}">
-                <div class="w-full h-24 sm:h-28 md:h-32 rounded-lg overflow-hidden object-cover object-center">
+                <div class="w-full h-24 sm:h-28 md:h-32 rounded-lg overflow-hidden">
                   {{ $img := .Params.image }}
                   {{ if $img }}
                     {{ $src := printf "%v" $img }}
                     {{ if strings.HasSuffix (lower $src) ".svg" }}
                       {{ partial "utilities/svg" (dict
                         "src" $src
-                        "class" "w-full h-full object-contain object-center"
+                        "class" "w-full h-full object-cover object-center"
                       ) }}
                     {{ else }}
                       {{ partial "utilities/image" (dict
                         "src" $src
-                        "class" "w-full h-full object-contain object-center"
+                        "class" "w-full h-full object-cover object-center"
                       ) }}
                     {{ end }}
                   {{ end }}
@@ -106,19 +106,19 @@
         {{ range $past }}
           <div class="flex flex-col sm:flex-row gap-6 bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition">
             <a class="block w-full sm:w-40 md:w-48 shrink-0" href="{{ .Permalink }}">
-              <div class="w-full h-24 sm:h-28 md:h-32 rounded-lg overflow-hidden object-cover object-center">
+              <div class="w-full h-24 sm:h-28 md:h-32 rounded-lg overflow-hidden">
                 {{ $img := .Params.image }}
                 {{ if $img }}
                   {{ $src := printf "%v" $img }}
                   {{ if strings.HasSuffix (lower $src) ".svg" }}
                     {{ partial "utilities/svg" (dict
                       "src" $src
-                      "class" "w-full h-full object-contain object-center"
+                      "class" "w-full h-full object-cover object-center"
                     ) }}
                   {{ else }}
                     {{ partial "utilities/image" (dict
                       "src" $src
-                      "class" "w-full h-full object-contain object-center"
+                      "class" "w-full h-full object-cover object-center"
                     ) }}
                   {{ end }}
                 {{ end }}

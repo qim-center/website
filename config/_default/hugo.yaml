@@ -2,7 +2,7 @@ baseURL: "/"
 title: "Qim Center"
 summaryLength: 20
 
-buildFuture: false
+buildFuture: true
 enableRobotsTXT: true
 
 # Enable raw HTML rendering in markdown

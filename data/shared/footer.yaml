@@ -3,7 +3,7 @@ enable: true
 contact:
   title: "Contact"
   items:
-    - label: "Email: info@qim.dk"
+    - label: "info@qim.dk"
       link: "mailto:info@qim.dk"
 
 social:

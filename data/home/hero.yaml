@@ -34,7 +34,7 @@ items:
     color: '#E63F47'
     title: 'Method development'
     text: 'Developing new algorithms for quantitative imaging, with focus on 3D microscopy and tomography'
-    link: 'http://platform.qim.dk/'
+    link: '/support/custom-method-development/'
 
   - icon: 'fa-solid fa-database'
     color: '#E63F47'
@@ -46,10 +46,10 @@ items:
     color: '#E63F47'
     title: 'Scanning support'
     text: 'High-resolution imaging services and support for experimental setup, sample preparation, and imaging strategies'
-    link: 'http://platform.qim.dk/'
+    link: '/support/support-for-beamtime/'
 
   - icon: 'fa-solid fa-graduation-cap'
     color: '#E63F47'
     title: 'Training'
     text: 'Workshops, courses, and tutorials to support researchers in quantitative imaging methods and tools'
-    link: 'http://platform.qim.dk/'
+    link: '/support/training-and-workshops/'
