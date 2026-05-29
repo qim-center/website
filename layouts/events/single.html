@@ -12,7 +12,7 @@
             {{ end }}
             {{ if .Params.date }}
               <span class="info-pill">
-                {{ .Params.date }}
+                {{ time.Format "2 January 2006" .Params.date }}
               </span>
             {{ end }}
           </div>

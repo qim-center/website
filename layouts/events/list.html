@@ -67,7 +67,7 @@
               <div class="flex-1">
                 {{ if .Params.date }}
                   <div class="text-sm font-semibold text-primary mb-2">
-                    {{ time.Format ":date_long" .Params.date }}
+                    {{ time.Format "2 January 2006" .Params.date }}
                   </div>
                 {{ end }}
                 <h2 class="text-2xl font-semibold leading-relaxed mb-3">
@@ -127,7 +127,7 @@
             <div class="flex-1">
               {{ if .Params.date }}
                 <div class="text-sm font-semibold text-gray-500 mb-2">
-                  {{ time.Format ":date_long" .Params.date }}
+                  {{ time.Format "2 January 2006" .Params.date }}
                 </div>
               {{ end }}
               <h2 class="text-2xl font-semibold leading-relaxed mb-3">
