@@ -171,3 +171,47 @@ Markdown body describing the event program or details.
 ### Modify an existing event
 
 Edit the corresponding `.md` file in `content/events/`. Change the `date` field to move it between upcoming and past sections.
+
+---
+
+## How to add publications
+
+Publications are stored as a JSON array in `data/publications.json`.
+
+To add a new publication, append an entry to the JSON array:
+
+```json
+{
+  "authors": "Author1 and Author2 and Author3",
+  "year": "2026",
+  "title": "The publication title",
+  "journal": "Journal Name",                    // or "booktitle" for conference papers
+  "volume": "123",
+  "issue": "4",
+  "pages": "1-10",
+  "url": "https://doi.org/10.xxxx/xxxxx",
+  "keywords": ["Keyword1", "Keyword2"]
+}
+```
+
+Fields:
+
+| Field | Required | Notes |
+|---|---|---|
+| `authors` | yes | Author names separated by ` and ` |
+| `year` | yes | 4-digit year |
+| `title` | yes | Full publication title |
+| `journal` | no* | Journal name (use for journal articles) |
+| `booktitle` | no* | Conference/workshop name (use for proceedings) |
+| `volume` | no | Journal or proceedings volume |
+| `issue` | no | Issue number |
+| `pages` | no | Page range (e.g. `"1-13"`) |
+| `publisher` | no | Publisher name |
+| `address` | no | Conference location |
+| `note` | no | Free text (e.g. `"Accepted/In press"`) |
+| `url` | no | Link to the publication (DOI or direct URL) |
+| `keywords` | no | Array of keyword tags for filtering |
+
+\* One of `journal` or `booktitle` should be provided.
+
+**Important:** Keep the JSON valid — every key and string value must be in double quotes. No trailing commas on the last entry.
