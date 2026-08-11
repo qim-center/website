@@ -11,11 +11,11 @@ buttons:
     link: '/about'
 
 visualizations:
-  - 'https://viz.qim.dk/?src=https%3A%2F%2Fplatform.qim.dk%2Fqim-public%2Fmex_coral%2Fmex_coral.zarr&scale=2&hidden=true&turntable=true&colormap=plasma'
-  - 'https://viz.qim.dk/?src=https%3A%2F%2Fplatform.qim.dk%2Fqim-public%2Fescargot%2Fescargot.zarr&scale=2&hidden=true&turntable=true&colormap=plasma'
-  - 'https://viz.qim.dk/?src=https%3A%2F%2Fplatform.qim.dk%2Fqim-public%2Fcowry_shell%2Fcowry_shell.zarr&scale=2&hidden=true&turntable=true&colormap=plasma'
-  - 'https://viz.qim.dk/?src=https%3A%2F%2Fplatform.qim.dk%2Fqim-public%2Fforam_okinawa%2Fforam_okinawa.zarr&scale=2&hidden=true&turntable=true&colormap=plasma'
-  - 'https://viz.qim.dk/?src=https%3A%2F%2Fplatform.qim.dk%2Fqim-public%2Fraspberry%2Fraspberry.zarr&scale=2&hidden=true&turntable=true&colormap=plasma'
+  - https://viz.qim.dk/?src=https%3A%2F%2Fpublic.qim.dk%2Fcowry_shell%2Fcowry_shell.zarr%2F&scale=2&hidden=true&turntable=true&colormap=plasma
+  - https://viz.qim.dk/?src=https%3A%2F%2Fpublic.qim.dk%2Fescargot%2Fescargot.zarr%2F&scale=2&hidden=true&turntable=true&colormap=plasma
+  - https://viz.qim.dk/?src=https%3A%2F%2Fpublic.qim.dk%2Fcowry_shell%2Fcowry_shell.zarr%2F&scale=2&hidden=true&turntable=true&colormap=plasma
+  - https://viz.qim.dk/?src=https%3A%2F%2Fpublic.qim.dk%2Fforam_okinawa%2Fforam_okinawa.zarr%2F&scale=2&hidden=true&turntable=true&colormap=plasma
+  - https://viz.qim.dk/?src=https%3A%2F%2Fpublic.qim.dk%2Fraspberry%2Fraspberry.zarr%2F&scale=2&hidden=true&turntable=true&colormap=plasma
 
 items:
   - icon: 'fa-solid fa-window-restore'
