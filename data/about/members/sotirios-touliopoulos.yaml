@@ -1,0 +1,15 @@
+name: "Sotirios Touliopoulos"
+group: "Development Team"
+role:
+  - "Software developer"
+affiliation: "DTU Compute"
+image: "/images/about/SotiriosTouliopoulos.jpg"
+bio: "Sotirios is a Master's student in Bioinformatics at DTU. He has been working on tool development and analysis projects in biomedical imaging."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:s253723@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/sotirios-touliopoulos-91769920a/"
+weight: 10
