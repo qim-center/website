@@ -23,7 +23,7 @@ To add or edit a team member:
 
 ```yaml
 name: "John Doe"
-group: "Staff"                     # One of: QIM Lead, Staff, Development Team, Working Group
+group: "Staff"                     # One of: Qim Lead, Staff, Development Team, Working Group
 role:                              # string or list of strings
   - "Researcher"
 affiliation: "DTU Compute"
@@ -54,7 +54,7 @@ Create a file in `content/showcases/` (e.g. `my-showcase.md`):
 
 ```toml
 +++
-author = "QIM"
+author = "Qim"
 title = "My Showcase"
 description = "Brief description of the showcase"
 tags = ["Tag1", "Tag2"]

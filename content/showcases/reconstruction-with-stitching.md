@@ -1,5 +1,5 @@
 +++
-author = "QIM"
+author = "Qim"
 title = "Reconstruction with Stitching"
 description = "3D reconstruction pipeline using image stitching techniques"
 tags = ["Reconstruction", "Pipeline"]

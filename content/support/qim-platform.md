@@ -6,9 +6,9 @@ image = "images/home/features/platform-neutral-screenshot-angle.png"
 +++
 
 
-The QIM Platform is a web-based computational environment designed to make quantitative analysis of large-scale 3D imaging data easier, faster, and more accessible. 
+The Qim Platform is a web-based computational environment designed to make quantitative analysis of large-scale 3D imaging data easier, faster, and more accessible. 
 
-Developed by the QIM Center and hosted at the DTU Computing Center, it provides researchers with direct access to analysis tools, data resources, documentation, and high-performance computing through a single interface.
+Developed by the Qim Center and hosted at the DTU Computing Center, it provides researchers with direct access to analysis tools, data resources, documentation, and high-performance computing through a single interface.
 
 
 ## What the platform provides
@@ -20,7 +20,7 @@ The platform offers integrated access to data through a web-based file system in
   Filestash
 </a> which allows direct access to the file system at the DTU HPC (Gbar).
 
-{{< fig src="/images/support/filestash.png" shadow="true" caption="The QIM Platform file explorer interface for browsing project and public datasets." >}}
+{{< fig src="/images/support/filestash.png" shadow="true" caption="The Qim Platform file explorer interface for browsing project and public datasets." >}}
 
 Using Filestash, users can:
 
@@ -34,7 +34,7 @@ The Qim platform allows users to easily start tools directly to the HPC cluster 
 
 For example, the Jupyter Launcher can be used for Jupyter servers:
 
-{{< fig src="/images/support/jupyter-launcher.png" shadow="true" caption="The Jupyter launcher interface on the QIM Platform allows launching a notebook server on the HPC cluster." >}}
+{{< fig src="/images/support/jupyter-launcher.png" shadow="true" caption="The Jupyter launcher interface on the Qim Platform allows launching a notebook server on the HPC cluster." >}}
 
 
 ## Ongoigng develoment
@@ -46,5 +46,5 @@ Its goal is to provide a growing ecosystem for quantitative imaging that lowers 
 If you find any issues or have feature requestes, please use the GitHub repository:
 <a href="https://github.com/qim-center/qim-platform" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-primary not-prose">
   <i class="fa-brands fa-github"></i>
-  QIM Platform
+  Qim Platform
 </a>

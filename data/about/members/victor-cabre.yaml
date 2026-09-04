@@ -1,10 +1,10 @@
 name: "Víctor Cabré i Guerrero"
-group: "Development Team"                     # One of: QIM Lead, Staff, Development Team, Working Group
+group: "Development Team"                     # One of: Qim Lead, Staff, Development Team, Working Group
 role:                              # string or list of strings
   - "Software developer"
 affiliation: "DTU Compute"
 image: "/images/about/VictorCabre.jpg"
-bio: "Víctor is a Master's student in Autonomous Systems at DTU. At QIM he works as a software developer, building and maintaining the tools researchers use to analyze their data. His interests are in software development, artificial intelligence and high-performance computing."
+bio: "Víctor is a Master's student in Autonomous Systems at DTU. At Qim he works as a software developer, building and maintaining the tools researchers use to analyze their data. His interests are in software development, artificial intelligence and high-performance computing."
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"

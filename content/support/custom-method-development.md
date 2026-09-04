@@ -5,7 +5,7 @@ icon = "fa-laptop-code"
 image = "images/support/support.jpg"
 +++
 
-Every research project presents unique challenges. The QIM Center collaborates with researchers to develop custom algorithms and analysis methods that address specific needs not covered by existing tools.
+Every research project presents unique challenges. The Qim Center collaborates with researchers to develop custom algorithms and analysis methods that address specific needs not covered by existing tools.
 
 ## What We Develop
 
