@@ -67,7 +67,18 @@
     {{ end -}}
 
 
-    <link rel="stylesheet" href="/css/tailwind.css" />
+    {{ $cssOpts := dict "minify" (not hugo.IsDevelopment) }}
+    {{ with resources.Get "css/styles.css" }}
+      {{ with . | css.TailwindCSS $cssOpts }}
+        {{ if hugo.IsDevelopment }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" />
+        {{ else }}
+          {{ with . | fingerprint }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
     <link rel="stylesheet" href="/css/hero-visualization.css" />
 
     {{ with resources.Get "css/fonts.css" }}
