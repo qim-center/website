@@ -1,15 +1,47 @@
 main:
   - name: "About Us"
+    identifier: about-us
     url: "/about"
     weight: 1
+
+  - name: "Qim Center"
+    parent: about-us
+    url: "/about"
+    weight: 1
+
+  - name: "Publications"
+    parent: about-us
+    url: "/publications"
+    weight: 2
 
   - name: "Showcases"
     url: "/showcases"
     weight: 2
 
-  - name: "Software Tools"
+  - name: "Resources"
+    identifier: resources
     url: "/tools"
     weight: 3
+
+  - name: "Software Tools"
+    parent: resources
+    url: "/tools"
+    weight: 1
+
+  - name: "Qim Platform"
+    parent: resources
+    url: "https://platform.qim.dk"
+    weight: 2
+
+  - name: "Volume Explorer"
+    parent: resources
+    url: "https://viz.qim.dk"
+    weight: 3
+
+  - name: "Data Repository"
+    parent: resources
+    url: "https://data-repository.qim.dk"
+    weight: 4
 
   - name: "Research Support"
     url: "/support"
@@ -18,10 +50,6 @@ main:
   - name: "Events"
     url: "/events"
     weight: 5
-
-  - name: "Publications"
-    url: "/publications"
-    weight: 6
 
 buttons:
   - name: "Contact Us"

@@ -80,3 +80,69 @@ body {
 .nav-link.active::after {
   @apply w-full left-0 translate-x-0;
 }
+
+/* ---------------------------------------------------------------------------
+   Menu dropdowns (submenus), styled to match the QIM Platform's UI
+   (see qim-platform's stylesheet: --color-border, --color-bg, .dropdown, etc.)
+   --------------------------------------------------------------------------- */
+:root {
+  --menu-border: #e3e6ea;
+  --menu-surface: #ffffff;
+  --menu-surface-hover: #f4f5f7;
+  --menu-shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 8px 24px rgba(16, 24, 40, 0.06);
+}
+
+/* Top-level nav item: rounded pill with a soft hover background */
+.nav-link {
+  @apply rounded-lg px-3 py-2 font-semibold transition-colors duration-150;
+}
+
+/* Wrapper positions the dropdown and bridges the gap to the trigger with
+   padding (not margin) so the pointer stays inside the hoverable area while
+   moving from the link down into the menu — this is what keeps the dropdown
+   open long enough to reach it. */
+.dropdown-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 0.4rem;
+  z-index: 50;
+}
+
+.dropdown {
+  margin: 0;
+  padding: 0.25rem;
+  list-style: none;
+  text-align: left;
+  background: var(--menu-surface);
+  border: 1px solid var(--menu-border);
+  border-radius: 10px;
+  box-shadow: var(--menu-shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 120ms ease, transform 120ms ease, visibility 120ms;
+}
+
+.group:hover .dropdown,
+.group:focus-within .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #1a1f27;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.dropdown-link:hover {
+  background: var(--menu-surface-hover);
+  color: var(--color-primary);
+  text-decoration: none;
+}
