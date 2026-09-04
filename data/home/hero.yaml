@@ -46,7 +46,7 @@ items:
     color: '#E63F47'
     title: 'Volume reconstruction'
     text: 'Support for reconstruction of volumetric data from MAX IV or other beamlines, using the open-source CIL framework.'
-    link: '/support/support-for-beamtime/'
+    link: '/support/tomography-reconstruction/'
 
   - icon: 'fa-solid fa-graduation-cap'
     color: '#E63F47'
