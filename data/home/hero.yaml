@@ -26,8 +26,8 @@ items:
 
   - icon: 'fa-brands fa-python'
     color: '#E63F47'
-    title: 'Python library'
-    text: 'Development of qim3d, an open source library for volumetric image analysis'
+    title: 'Image analysis'
+    text: 'Development of qim3d, an open source library Python for volumetric image analysis'
     link: 'https://docs.qim.dk/qim3d/'
 
   - icon: 'fa-solid fa-file-code'
@@ -42,10 +42,10 @@ items:
     text: 'Repository of volumetric data from imaging experiments, openly available for method development and benchmarking'
     link: 'https://data-repository.qim.dk/'
 
-  - icon: 'fa-solid fa-microscope'
+  - icon: 'fa-solid fa-cube'
     color: '#E63F47'
-    title: 'Scanning support'
-    text: 'High-resolution imaging services and support for experimental setup, sample preparation, and imaging strategies'
+    title: 'Volume reconstruction'
+    text: 'Support for reconstruction of volumetric data from MAX IV or other beamlines, using the open-source CIL framework.'
     link: '/support/support-for-beamtime/'
 
   - icon: 'fa-solid fa-graduation-cap'
