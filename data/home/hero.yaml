@@ -1,7 +1,7 @@
 enable: true
 
 title: 'Center for **Quantification of Imaging Data** from MAX IV'
-text: 'The QIM Center advances quantitative imaging and large scale 3D image analysis by combining imaging science, AI, and high performance computing. We build open, FAIR research infrastructure that makes complex imaging data findable, accessible, interoperable, and reusable, enabling transparent, reproducible, and impactful science.'
+text: 'The Qim Center advances quantitative imaging and large scale 3D image analysis by combining imaging science, AI, and high performance computing. We build open, FAIR research infrastructure that makes complex imaging data findable, accessible, interoperable, and reusable, enabling transparent, reproducible, and impactful science.'
 
 buttons:
   - label: 'Qim Platform'

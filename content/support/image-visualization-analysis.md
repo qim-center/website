@@ -6,7 +6,7 @@ image = "images/support/support.jpg"
 +++
 
 
-Working with 3D imaging data requires clever visualization and analysis tools. The QIM Center provides solutions for exploring volumetric datasets, even if the dataset size ranges to multiple Gigabytes.
+Working with 3D imaging data requires clever visualization and analysis tools. The Qim Center provides solutions for exploring volumetric datasets, even if the dataset size ranges to multiple Gigabytes.
 
 One of our tools is the <a href="https://github.com/qim-center/volume-explorer" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-primary not-prose">
   <i class="fa-brands fa-github"></i>
