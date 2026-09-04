@@ -1,0 +1,21 @@
+name: "Jeppe Klitgaard"
+group: "Development Team"
+role:
+  - "Software developer"
+affiliation: "DTU Compute"
+image: "/images/about/JeppeKlitgaard.jpg"
+bio: >
+  Jeppe is a Master's student in Mathematical Modelling and Computation at DTU Compute.
+  He has a strong interest in CT reconstruction
+  as well as the development of idiomatic software and reproducible scientific workflows.
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:s250250@dtu.dk"
+  - label: "Website"
+    icon: "fa-solid fa-globe"
+    href: "https://jeppe.science/"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/jeppeklitgaard/"
+weight: 10
