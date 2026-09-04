@@ -68,10 +68,35 @@
           {{ partial "heroicons/x-mark" }}
         </button>
       </div>
-      <ul class="flex flex-col gap-8 xl:flex-row">
+      <ul class="flex flex-col gap-8 xl:flex-row xl:items-center">
         {{ range site.Menus.main }}
-          <li class="text-center">
-            <a class="nav-link text-primary{{ if eq (strings.TrimSuffix "/" $.RelPermalink) (strings.TrimSuffix "/" .URL) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+          <li class="relative text-center group">
+            <a
+              class="nav-link inline-flex items-center gap-1 text-primary{{ if eq (strings.TrimSuffix "/" $.RelPermalink) (strings.TrimSuffix "/" .URL) }} active{{ end }}"
+              href="{{ .URL }}"
+              {{ if strings.HasPrefix .URL "http" }}target="_blank" rel="noopener"{{ end }}
+            >
+              {{ .Name }}
+              {{ if .Children }}
+                <span class="text-xs">&#9662;</span>
+              {{ end }}
+            </a>
+
+            {{ if .Children }}
+              <div class="dropdown-wrapper">
+                <ul class="dropdown">
+                  {{ range .Children.ByWeight }}
+                    <li>
+                      <a
+                        class="dropdown-link"
+                        href="{{ .URL }}"
+                        {{ if strings.HasPrefix .URL "http" }}target="_blank" rel="noopener"{{ end }}
+                      >{{ .Name }}</a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
           </li>
         {{ end }}
       </ul>
