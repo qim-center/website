@@ -1,0 +1,15 @@
+name: "Heather Geha"
+group: "Development Team"
+role:
+  - "Software developer"
+affiliation: "DTU Compute"
+image: "/images/about/HeatherGeha.jpg"
+bio: "Heather is a Master's student in Mathematical Modeling and Computation at DTU. At QIM she works on image analysis and computer vision for QIM3D user research projects. Her interests are in applied mathematics and developing data-driven computational methods for scientific research."
+links:
+  - label: "Email"
+    icon: "fa-regular fa-envelope"
+    href: "mailto:s264014@dtu.dk"
+  - label: "LinkedIn"
+    icon: "fa-brands fa-linkedin"
+    href: "https://www.linkedin.com/in/heather-geha-b83320298/"
+weight: 10
