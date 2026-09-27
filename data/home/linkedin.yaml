@@ -1,0 +1,6 @@
+enable: true
+
+title: "Latest from LinkedIn"
+
+# Linkedin widget managed from the SociableKIT dashboard (https://www.sociablekit.com/)
+embed_id: "25717320"
