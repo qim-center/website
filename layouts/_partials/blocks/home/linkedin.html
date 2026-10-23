@@ -1,0 +1,9 @@
+<section id="linkedin" class="linkedin relative py-16 overflow-hidden">
+  <div class="container mx-auto px-4">
+    {{ with .title }}
+      <h1 class="text-2xl font-medium leading-relaxed text-center xl:max-w-1/2 mx-auto mb-16">{{ . }}</h1>
+    {{ end }}
+    <div class="sk-ww-linkedin-page-post" data-embed-id="{{ .embed_id }}"></div>
+    <script src="https://widgets.sociablekit.com/linkedin-page-posts/widget.js" defer></script>
+  </div>
+</section>
