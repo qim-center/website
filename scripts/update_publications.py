@@ -7,10 +7,10 @@ hand-curated ``keywords`` / ``note`` are preserved. New entries are added with
 empty ``keywords`` so that they can be tagged by hand.
 
 Usage:
-    python scripts/update_publications.py                # dry run (prints summary)
-    python scripts/update_publications.py --write        # apply changes
+    python scripts/update_publications.py                # filter with CampusAI (4 workers) and write changes
+    python scripts/update_publications.py --dry-run      # preview summary without writing to disk
+    python scripts/update_publications.py --no-filter    # skip LLM relevance filtering
     python scripts/update_publications.py --since 2015   # override the default cutoff year (2018); 0 = no cutoff
-    python scripts/update_publications.py --filter       # drop new works unrelated to QIM (LLM)
 
 Only the Python standard library is used.
 
@@ -207,7 +207,7 @@ def ordered(e: dict) -> dict:
 CAMPUSAI_URL = "https://api.campusai.compute.dtu.dk/v1/chat/completions"
 CAMPUSAI_MODEL = "cai-instant"
 MAX_WORKERS = 4  # the key allows 8 concurrent requests; never use more than half
-DEFAULT_WORKERS = 2
+DEFAULT_WORKERS = 4
 SCOPE_PROMPT = """You decide whether a scientific publication is relevant to the work of the QIM Center \
 (DTU Compute / MAX IV / Lund University). QIM works on quantitative imaging and large-scale 3D image \
 analysis: X-ray, neutron and electron tomography (e.g. uCT, synchrotron imaging), tomographic \
@@ -307,11 +307,16 @@ def filter_entries(candidates: list[tuple[dict, bool]], api_key: str, workers: i
 # ---------- main ----------
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--write", action="store_true", help="apply changes to data/publications.json")
+    ap.add_argument("--dry-run", dest="write", action="store_false", default=True,
+                    help="preview changes without writing to data/publications.json")
+    ap.add_argument("--write", dest="write", action="store_true",
+                    help="apply changes to data/publications.json (default)")
     ap.add_argument("--since", type=int, default=DEFAULT_SINCE,
                     help=f"only include works from this year onwards (default {DEFAULT_SINCE}; 0 = no cutoff)")
-    ap.add_argument("--filter", action="store_true",
-                    help="drop new works unrelated to QIM using DTU CampusAI (needs CAMPUSAI_API_KEY)")
+    ap.add_argument("--no-filter", dest="filter", action="store_false", default=True,
+                    help="skip LLM relevance filtering via DTU CampusAI")
+    ap.add_argument("--filter", dest="filter", action="store_true",
+                    help="drop new works unrelated to QIM using DTU CampusAI (default; needs CAMPUSAI_API_KEY)")
     ap.add_argument("--workers", type=int, default=DEFAULT_WORKERS,
                     help=f"parallel LLM requests (default {DEFAULT_WORKERS}, max {MAX_WORKERS})")
     args = ap.parse_args()
@@ -319,7 +324,7 @@ def main() -> int:
         ap.error(f"--workers must be between 1 and {MAX_WORKERS}")
     api_key = os.environ.get("CAMPUSAI_API_KEY", "")
     if args.filter and not api_key:
-        ap.error("--filter needs the CAMPUSAI_API_KEY environment variable (see README / script docstring)")
+        ap.error("CAMPUSAI_API_KEY environment variable is required (or pass --no-filter to skip LLM filtering)")
 
     orcids, missing = member_orcids()
     print(f"Members with ORCID: {len(orcids)}")
@@ -446,7 +451,7 @@ def main() -> int:
         PUBS_FILE.write_text(json.dumps(final, indent=2) + "\n", encoding="utf-8")
         print(f"\nWrote {PUBS_FILE}. Review with: git diff data/publications.json")
     else:
-        print("\nDry run only. Re-run with --write to apply.")
+        print("\nDry run only. Run without --dry-run to apply.")
     return 0
 
 

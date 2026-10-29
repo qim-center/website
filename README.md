@@ -192,17 +192,17 @@ The website displays the combined contents of two JSON arrays:
 - **Follow-up curation:** New entries are added with `"keywords": []` to be tagged by hand. Because ORCID records sometimes omit co-authors when no BibTeX citation or contributor list is attached, the script falls back to the ORCID owner's name and flags `[authors incomplete]` in the output so the author list can be completed manually.
 
 ```bash
-# Dry run (prints summary of new and updated entries without modifying files)
-python scripts/update_publications.py
+# Fetch, filter unrelated works via DTU CampusAI (4 parallel workers), and update data/publications.json
+CAMPUSAI_API_KEY=... python scripts/update_publications.py
 
-# Apply changes to data/publications.json
-python scripts/update_publications.py --write
+# Dry run (preview summary without modifying data/publications.json)
+CAMPUSAI_API_KEY=... python scripts/update_publications.py --dry-run
+
+# Skip LLM relevance filtering (does not require CAMPUSAI_API_KEY)
+python scripts/update_publications.py --no-filter
 
 # Override the default cutoff year (2018); use 0 for no cutoff
-python scripts/update_publications.py --since 2015
-
-# Filter out new works unrelated to QIM using DTU CampusAI (requires CAMPUSAI_API_KEY)
-CAMPUSAI_API_KEY=... python scripts/update_publications.py --filter --write
+CAMPUSAI_API_KEY=... python scripts/update_publications.py --since 2015
 ```
 
 ### Adding edge-case publications manually
