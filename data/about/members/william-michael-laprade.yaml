@@ -12,4 +12,7 @@ links:
   - label: "LinkedIn"
     icon: "fa-brands fa-linkedin"
     href: "https://www.linkedin.com/in/william-laprade-41b64a171/"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0000-0002-4342-1046"
 weight: 10

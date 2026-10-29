@@ -15,4 +15,7 @@ links:
   - label: "LinkedIn"
     icon: "fa-brands fa-linkedin"
     href: "https://se.linkedin.com/in/endri-lacaj-343006142"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0009-0000-8360-0631"
 weight: 10

@@ -13,4 +13,7 @@ links:
   - label: "LinkedIn"
     icon: "fa-brands fa-linkedin"
     href: "https://www.linkedin.com/in/jakobhj/"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0000-0001-9114-754X"
 weight: 10

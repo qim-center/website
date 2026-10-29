@@ -12,4 +12,7 @@ links:
   - label: "LinkedIn"
     icon: "fa-brands fa-linkedin"
     href: "https://www.linkedin.com/in/phialosophy/"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0009-0005-7739-0064"
 weight: 10

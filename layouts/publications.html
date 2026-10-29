@@ -1,4 +1,14 @@
 {{ define "main" }}
+{{ $publications := slice }}
+{{ range .Site.Data.publications }}
+  {{ $publications = $publications | append . }}
+{{ end }}
+{{ with index .Site.Data "publications-extra" }}
+  {{ range . }}
+    {{ $publications = $publications | append . }}
+  {{ end }}
+{{ end }}
+{{ $publications = sort $publications "year" "desc" }}
 <section class="py-16">
   <div class="container mx-auto px-4 mb-24">
     <h1 class="text-center text-4xl xl:text-5xl font-bold mb-10">{{ .Title }}</h1>
@@ -12,7 +22,7 @@
     <div class="max-w-4xl mx-auto bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-8 border border-primary/20">
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
         <div class="text-center">
-          <div class="text-3xl font-bold text-primary mb-1" id="total-publications">{{ len .Site.Data.publications }}</div>
+          <div class="text-3xl font-bold text-primary mb-1" id="total-publications">{{ len $publications }}</div>
           <div class="text-sm text-gray-600 font-medium">Publications</div>
         </div>
         <div class="text-center">
@@ -38,7 +48,7 @@
       </div>
       <div class="flex items-center justify-between">
         <div class="text-sm text-gray-600">
-          Showing <span id="visible-count" class="font-semibold">{{ len .Site.Data.publications }}</span> of <span id="total-count" class="font-semibold">{{ len .Site.Data.publications }}</span> publications
+          Showing <span id="visible-count" class="font-semibold">{{ len $publications }}</span> of <span id="total-count" class="font-semibold">{{ len $publications }}</span> publications
         </div>
         <button 
           type="button"
@@ -54,7 +64,7 @@
   <!-- Publications List -->
   <div class="container mx-auto px-4 mb-28">
     <div class="space-y-6 max-w-4xl mx-auto" id="publications-list">
-      {{ range .Site.Data.publications }}
+      {{ range $publications }}
         <div class="publication-card flex gap-4 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition" 
              {{ if .keywords }}data-keywords="{{ delimit .keywords "," }}"{{ end }}
              data-year="{{ .year }}"

@@ -19,4 +19,7 @@ links:
   - label: "Scholar"
     icon: "fa-solid fa-graduation-cap"
     href: "https://scholar.google.com/citations?user=A9oS7vwAAAAJ&hl=en"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0000-0002-3586-5763"
 weight: 10

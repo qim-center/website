@@ -18,4 +18,7 @@ links:
   - label: "Website"
     icon: "fa-solid fa-globe"
     href: "https://jmlipman.github.io/"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0000-0002-2708-1547"
 weight: 10

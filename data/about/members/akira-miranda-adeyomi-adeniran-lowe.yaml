@@ -8,8 +8,11 @@ bio: "Akira is a Master's student in Autonomous Systems at DTU Electro. She has 
 links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
-    href: "mailto:s215170@dtu.dk"
+    href: "mailto:aadad@dtu.dk"
   - label: "LinkedIn"
     icon: "fa-brands fa-linkedin"
     href: "https://www.linkedin.com/in/akira-miranda-adeniran-lowe-5a4070154/"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0009-0000-7629-9254"
 weight: 10
