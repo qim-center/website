@@ -12,4 +12,7 @@ links:
   - label: "Website"
     icon: "fa-solid fa-globe"
     href: "https://portal.research.lu.se/en/persons/stephen-hall/#Overview"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0000-0002-5232-4942"
 weight: 30

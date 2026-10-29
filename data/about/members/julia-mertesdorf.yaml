@@ -12,4 +12,7 @@ links:
   - label: "LinkedIn"
     icon: "fa-brands fa-linkedin"
     href: "https://www.linkedin.com/in/julia-mertesdorf-691b6a284/"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0000-0002-9750-4285"
 weight: 20

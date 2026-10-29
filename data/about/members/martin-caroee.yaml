@@ -9,4 +9,7 @@ links:
   - label: "Email"
     icon: "fa-regular fa-envelope"
     href: "mailto:msaca@dtu.dk"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0009-0008-3739-7562"
 weight: 10

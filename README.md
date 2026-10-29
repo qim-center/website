@@ -36,6 +36,9 @@ links:
   - label: "LinkedIn"
     icon: "fa-brands fa-linkedin"
     href: "https://linkedin.com/in/john-doe"
+  - label: "Orcid"
+    icon: "fa-solid fa-graduation-cap"
+    href: "https://orcid.org/0000-0000-0000-0000"
 weight: 30                         # lower = higher position in the list
 ```
 
@@ -176,9 +179,35 @@ Edit the corresponding `.md` file in `content/events/`. Change the `date` field 
 
 ## How to add publications
 
-Publications are stored as a JSON array in `data/publications.json`.
+The website displays the combined contents of two JSON arrays:
+- `data/publications.json` — automatically fetched and updated from team members' ORCID profiles.
+- `data/publications-extra.json` — manually maintained for edge cases that cannot be fetched automatically.
 
-To add a new publication, append an entry to the JSON array:
+### Automatic scraping from ORCID
+
+`scripts/update_publications.py` queries the public ORCID API for every ORCID link (`https://orcid.org/...`) listed in `data/about/members/*.yaml` and updates `data/publications.json`:
+
+- **Types included:** `journal-article`, `conference-paper`, `book-chapter`
+- **Preserves existing data:** Existing entries in `data/publications.json` (or `data/publications-extra.json`, matched by DOI or normalized `title` + `year`) are never overwritten — only a missing `doi` is filled in, preserving hand-curated `keywords` and `note` fields.
+- **Follow-up curation:** New entries are added with `"keywords": []` to be tagged by hand. Because ORCID records sometimes omit co-authors when no BibTeX citation or contributor list is attached, the script falls back to the ORCID owner's name and flags `[authors incomplete]` in the output so the author list can be completed manually.
+
+```bash
+# Dry run (prints summary of new and updated entries without modifying files)
+python scripts/update_publications.py
+
+# Apply changes to data/publications.json
+python scripts/update_publications.py --write
+
+# Override the default cutoff year (2018); use 0 for no cutoff
+python scripts/update_publications.py --since 2015
+
+# Filter out new works unrelated to QIM using DTU CampusAI (requires CAMPUSAI_API_KEY)
+CAMPUSAI_API_KEY=... python scripts/update_publications.py --filter --write
+```
+
+### Adding edge-case publications manually
+
+If a publication cannot be fetched automatically via ORCID, append an entry to the JSON array in `data/publications-extra.json`:
 
 ```json
 {
@@ -189,6 +218,7 @@ To add a new publication, append an entry to the JSON array:
   "volume": "123",
   "issue": "4",
   "pages": "1-10",
+  "doi": "10.xxxx/xxxxx",
   "url": "https://doi.org/10.xxxx/xxxxx",
   "keywords": ["Keyword1", "Keyword2"]
 }
@@ -198,7 +228,7 @@ Fields:
 
 | Field | Required | Notes |
 |---|---|---|
-| `authors` | yes | Author names separated by ` and ` |
+| `authors` | yes | Author names (`Surname, I.`) separated by ` and ` |
 | `year` | yes | 4-digit year |
 | `title` | yes | Full publication title |
 | `journal` | no* | Journal name (use for journal articles) |
@@ -209,6 +239,7 @@ Fields:
 | `publisher` | no | Publisher name |
 | `address` | no | Conference location |
 | `note` | no | Free text (e.g. `"Accepted/In press"`) |
+| `doi` | no | DOI identifier (e.g. `"10.1007/s10851-023-01146-x"`) |
 | `url` | no | Link to the publication (DOI or direct URL) |
 | `keywords` | no | Array of keyword tags for filtering |
 
